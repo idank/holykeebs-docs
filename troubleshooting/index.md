@@ -36,3 +36,15 @@ If an entire row or column is unresponsive, one of the controller pins is not fu
 
 1. Look at the controller sockets from under the PCB. Check they are all fully soldered.
 1. Do the same for the top side of the controller.
+
+## Split Side Is Not Working
+
+It's possible one of the controllers is faulty. A common cause is that the keyboard was powered, and you connected / disconnected the TRRS cable, which can cause shorts at the controller GPIO pins.
+
+1. Unpower the keyboard and disconnect the halves.
+1. Connect each side separately, if they work independently then try a different TRRS cable. Check that the TRRS jack is soldered properly.
+1. Try swapping the controllers between the sides.
+
+## Trackball Is Skipping
+
+This happens on split keyboards with Sea Picros when only the master side is connected. Unpower it, connect the halves, and try again.

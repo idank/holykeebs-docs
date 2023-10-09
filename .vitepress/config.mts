@@ -5,7 +5,8 @@ export default defineConfig({
   title: "holykeebs Documentation",
   description: "holykeebs Documentation",
   head: [['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]],
-  themeConfig: {
+  lastUpdated: true,
+    themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.svg',
     siteTitle: 'holykeebs',
@@ -27,10 +28,10 @@ export default defineConfig({
           { text: 'Buyer\'s Guide', link: '/guides/buyers-guide/' },
           { text: 'Keyboard', link: '/guides/keyboard/' },
           { text: 'Trackball Module', link: '/guides/trackball-module/' },
-          { text: 'Span', link: '/guides/span/' },
         ]
       },
-      { text: 'Firmware', link: '/firmware/' }
+      { text: 'Firmware', link: '/firmware/' },
+      { text: 'Troubleshooting', link: '/troubleshooting/' }
     ],
 
     socialLinks: [

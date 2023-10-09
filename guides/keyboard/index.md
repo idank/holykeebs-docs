@@ -48,7 +48,7 @@ If you find these instructions lacking, please check [Additional Resources](#add
 
 ## Getting Started
 
-This guide will walk you through building and flashing a keyboard from start to finish.
+This guide will walk you through building and flashing a keyboard from start to finish. Even though this guide might seem long, don't let that deter you: building a keyboard is an extremely fun and rewarding project.
 
 Depending on how you configured your purchase, some of the steps may have been done for you and can be skipped.
 
