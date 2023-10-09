@@ -18,6 +18,8 @@ import controllerheadersnotflat from './controller-headers-not-flat.jpg';
 
 import millmaxpins from './millmax-pins.jpg';
 import millmaxcontroller from './millmax-controller.jpg';
+import millmaxsoldered from './millmax-soldered.jpg';
+import millmaxsolderedbottom from './millmax-soldered-bottom.jpg';
 
 import oledsocketsflat from './oled-sockets-flat.jpg';
 import oledsocketsnotflat from './oled-sockets-not-flat.jpg';
@@ -158,7 +160,7 @@ The best result is achieved when building a small and consistent solder cone on 
 
 The process is largely similar for Mill-max pins, do pay attention not to add too much solder so the controller doesn't get soldered to the sockets. You want solder at the top side of the controller through-holes.
 
-<Images :paths="[millmaxpins, millmaxcontroller]" />
+<Images :paths="[millmaxpins, millmaxcontroller, millmaxsoldered, millmaxsolderedbottom]" />
 
 ## OLED
 
@@ -208,17 +210,37 @@ This step depends whether hotswap sockets and/or top plates were used.
 
 ### Top Plates
 
-Top plates can be installed flush against the PCB, or have a small gap. The correct apporach is to have a small gap, but this can be a bit challenging to do. Unless 2u stabilizers are used, it makes no practical difference which one is used.
+Top plates can be installed flush against the PCB, or have a small gap. The correct apporach is to have a small gap, but this can be a bit challenging to do. 
+
+It makes no practical difference which one is used, but **when 2u stabilizers are installed, the small gap method must be used**.
 
 <Images :paths="[topplatesgap, topplatesflush]" />
 
-Start by pushing a few keys at the edges of the plate. Make note of the orientation that the key needs to go into the hole.
+Start by pushing a few keys at the edges of the plate, there should be a click once the switch is seated fully in the hole. Make note of the orientation that the switch needs to go into the hole, depending if you have hotswap sockets or plan to solder the switch to the PCB.
 
 ::: tip
 It is also possible to push all of the switches into the top plate ahead of time. Try that if this method fails.
 :::
 
 <Images :paths="[topplates1, topplates2]" />
+
+::: details Installing 2u stabilizers
+
+The stabilizer sits between the PCB and the top plate and needs to be installed before joining the two. First, assemble the stabilizer:
+
+pic
+
+Secure it against the PCB:
+
+pic
+
+Later on, when installing the keycaps, pay attention to the orientation of the 2u keycap: unlike the other keycaps, it is not symmetric and needs to be installed as follows:
+
+pic
+
+Repeat for the other half.
+
+:::
 
 Push the top plate against the PCB, pressing the keys pushed before into the sockets or through holes. It should take some amount of force to push the switch all the way, but if it doesn't want to go in then check for alignment of the pins and that none are bent.
 

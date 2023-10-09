@@ -113,6 +113,10 @@ If not, enter bootloader mode:
 
 On split keyboards, repeat the flashing process for the other controller.
 
+::: danger
+Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
+:::
+
 ## Testing
 
 1. On a split keyboard, connect the halves when none of the sides are powered.

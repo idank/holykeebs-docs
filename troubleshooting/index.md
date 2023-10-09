@@ -39,7 +39,7 @@ If an entire row or column is unresponsive, one of the controller pins is not fu
 
 ## Split Side Is Not Working
 
-It's possible one of the controllers is faulty. A common cause is that the keyboard was powered, and you connected / disconnected the TRRS cable, which can cause shorts at the controller GPIO pins.
+It's possible one of the controllers is faulty. A common cause is that the keyboard was powered, and the TRRS cable was connected / disconnected, which can cause shorts at the controller GPIO pins.
 
 1. Unpower the keyboard and disconnect the halves.
 1. Connect each side separately, if they work independently then try a different TRRS cable. Check that the TRRS jack is soldered properly.

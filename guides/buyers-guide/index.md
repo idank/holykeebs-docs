@@ -40,9 +40,9 @@ All of our keyboards come with machine sockets for controllers. This option dete
 We currently have two options, the main difference is how much height each one adds to the "controller stack".
 
 1. Machine headers: a strip of pins + 3mm plastic that match the machine sockets.
-1. Mill Max pins: these come as a individual gold plated pins that can be inserted into the sockets. These have no plastic and so provide a lower height than machine headers. The disadvantage is dealing with individual pins which can be a bit of a pain, and the high cost of this item.
+1. Mill Max pins: these come as a individual gold plated pins that can be inserted into the sockets. These have no plastic and so provide a lower height than machine headers. The downside is dealing with individual pins which can be a bit of a pain, and the high cost of this item.
 
-<Images :paths="[controllerheadersflat, millmaxcontroller]" />
+![controller-headers-comparison](./controller-headers-comparison.jpg)
 
 ## Pointing Device
 
@@ -68,6 +68,12 @@ If you can't decide, make sure you get hotswap sockets and consider the Red Pro 
 Hotswap sockets allow socketing the switches (rather than soldering them directly to the PCB).
 
 They are easy to solder and are generally a good idea if you're not set on a switch or want the freedom to change them in the future.
+
+### Stabilizers
+
+The purpose of a stabilizer is to provide an even pressing surface across a wide keycap. The [Span](https://holykeebs.com/products/span) keyboard uses 2u keys, which have an option to use stabilizers.
+
+Stabilizers are generally recommended, although do add a bit of work in the build process. 2u keys are very usable even without stabilizers.
 
 ## Keycaps
 
