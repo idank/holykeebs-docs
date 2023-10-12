@@ -12,11 +12,15 @@ import cases4 from './cases-4.jpg';
 
 # Buyer's Guide
 
-This guide will help you choose through the various options when buying a keyboard.
+At holykeebs, we specialize in low profile ergonomic keyboards with pointing devices.
 
 A mechanical keyboard is comprised of various parts, allowing a relatively high degree of customization compared to a regular keyboard.
 
-At holykeebs, we specialize in low profile ergonomic keyboards with pointing devices.
+This guide will help you choose through the various options when buying a keyboard.
+
+::: info
+We cover all options here. If a product you're looking at is missing something then it's either incompatible, or a mistake. Reach out if in doubt.
+:::
 
 ## Build Service
 

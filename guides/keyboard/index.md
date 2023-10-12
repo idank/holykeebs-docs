@@ -71,6 +71,8 @@ To fully build a keyboard, you will need these tools at a minimum:
 - Flush cutters (if cutting pins is necessary).
 - M2 hex screwdriver for attaching a case.
 
+Consult [Recommended Tools](../../recommended-tools/) if you plan on purchasing some of these.
+
 ## Diodes
 
 We will start with the smallest components we have to deal with in this guide. SMD components can be intimidating if you've never dealt with them before, but once you get the hang of it, they should go fairly smoothly.
@@ -210,7 +212,7 @@ This step depends whether hotswap sockets and/or top plates were used.
 
 ### Top Plates
 
-Top plates can be installed flush against the PCB, or have a small gap. The correct apporach is to have a small gap, but this can be a bit challenging to do. 
+Top plates can be installed flush against the PCB, or have a small gap. The correct apporach is to have a small gap, but this can be a bit challenging to do.
 
 It makes no practical difference which one is used, but **when 2u stabilizers are installed, the small gap method must be used**.
 
@@ -282,7 +284,7 @@ If you're not sure the soldering job you did went well, it is recommended to fir
 
 Paint the edge of the PCBs black for the ultimate look and put the keycaps. The build is done, congratulations! :tada:
 
-Head on over to [Firmware](/firmware/) to flash the controllers with QMK. 
+Head on over to [Firmware](/firmware/) to flash the controllers with QMK.
 
 ## Additional Resources
 
