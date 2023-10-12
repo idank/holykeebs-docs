@@ -99,13 +99,19 @@ They can also be added to non-hotswap builds for the aesthetics, even though we 
 A top plate is **required** if you'd like stabilizers for 2u keys, like the [Span](https://holykeebs.com/products/span) keyboard supports.
 :::
 
-## Bottom Plates
+## Bottom Plates / Cases
 
-A bottom plate sits under the keyboard PCB and is a low cost option compared to a fully enclosed machined case.
+A bottom plate / case sits under the keyboard PCB and is a low cost option compared to a fully enclosed machined metal / plastic molded case.
 
-We carry a variety of colors for acrylic plates or printed cases.
+We carry a variety of colors for laser cut acrylic plates or 3d printed cases.
 
 <Images :paths="[cases1, cases2, cases3, cases4]" />
+
+## Covers
+
+Covers can be mounted on trackpoints and OLEDs for a better look / protection. All of our covers are laser cut acrylic in glossy, matte or translucent colors.
+
+![covers](./covers.jpg)
 
 ## More
 
