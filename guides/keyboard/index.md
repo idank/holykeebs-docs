@@ -31,6 +31,14 @@ import topplatesgap from './top-plates-gap.jpg';
 import topplatesflush from './top-plates-flush.jpg';
 import topplates1 from './top-plates-1.jpg';
 import topplates2 from './top-plates-2.jpg';
+
+import stabilizersmountedtop from './stabilizers-mounted-top.jpg';
+import stabilizersmountedbottom from './stabilizers-mounted-bottom.jpg';
+
+import stabilizersinstalled1 from './stabilizers-installed-1.jpg';
+import stabilizersinstalled2 from './stabilizers-installed-2.jpg';
+import stabilizersinstalled3 from './stabilizers-installed-3.jpg';
+import stabilizersinstalled4 from './stabilizers-installed-4.jpg';
 </script>
 
 # Keyboard Build Guide
@@ -232,16 +240,17 @@ The stabilizer sits between the PCB and the top plate and needs to be installed 
 
 pic
 
-Secure it against the PCB:
+Mount the stabilizer onto the top plate by pushing it from the bottom (the metal bar goes needs to be on the bottom):
 
-pic
+<Images :paths="[stabilizersmountedtop, stabilizersmountedbottom]" />
 
 Later on, when installing the keycaps, pay attention to the orientation of the 2u keycap: unlike the other keycaps, it is not symmetric and needs to be installed as follows:
 
-pic
+![2u-key-orientation](./2u-key-orientation.jpg)
 
-Repeat for the other half.
+Additional photos showing the rest of the installation:
 
+<Images :paths="[stabilizersinstalled1, stabilizersinstalled2, stabilizersinstalled3, stabilizersinstalled4]" />
 :::
 
 Push the top plate against the PCB, pressing the keys pushed before into the sockets or through holes. It should take some amount of force to push the switch all the way, but if it doesn't want to go in then check for alignment of the pins and that none are bent.

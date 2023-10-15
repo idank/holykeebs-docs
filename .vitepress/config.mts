@@ -30,8 +30,8 @@ export default defineConfig({
           { text: 'Trackball Module', link: '/guides/trackball-module/' },
         ]
       },
-      { text: 'Recommended Tools', link: '/recommended-tools/' },
       { text: 'Firmware', link: '/firmware/' },
+      { text: 'Recommended Tools', link: '/recommended-tools/' },
       { text: 'Troubleshooting', link: '/troubleshooting/' },
       { text: 'FAQ', link: '/faq/' }
     ],
