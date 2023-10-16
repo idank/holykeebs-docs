@@ -28,12 +28,18 @@ export default defineConfig({
           { text: 'Buyer\'s Guide', link: '/guides/buyers-guide/' },
           { text: 'Keyboard', link: '/guides/keyboard/' },
           { text: 'Trackball Module', link: '/guides/trackball-module/' },
+          { text: 'Firmware', link: '/guides/firmware/' },
         ]
       },
-      { text: 'Firmware', link: '/firmware/' },
+      {
+        text: 'Help',
+        items: [
+          { text: 'Troubleshooting', link: '/troubleshooting/' },
+          { text: 'FAQ', link: '/faq/' },
+          { text: 'Contact', link: 'https://holykeebs.com/pages/contact' }
+        ]
+      },
       { text: 'Recommended Tools', link: '/recommended-tools/' },
-      { text: 'Troubleshooting', link: '/troubleshooting/' },
-      { text: 'FAQ', link: '/faq/' }
     ],
 
     socialLinks: [
