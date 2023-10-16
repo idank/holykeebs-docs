@@ -48,6 +48,8 @@ We currently have two options, the main difference is how much height each one a
 
 ![controller-headers-comparison](./controller-headers-comparison.jpg)
 
+Our recommendation is to consider the Mill-max pins if you have a controller mounted pointing device, as the reduced height can be an improvement for finger movement. If you don't have a pointing device, the decision is purely cosmetic.
+
 ## Pointing Device
 
 ![pointing-device](./pointing-device.jpg)
