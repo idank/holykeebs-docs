@@ -29,7 +29,7 @@ Change branches to `dev` if you're flashing a Pro Micro controller, and to `dev-
 ::: details
 Even though it is possible to use one configuration in QMK to describe a keyboard and "convert" a firmware to be compatible with different controllers, this conversion doesn't work in all cases.
 
-Importantly, it is not fully working when used in combination with several other features such as the PS/2 driver (needed for trackpoints), split support, OLED, etc. 
+Importantly, it is not fully working when used in combination with several other features such as the PS/2 driver (needed for trackpoints), split support, OLED, etc.
 :::
 
 The basic structure of the build and flash command is:
@@ -124,4 +124,4 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 1. On first use, a dialog from the OS may open to configure a new keyboard, go through that.
 1. Go to config [https://config.qmk.fm/#/test](https://config.qmk.fm/#/test) to test that all of the keys work. Some keys (usually on the thumb clusters) don't generate a regular key. Try pressing those in combination with another key.
 
-If one of the keys do not work, head over to [Troubleshooting](../troubleshooting/).
+If one of the keys do not work, head over to [Troubleshooting](/troubleshooting/).

@@ -28,7 +28,7 @@ export default defineConfig({
           { text: 'Buyer\'s Guide', link: '/guides/buyers-guide/' },
           { text: 'Keyboard', link: '/guides/keyboard/' },
           { text: 'Trackball Module', link: '/guides/trackball-module/' },
-          { text: 'Firmware', link: '/guides/firmware/' },
+          { text: 'Firmware', link: '/firmware/' },
         ]
       },
       {
