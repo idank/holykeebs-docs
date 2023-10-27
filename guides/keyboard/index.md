@@ -210,6 +210,8 @@ See the [dedicated guide](../trackball-module/index.md).
 
 ### Trackpoint
 
+Building a trackpoint module from scratch is a difficult task that involves desoldering and dealing with tiny components. At this time, we provide trackpoint modules already assembled.
+
 ## Switches
 
 We're one step away from a functioning keyboard!
