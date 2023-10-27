@@ -56,7 +56,7 @@ The table below lists the possible flags that control what feature to turn on in
 
 | Flag          | Description |
 | ------------- | ----------- |
-| `-e POINTING_DEVICE=trackball\|trackpoint` | enable pointing device |
+| `-e POINTING_DEVICE=trackball\|trackpoint\|vendor` | enable pointing device (use vendor for RP2040 trackpoint) |
 | `-e POINTING_DEVICE_POSITION=left\|right\|thumb\|middle` | specify pointing device position |
 | `-e OLED=yes` | enable OLED screen |
 | `-e TRACKBALL_RGB_RAINBOW=yes` | enable a rainbow color animation on the trackball LED |
