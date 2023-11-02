@@ -41,3 +41,7 @@ Used for screwing cases and covers to the keyboard.
 These (knock off?) [Stanley screwdrivers](https://www.aliexpress.com/item/32923367031.html) get the job done (choose H1.3 for the M2 screws that come with our kits). The end might wear out after many uses (can be fixed by sanding it).
 
 If you need a screwdriver set for other things, the [iFixit Mako Driver kit](https://www.amazon.com/iFixit-IF145-299-4-Driver-Bit-64pc/dp/B0189YWOIO) is fantastic.
+
+## Black Marker
+
+A black marker is used to paint the edges of PCBs black for better looks. A sharpie works fine for this, but for best results I recommend an acrylic marker, such as any of [these Posca ones](https://www.amazon.com/dp/B0BKGL69MP), which produces an opaque, matte edge and is easier to use around internal corners due to its soft tip.
