@@ -61,6 +61,12 @@ There are 2 pins to solder on each column, marked with a circle.
 
 ![shield pins to solder](./shield-pin-circles.jpg)
 
+::: details Using Mill-max pins?
+When using Mill-max pins, cut the 4 long pins above the shield, before soldering:
+
+![mill max long pins cut](./millmax-long-pins-cut.jpg)
+:::
+
 Add a bit of solder to one of the pins on each column, locking the shield in place. Check that it's still straight. Finish soldering all 4 but avoid overdoing it resulting in a ball of solder that would make the trackball not sit flush on the shield.
 
 ::: warning

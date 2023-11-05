@@ -20,6 +20,8 @@ import millmaxpins from './millmax-pins.jpg';
 import millmaxcontroller from './millmax-controller.jpg';
 import millmaxsoldered from './millmax-soldered.jpg';
 import millmaxsolderedbottom from './millmax-soldered-bottom.jpg';
+import millmaxlongpinsguide1 from './millmax-long-pins-guide-1.jpg';
+import millmaxlongpinsguide2 from './millmax-long-pins-guide-2.jpg';
 
 import oledsocketsflat from './oled-sockets-flat.jpg';
 import oledsocketsnotflat from './oled-sockets-not-flat.jpg';
@@ -168,7 +170,23 @@ The best result is achieved when building a small and consistent solder cone on 
 
 #### Mill-max
 
-The process is largely similar for Mill-max pins, do pay attention not to add too much solder so the controller doesn't get soldered to the sockets. You want solder at the top side of the controller through-holes.
+Mill-max pins come in two lengths, the shorter ones are just enough to reach the microcontroller's top side:
+
+![millmaxcontroller](./millmax-controller.jpg)
+
+::: details Controller mounted pointing device
+When installing a controller mounted pointing device, we need to use a few longer pins so we can connect the pointing device to the appropriate pins on the microcontroller. Use the pointing device shield as a guide to know where to use the longer ones:
+
+<Images :paths="[millmaxlongpinsguide1, millmaxlongpinsguide2]" />
+
+Leave the long pins as is for now, we will cut them to length later on.
+:::
+
+Next, position the controller and solder it.
+
+::: warning
+Careful not to add too much solder to the point where the controller gets soldered to the sockets. You want solder at the top side of the controller through-holes.
+:::
 
 <Images :paths="[millmaxpins, millmaxcontroller, millmaxsoldered, millmaxsolderedbottom]" />
 
