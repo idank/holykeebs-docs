@@ -125,3 +125,21 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 1. Go to config [https://config.qmk.fm/#/test](https://config.qmk.fm/#/test) to test that all of the keys work. Some keys (usually on the thumb clusters) don't generate a regular key. Try pressing those in combination with another key.
 
 If one of the keys do not work, head over to [Troubleshooting](/troubleshooting/).
+
+## Community Keymaps
+
+This section is dedicated to keymaps written by community members, describing the special aspects that were implemented:
+
+[@R4_Unit's firmware](https://github.com/Koloth/qmk_firmware/tree/master/keyboards/crkbd/keymaps/Koloth): 4 layers accessed through a pair of thumb keys. The trackball is different on each layer.
+
+::: details
+Layer 0: Trackball scrolls the page.  For me, my most common mouse action was scrolling in a web browser etc, so this is the default.  Works perfectly for this task.
+
+Layer 1: Trackball presses arrow keys.  I also really like this for moving inside text fields and it feels really good with the clicks of the trackball.  This is how it was used on older mobile phones, and it is really good at this.
+
+Layer 2: Trackball is mouse.  Out of the box, the pimoroni is a pretty bad mouse, needing you to drag it edge-to-edge about 5 times to move across your screen. If you just up the sensitivity then it isn’t accurate enough to do things like select individual buttons. I’ve added nonlinear response to mine, so that moving it twice as fast doesn’t just move it twice as far, but actually 4x as far (3x as fast, 9x as far, etc.). This gives you the best of both worlds, and if you use like a Mac trackpad, you are already used to this behavior.
+
+Layer 3: Trackball is app switcher.  Again this feels nice as a slightly better version of alt-tab.
+
+I also have a variety of dedicated shortcut keys for things like: screenshot, switch tabs in a browser, basic window arrangement (left-half, right-half, etc.)
+:::

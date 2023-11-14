@@ -31,3 +31,26 @@ It is possible to use both a 2x trackballs or a trackball + trackpoint. Two trac
 ### Remapping Keys
 
 With VIA, keys and layers can be changed without flashing the keyboard. Go to the VIA [web app](https://usevia.app/), or download the [desktop app](https://github.com/the-via/releases/releases). If you don't want to use VIA, please consult QMK docs on how to create your own keymap.
+
+### Trackpoint Calibration
+
+Most trackpoints move the same in all directions, but some may move slower in certain directions. This can be calibrated in firmware by modifying the movement in the misbehaving directions.
+
+This code snippet is a simple solution that bumps the movement for a trackpoint that moves slower in the left and bottom directions. Adjust the multiplier and directions to your need:
+
+```
+#define PS2_MOUSE_MULTIPLIER 2
+
+void ps2_mouse_moved_user(report_mouse_t *mouse_report) {
+  // Moving left.
+  if (mouse_report->x < 0) {
+    mouse_report->x *= PS2_MOUSE_MULTIPLIER;
+  }
+  // Moving down.
+  if (mouse_report->y > 0) {
+    mouse_report->y *= PS2_MOUSE_MULTIPLIER;
+  }
+}
+```
+
+If this doesn't solve your problem, reach out.
