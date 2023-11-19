@@ -303,7 +303,7 @@ Finish soldering all of the switches.
 
 ## Covers, Cases
 
-Use the hardware that came with the kit to secure any covers and cases.
+Use the hardware that came with the kit to secure any covers and cases. If you find two length of screws in your kit then the longer ones will go on the side with the acrylic, which is thicker than the PCB FR4.
 
 ::: tip
 If you're not sure the soldering job you did went well, it is recommended to first flash a firmware and verify all keys are working, before completing this step.
