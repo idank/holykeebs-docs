@@ -18,7 +18,7 @@ Shipping to most countries is available with tracked or untracked options. Track
 
 For select countries, the shipping methods may differ.
 
-### My order tracking has not been updating!
+### My order's tracking has not been updating!
 
 This can be a customs issue, port issues, parcel / postal system overload, and many more reasons we cannot influence. Please reach out after you have not seen an about for at least a week.
 
