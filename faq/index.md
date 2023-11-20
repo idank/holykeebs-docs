@@ -1,6 +1,48 @@
 # FAQ
 
-Answers to some common questions.
+## About
+
+holykeebs is a tiny store operated from Israel. I just like soldering.
+
+We specialize in ergonomic split keyboards with pointing devices such as trackballs and trackpoints.
+
+## Shipping
+
+### Do you ship globally?
+
+Yes, if you don't see your country in the shipping page, please contact us.
+
+### What shipping methods are available?
+
+Shipping to most countries is available with tracked or untracked options. Tracked packages usually take 10 to 15 days, with untracked taking around 30 days. Please do not use the untracked option if you're not willing to wait beyond 30 days, which can happen. Order cost / size may exclude the untracked option.
+
+For select countries, the shipping methods may differ.
+
+### My order tracking has not been updating!
+
+This can be a customs issue, port issues, parcel / postal system overload, and many more reasons we cannot influence. Please reach out after you have not seen an about for at least a week.
+
+Once packages arrive in the destination, they will be delivered using the destination country's local postal service. Use the tracking number in the local systems to get detailed information on its whereabouts.
+
+## Warranty and Support
+
+Whether you order a kit or use the build service, we do our best to test everything before shipping. If you discover an issue after unboxing, please reach out and we'll sort it out. For general firmware questions, please use the help-firmware discord channel. Other warranty and support services aren't provided.
+
+We also encourage visiting the larger keyboard communities such as r/ErgoMechKeyboards, r/MechanicalKeyboards, [QMK](https://discord.gg/qmk) / [Low Profile Keyboards](https://discord.gg/j2ekqbkS) discord server.
+
+## Refunds and Returns
+
+### Cancellations
+
+Please contact as soon as possible if you have any problems with your order or wish to cancel.
+
+### Returns
+
+Contact me within: 14 days of delivery.
+
+Ship items back within: 30 days of delivery.
+
+Buyers are responsible for return shipping costs. If the item is not returned in its original condition, the buyer is responsible for any loss in value.
 
 ## Wireless
 
@@ -54,3 +96,4 @@ void ps2_mouse_moved_user(report_mouse_t *mouse_report) {
 ```
 
 If this doesn't solve your problem, reach out.
+
