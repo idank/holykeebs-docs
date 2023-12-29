@@ -79,7 +79,7 @@ To fully build a keyboard, you will need these tools at a minimum:
 - Soldering iron + solder.
 - Tweezers (to pick up the diodes / hotswap sockets).
 - Flush cutters (if cutting pins is necessary).
-- M2 hex screwdriver for attaching a case.
+- M2 1.3 mm hex screwdriver for attaching a case.
 
 Consult [Recommended Tools](../../recommended-tools/) if you plan on purchasing some of these.
 
