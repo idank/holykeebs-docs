@@ -84,6 +84,42 @@ Breaking this down:
 1. `-e OLED=yes` enables the OLED.
 1. `-j8` parallizes the build process.
 
+### Trackpoint + Trackball
+
+The PS/2 driver in QMK is using a subsystem that doesn't play well with the pointing device subsystem, which trackball or trackpads use. For this reason, split keyboards with a trackpoint and trackball have no support in stock QMK.
+
+The `dev-rp2040-combined` branch addresses these issues, but requires a different command than the one above.
+
+Example:
+
+```shell
+# assumes dev-rp2040-combined is checked out
+make \
+    crkbd/rev1:via:flash \
+    -e USER_NAME=idank \
+    -e POINTING_DEVICE=trackball_trackpoint \
+    -e SIDE=right \
+    -j8
+```
+
+Details:
+
+1. Possible values for `POINTING_DEVICE` are `trackball_trackpoint` for a keyboard with a trackball on left, trackpoint on right, or `trackpoint_trackball` for the reverse.
+1. We can see that we now need to specify the side we're flashing with `-e SIDE=right|left`. The example above flashes the right side, which should be the side with the trackpoint.
+
+The left side would be flashed as follows:
+
+```shell
+make \
+    crkbd/rev1:via:flash \
+    -e USER_NAME=idank \
+    -e POINTING_DEVICE=trackball_trackpoint \
+    -e SIDE=left \
+    # optional:
+    -e TRACKBALL_RGB_RAINBOW=yes \
+    -j8
+```
+
 ## Flashing
 
 Run the command you built in the previous step, with `:flash` after the keymap name to also flash after building.
