@@ -41,6 +41,10 @@ import stabilizersinstalled1 from './stabilizers-installed-1.jpg';
 import stabilizersinstalled2 from './stabilizers-installed-2.jpg';
 import stabilizersinstalled3 from './stabilizers-installed-3.jpg';
 import stabilizersinstalled4 from './stabilizers-installed-4.jpg';
+
+import casetrackpoint1 from './case-trackpoint-1.jpg';
+import casetrackpoint2 from './case-trackpoint-2.jpg';
+import casetrackpoint3 from './case-trackpoint-3.jpg';
 </script>
 
 # Keyboard Build Guide
@@ -303,10 +307,18 @@ Finish soldering all of the switches.
 
 ## Covers, Cases
 
-Use the hardware that came with the kit to secure any covers and cases. If you find two length of screws in your kit then the longer ones will go on the side with the acrylic, which is thicker than the PCB FR4.
-
 ::: tip
 If you're not sure the soldering job you did went well, it is recommended to first flash a firmware and verify all keys are working, before completing this step.
+:::
+
+Use the hardware that came with the kit to secure any covers and cases. If you find two length of screws in your kit then the longer ones will go on the side with the acrylic, which is thicker than the PCB FR4.
+
+::: details Trackpoint Driver PCB
+The trackpoint comes with a driver PCB that should be mounted between the case and PCB. Some cases might have mounting holes to attach the PCB with screws and nuts, like so:
+
+<Images :paths="[casetrackpoint1, casetrackpoint2, casetrackpoint3]" />
+
+If the case doesn't have mounting holes, use the included double sided tape on the bottom of the driver PCB to attach it to the case. Check the position with respect to the flexible cable.
 :::
 
 ## Finishing Steps
