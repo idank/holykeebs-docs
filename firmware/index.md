@@ -15,7 +15,7 @@ The source code for all keyboards can be found on the `dev` and `dev-rp2040` bra
 There's no requirement to use this repo, it is also possible to copy the relevant pieces (explained below) to your own clone.
 
 ::: details Precompiled
-Due to the various configurations possible (trackpoint, trackball, pro micro, rp2040, etc.), precomplied files are currently not published. Please build your own.
+Due to the various configurations possible (trackpoint, trackball, touchpad, pro micro, rp2040, etc.), precomplied files are currently not published. Please build your own.
 :::
 
 ## Introduction
@@ -24,7 +24,7 @@ Since many of our keyboards share common features such as OLED / Pointing Device
 
 Start by setting up a development environment per [QMK instructions](https://docs.qmk.fm/#/newbs). Clone the repo above and not the main QMK repo.
 
-Change branches to `dev` if you're flashing a Pro Micro controller, and to `dev-rp2040` for Sea Picros.
+Change branches to `dev-rp2040` if you're flashing a Sea Picro, and `dev` for Pro Micro.
 
 ::: details
 Even though it is possible to use one configuration in QMK to describe a keyboard and "convert" a firmware to be compatible with different controllers, this conversion doesn't work in all cases.
@@ -56,7 +56,7 @@ The table below lists the possible flags that control what feature to turn on in
 
 | Flag          | Description |
 | ------------- | ----------- |
-| `-e POINTING_DEVICE=trackball\|trackpoint\|vendor` | enable pointing device (use vendor for RP2040 trackpoint) |
+| `-e POINTING_DEVICE=trackpoint\|trackball\|`<br>`trackball_trackball\|vendor` | enable pointing device (use vendor for RP2040 trackpoint) |
 | `-e POINTING_DEVICE_POSITION=left\|right\|thumb\|middle` | specify pointing device position |
 | `-e OLED=yes` | enable OLED screen |
 | `-e TRACKBALL_RGB_RAINBOW=yes` | enable a rainbow color animation on the trackball LED |
@@ -84,9 +84,9 @@ Breaking this down:
 1. `-e OLED=yes` enables the OLED.
 1. `-j8` parallizes the build process.
 
-### Trackpoint + Trackball
+### Trackpoint + Trackball/Touchpad
 
-The PS/2 driver in QMK is using a subsystem that doesn't play well with the pointing device subsystem, which trackball or trackpads use. For this reason, split keyboards with a trackpoint and trackball have no support in stock QMK.
+The PS/2 driver in QMK is using a subsystem that doesn't play well with the pointing device subsystem, which trackball and touchpad use. For this reason, split keyboards with a trackpoint and trackball/touchpad have no support in stock QMK.
 
 The `dev-rp2040-combined` branch addresses these issues, but requires a different command than the one above.
 
@@ -104,7 +104,7 @@ make \
 
 Details:
 
-1. Possible values for `POINTING_DEVICE` are `trackball_trackpoint` for a keyboard with a trackball on left, trackpoint on right, or `trackpoint_trackball` for the reverse.
+1. Possible values for `POINTING_DEVICE` are `trackball_trackpoint` for a keyboard with a trackball on left, trackpoint on right, or `trackpoint_trackball` for the reverse. Replace `trackball` with `touchpad` if using a touchpad.
 1. We can see that we now need to specify the side we're flashing with `-e SIDE=right|left`. The example above flashes the right side, which should be the side with the trackpoint.
 
 The left side would be flashed as follows:
