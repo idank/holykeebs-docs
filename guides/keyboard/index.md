@@ -196,6 +196,12 @@ Careful not to add too much solder to the point where the controller gets solder
 
 ## OLED
 
+::: details Lily58/Keyball
+Lily58 and Keyball use reversible PCBs which require bridging the jumpers for the OLED to work. Bridging is done by holding the iron on the two jumper pads and adding enough solder until a "bridge" is created, connecting the two pads. Careful not to touch the controller sockets with your iron while doing this.
+
+For Lily58, bridge the OLED jumpers on the top side of the PCB. For Keyball, bridge on the bottom side.
+:::
+
 Similar to the controller sockets, we're going to socket the OLED display. Use whatever method was more comfortable for you when doing the controller sockets:
 
 ![oled-sockets](./oled-sockets.jpg)
@@ -212,9 +218,7 @@ Next, we're going to do the headers:
 1. Ensure the screen is still straight.
 1. Finish soldering all pins.
 
-If you're not able to get a good solder connection, remove the screen from the sockets and solder it from the other side:
-
-TODO: add photo.
+If you're not able to get a good solder connection, remove the screen from the sockets and solder it from the other side.
 
 ## Reset Switch, TRRS Jack
 
