@@ -8,6 +8,9 @@ import cases1 from './cases-1.jpg';
 import cases2 from './cases-2.jpg';
 import cases3 from './cases-3.jpg';
 import cases4 from './cases-4.jpg';
+
+import pointingdevice1 from './pointing-device-1.jpg';
+import pointingdevice2 from './pointing-device-2.jpg';
 </script>
 
 # Buyer's Guide
@@ -30,38 +33,38 @@ This option gives you a choice of:
 2. Getting a soldered keyboard and additional hardware, you have to assemble it (e.g. push the switches into hotswap sockets, keycaps into switches, screw bottom plate etc.).
 3. Getting a fully assembled and tested keyboard, just plug it in.
 
+Soldered but unassembled keyboards are electrically tested to the extent possible. In the event that something got missed or doesn't work on arrival, please reach out and if possible we'll try to fix things remotely depending on your skillset and severity of the problem.
+
 ## Controllers
 
-All of the keyboards we offer use a top mounted USB-C microcontroller, with split keyboards using one on each keyboard half.
+All of the keyboards we sell use a top mounted USB-C microcontroller, with split keyboards using one on each keyboard half.
 
-1. [Sea Picro](https://joshajohnson.com/sea-picro/): this open source microcontroller uses an RP2040 chip with lots of storage. We recommend choosing this as RP2040 based controllers are becoming the standard for DIY keyboards.
-1. Pro Micro: the Arduino Pro Micro has been around for a long time and is well supported in QMK. It is relatively low on storage, making it a less favorable option if you plan on customizing your firmware (e.g. many keymap layers, custom OLED graphics, etc.).
+[Sea Picro](https://joshajohnson.com/sea-picro/) is an open source microcontroller which uses an RP2040 chip with lots of storage. RP2040 based controllers are becoming the standard for DIY keyboards and are thus favored over Pro Micro clones (which we no longer offer), that are comparatively low on storage.
 
-## Headers
+## Sockets, Headers
 
-All of our keyboards come with machine sockets for controllers. This option determines what headers go into those sockets.
+Socketing the controllers is always a good idea because removing a faulty controller that was soldered to a PCB can be a very frustrating experience.
 
-We currently have two options, the main difference is how much height each one adds to the "controller stack".
+All of the keyboards we build come with socketed controllers. We currently have two options, the main difference is how much height each one adds to the "controller stack".
 
-1. Machine headers: a strip of pins + 3mm plastic that match the machine sockets.
-1. Mill Max pins: these come as a individual gold plated pins that can be inserted into the sockets. These have no plastic and so provide a lower height than machine headers. The downside is dealing with individual pins which can be a bit of a pain, and the high cost of this item.
+1. Machine headers (PCB to controller height: 7.5mm): a strip of pins + 3mm plastic that match the machine sockets. These are cut from 40 pin strips.
+1. Custom low profile headers (PCB to controller height: 5mm): these are custom made sockets and headers, that are ideal for low profile keyboards with a pointing device, as the reduced height can be an improvement for finger movement.
 
 ![controller-headers-comparison](./controller-headers-comparison.jpg)
 
-Our recommendation is to consider the Mill-max pins if you have a controller mounted pointing device, as the reduced height can be an improvement for finger movement. If you don't have a pointing device, the decision is purely cosmetic.
-
 ## Pointing Device
 
-![pointing-device](./pointing-device.jpg)
+<Images :paths="[pointingdevice1, pointingdevice2]" />
 
+1. [Cirque 35mm Touchpad](https://www.cirque.com/glidepoint-circle-trackpads): a compact, high resolution, gesture enabled touchpad.
 1. [Pimoroni Trackball](https://shop.pimoroni.com/products/trackball-breakout?variant=27672765038675): a small, RGBW-illuminated, clickable trackball.
 1. Trackpoint: these are commonly found in Lenovo laptops. If you've used one in the past, you can expect similar movement and sensitivity.
 
-While the trackball is a very usable pointing device, given its size it is less accurate than the trackpoint. The movement style is different though: the trackball doesn't require constant engagement to move in a certain direction, simply scrolling the ball moves it. On the other hand, the trackpoint needs to be held to keep moving.
+While the trackball is a very usable pointing device, given its size it is the least accurate of the 3 and is mostly recommended as an off-hand device, rather than a mouse replacement. Some do find it adequete as a main pointing device (author included).
 
-Additionally, the trackball is clickable and has a built in RGBW LED. Even though the trackpoint has no buttons, this is easily solved by assigning mouse keys to the split side without the pointing device. For example, if the right side of the keyboard has the trackpoint, on the left side a few keys are assigned to do left, right clicks, etc. This is a common setup for both devices.
+Both trackball and touchpad support clicking, and it is common to use [mouse keys](https://docs.qmk.fm/#/feature_mouse_keys) on the split side without the pointing device. For example, if the right side of the keyboard has a trackpoint, on the left side a few keys are assigned to do left click, right click, scroll mode, etc.
 
-Generally speaking, both pointing devices are great for navigation, browsing, code editing and doing other activities that complement otherwise "standard" computer usage. They are not suitable for gaming.
+Generally speaking, all pointing devices are great for navigation, browsing, code editing and doing other activities that complement otherwise "standard" computer usage. They are not suitable for gaming.
 
 ## Switches
 
@@ -118,6 +121,24 @@ We carry a variety of colors for laser cut acrylic plates or 3d printed cases.
 Covers can be mounted on trackpoints and OLEDs for a better look / protection. All of our covers are laser cut acrylic in glossy, matte or translucent colors.
 
 ![covers](./covers.jpg)
+
+## Keyball
+
+Most of the guide above applies to Keyball lineup of keyboards as well, it stands out in a few ways described below.
+
+First, it's worth noting that our Keyball differ from the one sold by Yushakobo / Shirogane Lab. In terms of cosmetics, we use black PCBs, different thickness acrylic plates and different M2 screws. Additionally, we use Sea-Picro. The rest is identical.
+
+### 34mm Trackball
+
+Keyball uses a 34mm trackball that's not included in your purchase. There are many color options to choose from, and the ones made by [Perixx are a popular choice](https://www.amazon.com/Perixx-PERIPRO-303-GLG-Trackball-Compatible/dp/B07BDHK2MR).
+
+### Thumb Cluster
+
+Keyball has a unique thumb cluster that allows either Kailh's choc low profile or MX switches. If you're building the keyboard yourself and you're not sure which one, add a pack of low profile hotswap sockets to your order to have both options.
+
+### LEDs
+
+We are doing a trial run of offering LEDs as part of our kits / build service. You can either get the LEDs unsoldered or soldered. There's an additional build charge on top of the build service cost for soldering LEDs due to the amount of extra work required.
 
 ## More
 
