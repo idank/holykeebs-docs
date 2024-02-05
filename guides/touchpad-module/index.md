@@ -8,8 +8,6 @@ import Images from '../../components/Images.vue';
 
 The touchpad module consists of a small adapter PCB (shield) that sits on a top mounted controller, and creates the necessary connections to easily use the Cirque 35mm touchpad.
 
-![module](./result.jpg)
-
 ## Tools
 
 In addition to a soldering iron, you will need an M2 hex key and a bit of super glue.
