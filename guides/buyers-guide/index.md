@@ -33,7 +33,9 @@ This option gives you a choice of:
 2. Getting a soldered keyboard and additional hardware, you have to assemble it (e.g. push the switches into hotswap sockets, keycaps into switches, screw bottom plate etc.).
 3. Getting a fully assembled and tested keyboard, just plug it in.
 
-Soldered but unassembled keyboards are electrically tested to the extent possible. In the event that something got missed or doesn't work on arrival, please reach out and if possible we'll try to fix things remotely depending on your skillset and severity of the problem.
+::: info
+Soldered but unassembled keyboards are electrically tested to the extent possible. In the event that something got missed or doesn't work on arrival, please reach out and when possible we'll try to fix things remotely depending on your skillset and severity of the problem.
+:::
 
 ## Controllers
 
@@ -58,7 +60,7 @@ All of the keyboards we build come with socketed controllers. We currently have 
 
 1. [Cirque 35mm Touchpad](https://www.cirque.com/glidepoint-circle-trackpads): a compact, high resolution, gesture enabled touchpad.
 1. [Pimoroni Trackball](https://shop.pimoroni.com/products/trackball-breakout?variant=27672765038675): a small, RGBW-illuminated, clickable trackball.
-1. Trackpoint: these are commonly found in Lenovo laptops. If you've used one in the past, you can expect similar movement and sensitivity.
+1. [Trackpoint](https://www.sprintek.com/en/products/PointingStick.aspx): these are commonly found in Lenovo laptops. If you've used one in the past, you can expect similar movement and sensitivity.
 
 While the trackball is a very usable pointing device, given its size it is the least accurate of the 3 and is mostly recommended as an off-hand device, rather than a mouse replacement. Some do find it adequete as a main pointing device (author included).
 

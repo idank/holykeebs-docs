@@ -39,13 +39,27 @@ If an entire row or column is unresponsive, one of the controller pins is not fu
 
 ## Split Side Is Not Working
 
-It's possible one of the controllers is faulty. A common cause is connecting / disconnecting the TRRS cable while the the keyboard is powered, which can cause shorts at the controller GPIO pins (we specifically call this out when you open packages from us).
+If the keyboard is connected with the main side responding, while the peripheral side isn't, it's possible one of the controllers is faulty. The most common cause is hot-plugging the TRRS cable (i.e. connecting/disconnecting it while the the keyboard is powered), which can cause shorts at the controller GPIO pins (we specifically call this out when you open packages from us).
 
 1. First, verify solder joints of the TRRS jacks and the controller sockets are good.
 1. Check the controller on the peripheral is getting power, its LED should be on. If it's not, recheck the solder joints and try a different TRRS cable (power off first).
 1. Power each side separately (disconnect the keyboard and the halves).
 1. Try swapping the controllers between the sides.
 1. If each side works separately but split still doesn't, something was shorted.
+
+If the conclusion is that a short is the culprit, it's possible to manually solder a different pin on the controller that connects to the TRRS jack data pin, thereby replacing the shorted pin:
+
+![rewire shorted pins](./rewire-shorted-trrs.jpg)
+
+This connects GP0 instead of the shorted GP1 to the TRRS jack on each side. Lastly, edit the `users/idank/config.h` file in your QMK clone to have this instead:
+
+```
+// Old before shorted pin.
+// #define SERIAL_USART_TX_PIN GP1
+#define SERIAL_USART_TX_PIN GP0
+```
+
+Flash both sides and try again.
 
 ## Trackball Is Skipping
 
