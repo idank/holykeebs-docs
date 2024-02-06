@@ -8,7 +8,7 @@ import Images from '../../components/Images.vue';
 
 The touchpad module consists of a small adapter PCB (shield) that sits on a top mounted controller, and creates the necessary connections to easily use the Cirque 35mm touchpad.
 
-![module](./result.jpg)
+![corne with touchpad](./result-top.jpg)
 
 ## Tools
 
@@ -92,6 +92,6 @@ The remaining 3d printed piece has small notches that match the notches on the t
 
 ### Step 7
 
-![module](./result.jpg)
+Done! Head over to [Firmware](/firmware/) to flash your controller with touchpad support.
 
-Head over to [Firmware](/firmware/) to flash your controller with touchpad support.
+![module](./result-bottom.jpg)
