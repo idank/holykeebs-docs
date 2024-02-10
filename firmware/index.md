@@ -49,6 +49,7 @@ The value for `<keyboard>` should match the keyboard you are flashing for:
 | Revuing41 | reviung/reviung41 |
 | Sweep | idank/sweeq |
 | Span | idank/spankbd |
+| Keyball44 | keyball/keyball44 |
 
 The `<keymap>` can be either `default` or `via` (enables VIA support).
 
@@ -56,7 +57,7 @@ The table below lists the possible flags that control what feature to turn on in
 
 | Flag          | Description |
 | ------------- | ----------- |
-| `-e POINTING_DEVICE=trackpoint\|trackball\|`<br>`trackball_trackball\|vendor` | enable pointing device (use vendor for RP2040 trackpoint) |
+| `-e POINTING_DEVICE=cirque35`<br>          `trackpoint`<br>          `trackball`<br>          `vendor` | enable pointing device (use `vendor` for RP2040 trackpoint) |
 | `-e POINTING_DEVICE_POSITION=left\|right\|thumb\|middle` | specify pointing device position |
 | `-e OLED=yes` | enable OLED screen |
 | `-e TRACKBALL_RGB_RAINBOW=yes` | enable a rainbow color animation on the trackball LED |
@@ -84,11 +85,15 @@ Breaking this down:
 1. `-e OLED=yes` enables the OLED.
 1. `-j8` parallizes the build process.
 
-### Trackpoint + Trackball/Touchpad
+### Dual Pointing Devices
+
+When using multiple pointing devices, the pointing device specification turns to `-e POINTING_DEVICE=<left>_<right>` where left and right take one of `trackball`, `trackpoint` or `cirque35`. The `-e POINTING_DEVICE_POSITION` argument is only necessary when using a thumb trackball, in all other cases it can be omitted.
+
+#### Trackpoint + Trackball/Touchpad
 
 The PS/2 driver in QMK is using a subsystem that doesn't play well with the pointing device subsystem, which trackball and touchpad use. For this reason, split keyboards with a trackpoint and trackball/touchpad have no support in stock QMK.
 
-The `dev-rp2040-combined` branch addresses these issues, but requires a different command than the one above.
+The `dev-rp2040-combined` branch addresses these issues, but a slightly different command than the one above.
 
 Example:
 
@@ -104,7 +109,7 @@ make \
 
 Details:
 
-1. Possible values for `POINTING_DEVICE` are `trackball_trackpoint` for a keyboard with a trackball on left, trackpoint on right, or `trackpoint_trackball` for the reverse. Replace `trackball` with `touchpad` if using a touchpad.
+1. Possible values for `POINTING_DEVICE` are `trackball_trackpoint` for a keyboard with a trackball on left, trackpoint on right, or `trackpoint_trackball` for the reverse. Replace `trackball` with `cirque35` if using a touchpad.
 1. We can see that we now need to specify the side we're flashing with `-e SIDE=right|left`. The example above flashes the right side, which should be the side with the trackpoint.
 
 The left side would be flashed as follows:
