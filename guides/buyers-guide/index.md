@@ -88,7 +88,17 @@ Stabilizers are generally recommended, although do add a bit of work in the buil
 
 ## Keycaps
 
-MBK keycaps are the most popular low profile keycaps, which come either blank or with legends.
+The keyboards we sell are exclusively using 1U, 1.5U and 2U key sizes. Unlike MX switches, there aren't many keycap options for choc switches.
+
+[MBK keycaps](https://holykeebs.com/products/mbk-low-profile-keycaps) are the most popular low profile keycaps, which come either blank, colored or with legends.
+
+![MBK keycaps](./keycaps-mbk.webp)
+
+Another option that recently came about are [DDC](https://holykeebs.com/products/ddc-choc-pbt-blank-keycaps), which try to emulate the traditional cylindrical profiles. DDC are currently only available in 1U / homing, so for keyboards with 1.5U / 2U keys we will use the MBK variant for those key sizes.
+
+![DDC keycaps](./keycaps-ddc.webp)
+
+Both of these keycaps are PBT and are slightly textured.
 
 ::: tip
 Adding a few [colored keycaps](https://holykeebs.com/products/mbk-dyed-low-profile-keycaps) is a great way to make your keyboard unique!
