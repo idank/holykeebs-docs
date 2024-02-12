@@ -8,6 +8,10 @@ This page covers how to flash your microcontrollers with QMK.
 Fully built keyboards already come flashed and tested. You can use these instructions to customize it, e.g. add scrolling mode, adjust the pointing device, OLED and more.
 :::
 
+::: danger
+Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
+:::
+
 ## Source Code
 
 The source code for all keyboards can be found on the `dev` and `dev-rp2040` branches of https://github.com/idank/qmk_firmware. This repo is periodically kept up to date with the `develop` branch of main QMK.
@@ -52,6 +56,10 @@ The value for `<keyboard>` should match the keyboard you are flashing for:
 | Keyball44 | keyball/keyball44 |
 
 The `<keymap>` can be either `default` or `via` (enables VIA support).
+
+::: info
+For Keyball, please see the dedicated section as the options below don't apply.
+:::
 
 The table below lists the possible flags that control what feature to turn on in the firmware.
 
@@ -124,6 +132,22 @@ make \
     -e TRACKBALL_RGB_RAINBOW=yes \
     -j8
 ```
+
+### Keyball
+
+Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers exists in https://github.com/idank/qmk_firmware `dev-rp2040` branch under `keyboards/keyball/...`.
+
+::: danger
+Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
+:::
+
+While on the `dev-rp2040` branch, flash both sides using:
+
+```shell
+make keyball/keyball44:via:flash -j8
+```
+
+USB cable can be connected to either side of the keyboard.
 
 ## Flashing
 
