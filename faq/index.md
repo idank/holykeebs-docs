@@ -50,11 +50,12 @@ I'd love to do wireless builds but there isn't official support for the pointing
 
 ## Low Profile vs. Choc
 
-The difference between these two is the key spacing.
+The difference between these two is the key spacing, i.e. how close the keys are to each other:
 
-Low profile uses a grid of 19x19mm squares and is also called MX spacing as that's what keyboards with MX style switches commonly use.
+1. MX keyboards use a grid of 19x19mm squares. Some keyboards with choc switches also use this, which results in small gaps between keys.
+1. Choc spacing uses 18x17mm squares, and produces a more tight arrangement with minimal key spacing. It is specifically designed for Kailh's choc switches (hence the name).
 
-Choc spacing is more compact and uses 18x17mm squares, and produces a more compact keyboard with minimal key spacing. It is specifically designed for Kailh's choc switches (hence the name) as they have a smaller footprint and allow this.
+For choc keyboards, we differentiate these two styles of spacing by calling the former Low Profile and the latter Choc.
 
 ## New Keyboards
 

@@ -86,6 +86,15 @@ The purpose of a stabilizer is to provide an even pressing surface across a wide
 
 Stabilizers are generally recommended, although do add a bit of work in the build process. 2u keys are very usable even without stabilizers.
 
+## Key Spacing
+
+There are two standard "key spacing", i.e. how close the keys are to each other:
+
+1. MX keyboards use a grid of 19x19mm squares. Some keyboards with choc switches also use this, which results in small gaps between keys.
+1. Choc spacing uses 18x17mm squares, and produces a more tight arrangement with minimal key spacing. It is specifically designed for Kailh's choc switches (hence the name).
+
+For choc keyboards, we differentiate these two styles of spacing by calling the former Low Profile and the latter Choc.
+
 ## Keycaps
 
 The keyboards we sell are exclusively using 1U, 1.5U and 2U key sizes. Unlike MX switches, there aren't many keycap options for choc switches.
@@ -124,7 +133,7 @@ A top plate is **required** if you'd like stabilizers for 2u keys, like the [Spa
 
 A bottom plate / case sits under the keyboard PCB and is a low cost option compared to a fully enclosed machined metal / plastic molded case.
 
-We carry a variety of colors for laser cut acrylic plates or 3d printed cases.
+We carry a variety of colors for laser cut acrylic plates or 3d printed cases. Our 3d printed cases feature a thin bezel that is the same height as the top plate of the keyboard.
 
 <Images :paths="[cases1, cases2, cases3, cases4]" />
 
