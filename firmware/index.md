@@ -135,7 +135,7 @@ make \
 
 ### Keyball
 
-Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers exists in https://github.com/idank/qmk_firmware `dev-rp2040` branch under `keyboards/keyball/...`.
+Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers exists [here](https://github.com/idank/qmk_firmware/tree/dev-rp2040/keyboards/keyball).
 
 ::: danger
 Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
