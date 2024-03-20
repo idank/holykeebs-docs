@@ -72,6 +72,10 @@ Both trackball and touchpad support clicking, and it is common to use [mouse key
 
 Generally speaking, all pointing devices are great for navigation, browsing, code editing and doing other activities that complement otherwise "standard" computer usage. They are not suitable for gaming.
 
+::: info
+A pointing device and OLED display share the same location on the keyboard, it is possible to only have one or the other on a given side.
+:::
+
 ## Switches
 
 There are 3 switch categories: linear, tactile and clicky. A lot has been said on this topic, please search around to understand the differences and watch some videos to decide which one might work for you.
@@ -118,6 +122,10 @@ Adding a few [colored keycaps](https://holykeebs.com/products/mbk-dyed-low-profi
 :::
 
 ## OLED
+
+::: info
+A pointing device and OLED display share the same location on the keyboard, it is possible to only have one or the other on a given side.
+:::
 
 A small 128x32 OLED display that sits on top of the controller. These displays can be programmed to display a static image, or other dynamic information such as WPM, current layer, etc.
 

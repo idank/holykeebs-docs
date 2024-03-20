@@ -44,4 +44,4 @@ If you need a screwdriver set for other things, the [iFixit Mako Driver kit](htt
 
 ## Black Marker
 
-A black marker is used to paint the edges of PCBs black for better looks. A sharpie works fine for this, but for best results I recommend an acrylic marker, such as any of [these Posca ones](https://www.amazon.com/dp/B0BKGL69MP), which produces an opaque, matte edge and is easier to use around internal corners due to its soft tip.
+A black marker is used to paint the edges of PCBs black for better looks. A sharpie works fine for this, but for best results I recommend an acrylic marker, such as [these soft tip Posca ones](https://www.amazon.com/Uni-POSCA-Paint-Marker-PC8K-24/dp/B07Q393NCV), which produces an opaque, matte edge and is easier to use around internal corners due to its soft tip.

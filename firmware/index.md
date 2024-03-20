@@ -68,6 +68,7 @@ The table below lists the possible flags that control what feature to turn on in
 | `-e POINTING_DEVICE=cirque35`<br>          `trackpoint`<br>          `trackball` | enable pointing device |
 | `-e POINTING_DEVICE_POSITION=left\|right\|thumb\|middle` | specify pointing device position |
 | `-e OLED=yes` | enable OLED screen |
+| `-e OLED_FLIP=yes` | swaps the left and right OLED roles |
 | `-e TRACKBALL_RGB_RAINBOW=yes` | enable a rainbow color animation on the trackball LED |
 
 An example command might look like this:
