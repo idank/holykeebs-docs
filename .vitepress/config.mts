@@ -32,6 +32,7 @@ export default defineConfig({
             text: 'Modules',
             items: [
               { text: 'Trackball', link: '/guides/trackball-module/' },
+              { text: 'Trackpoint', link: '/guides/trackpoint-module/' },
               { text: 'Touchpad', link: '/guides/touchpad-module/' },
             ]
           },
