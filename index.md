@@ -21,6 +21,18 @@ features:
     title: Firmware
     details: Learn how to build and flash a firmware.
     link: /firmware/
+  - icon: ⚫️
+    title: Touchpad Module
+    details: Learn how to build a touchpad module.
+    link: /guides/touchpad-module/
+  - icon: 🔴
+    title: Trackpoint Module
+    details: Learn how to build a trackpoint module.
+    link: /guides/trackpoint-module/
+  - icon: ⚪️
+    title: Trackball Module
+    details: Learn how to build a trackball module.
+    link: /guides/trackball-module/
   - icon: 🛠
     title: Recommended Tools
     details: Suggestions for tools to use in the build process.

@@ -5,10 +5,10 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.20"
+    "vitepress": "^1.0.1"
   },
   "dependencies": {
-    "posthog-js": "^1.87.6",
+    "posthog-js": "^1.116.6",
     "swiper": "^10.3.1"
   }
 }
