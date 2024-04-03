@@ -115,7 +115,7 @@ Add solder to the bottom pads.
 Skip this step if you didn't get hotswap sockets.
 :::
 
-Find the hotswap sockets in your kit, follow these [instructions](https://github.com/foostan/crkbd/blob/main/corne-chocolate/doc/buildguide_en.md#kailh-pcb-socket).
+Find the hotswap sockets in your kit, follow these [instructions](https://github.com/foostan/crkbd/blob/main/docs/corne-chocolate/v2/buildguide_en.md#kailh-pcb-socket).
 
 ## Controllers
 
