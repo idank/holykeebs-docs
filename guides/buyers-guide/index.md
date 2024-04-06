@@ -133,13 +133,18 @@ A small 128x32 OLED display that sits on top of the controller. These displays c
 
 ## Top Plates
 
-On keyboards with hotswap sockets, a top plate is used to better secure the switches to the keyboard. Even though the keys will not fall off without one, it is recommended to have.
+On keyboards with hotswap sockets, an FR4 top plate is used to better secure the switches to the keyboard (they are therefore sometimes called switch plates). Even though the keys will not fall off without one, it is recommended to have.
 
 They can also be added to non-hotswap builds for the aesthetics, even though we keep the top side of our PCBs super clean!
 
 ::: info
 A top plate is **required** if you'd like stabilizers for 2u keys, like the [Span](https://holykeebs.com/products/span) keyboard supports.
 :::
+
+MX keyboards also have the option of having an additional acrylic piece at the top, which is a nice addition if LEDs are used and helps fill the gap between the PCB and top plate:
+
+![plates breakdown](./plates-breakdown.jpg)
+
 
 ## Bottom Plates / Cases
 
