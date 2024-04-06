@@ -4,11 +4,9 @@ import Images from '../../components/Images.vue';
 import shieldorientation1 from './shield-orientation-1.jpg';
 import shieldorientation2 from './shield-orientation-2.jpg';
 
-import mountbottomscrewed1 from './mount-bottom-screwed-1.jpg';
-import mountbottomscrewed2 from './mount-bottom-screwed-2.jpg';
-
-import topmounton1 from './top-mount-on-1.jpg';
-import topmounton2 from './top-mount-on-2.jpg';
+import mountscrewed1 from './mount-screwed-1.jpg';
+import mountscrewed2 from './mount-screwed-2.jpg';
+import mountscrewed3 from './mount-screwed-3.jpg';
 </script>
 
 # Touchpad Module
@@ -19,7 +17,7 @@ The touchpad module consists of a small adapter PCB (shield) that sits on a top 
 
 ## Tools
 
-In addition to a soldering iron, you will need an M2 hex key and a bit of super glue.
+In addition to a soldering iron, you will need an H1.3 M2 hex key.
 
 ## Controller
 
@@ -35,7 +33,7 @@ The module comes with the following parts:
 - adapter PCB (either left or right sided)
 - 12-pin, 0.5 pitch FFC cable
 - 3d printed mount
-- 2 x 3mm M2 screws to fasten mount to adapter PCB
+- 2 x 4mm M2 screws to fasten the mount to the adapter PCB
 
 ![kit contents](./kit.jpg)
 
@@ -77,29 +75,23 @@ Connect the FFC cable to the connector on the adapter PCB (note which side of th
 
 ### Step 5
 
-Next, we screw to bottom half of the 3d printed mount to the adapter PCB. If the controller is mounted on a PCB which doesn't let you access the bottom side of the screw holes, you may need to remove it: **do not take it out by pulling on the adapter PCB**. Use the back side of tweezers and push the underside of the controller from both ends, switching back and forth until it pops out.
+Next, we screw to the 3d printed mount to the adapter PCB. If the controller is mounted on a PCB which doesn't let you access the bottom side of the screw holes, you may need to remove it: **do not take it out by pulling on the adapter PCB**. Use the back side of tweezers and push the underside of the controller from both ends, switching back and forth until it pops out.
 
 The screw holes in the 3d printed piece are small such that screwing into them will hold the screws firmly in place.
 
-<Images :paths="[mountbottomscrewed1, mountbottomscrewed2]" />
+<Images :paths="[mountscrewed1, mountscrewed2, mountscrewed3]" />
 
 Finish by pulling the FFC cable through the middle slot.
 
 ### Step 6
 
-We're going to secure the touchpad to the adapter PCB. Position it on the 3d printed piece that is screwed to the adapter PCB, with the connector going into the slot.
+We're going to secure the touchpad to the mount we just screwed. Push one corner of the touchpad to the notches on the mount as follows, it should sit flush on this corner, with the connector going into the slot on the adapter PCB.
 
-![touchpad on mount](./touchpad-on-mount.jpg)
+![touchpad on mount partial](./touchpad-on-mount-partial.jpg)
 
-The remaining 3d printed piece has small notches that match the notches on the touchpad and protrusions on the bottom half of the mount:
+Next, apply pressure on the outside edge of the touchpad to push it into the mount. It's a press fit and should require some force, but not an excessive amount.
 
-![top mount notches](./top-mount-notches.jpg)
-
- Put the two together and rotate the top piece until there's no gap between the two.
-
-<Images :paths="[topmounton1, topmounton2]" />
-
- Now that you know how to close it up, take some super glue and put a few small dabs on the perimeter of the bottom 3d printed piece, and press the top piece into it.
+![touchpad flush](./touchpad-flush.jpg)
 
 ### Step 7
 
