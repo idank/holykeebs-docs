@@ -230,13 +230,17 @@ If the PCB uses an SMD reset switch, apply the same method as the diodes: add so
 
 ## Pointing Device
 
-### Trackball
+### Touchpad
 
-See the [dedicated guide](../trackball-module/index.md).
+See the [dedicated guide](../touchpad-module/index.md).
 
 ### Trackpoint
 
-Building a trackpoint module from scratch is a difficult task that involves desoldering and dealing with tiny components. At this time, we provide trackpoint modules already assembled.
+See the [dedicated guide](../trackpoint-module/index.md).
+
+### Trackball
+
+See the [dedicated guide](../trackball-module/index.md).
 
 ## Switches
 
@@ -248,17 +252,15 @@ This step depends whether hotswap sockets and/or top plates were used.
 
 ### Top Plates
 
-Top plates can be installed flush against the PCB, or have a small gap. The correct apporach is to have a small gap, but this can be a bit challenging to do.
+Top plates can be installed flush against the keyboard PCB, or flush against the switch.
 
-It makes no practical difference which one is used, but **when 2u stabilizers are installed, the small gap method must be used**.
+<Images :paths="[topplatesflush, topplatesgap]" />
 
-<Images :paths="[topplatesgap, topplatesflush]" />
+On low profile keyboards, it can be tedious to keep the top plate flush against the switches, so we're going to make them flush to the PCB as it makes no practical difference which method is used.
+
+The exceptions to this are MX keyboards, and the **Span keyboard which uses 2u stabilizers**.
 
 Start by pushing a few keys at the edges of the plate, there should be a click once the switch is seated fully in the hole. Make note of the orientation that the switch needs to go into the hole, depending if you have hotswap sockets or plan to solder the switch to the PCB.
-
-::: tip
-It is also possible to push all of the switches into the top plate ahead of time. Try that if this method fails.
-:::
 
 <Images :paths="[topplates1, topplates2]" />
 
@@ -289,7 +291,9 @@ When pushing switches into hotswap sockets, it is advised to support the socket 
 
 ![top-plates-switches-pushed](./top-plates-switches-pushed.jpg)
 
-After the top plate is secure against the PCB, push the rest of the switches in. If the top plate is pressed against the PCB in some places, pull it up by inserting tweezers or the end of a switch puller into the gap.
+After the top plate is secure against the PCB, push the rest of the switches in.
+
+If your keyboard needs the top plate to be flush against the switches and you find it isn't in some places, pull it up by inserting tweezers or the end of a switch puller into the gap.
 
 ![top-plates-lift](./top-plates-lift.jpg)
 
@@ -316,14 +320,6 @@ If you're not sure the soldering job you did went well, it is recommended to fir
 :::
 
 Use the hardware that came with the kit to secure any covers and cases. If you find two length of screws in your kit then the longer ones will go on the side with the acrylic, which is thicker than the PCB FR4.
-
-::: details Trackpoint Driver PCB
-The trackpoint comes with a driver PCB that should be mounted between the case and PCB. Some cases might have mounting holes to attach the PCB with screws and nuts, like so:
-
-<Images :paths="[casetrackpoint1, casetrackpoint2, casetrackpoint3]" />
-
-If the case doesn't have mounting holes, use the included double sided tape on the bottom of the driver PCB to attach it to the case. Check the position with respect to the flexible cable.
-:::
 
 ## Finishing Steps
 
