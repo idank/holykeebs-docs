@@ -16,13 +16,6 @@ import controllerheaders2 from './controller-headers-2.jpg';
 import controllerheadersflat from './controller-headers-flat.jpg';
 import controllerheadersnotflat from './controller-headers-not-flat.jpg';
 
-import millmaxpins from './millmax-pins.jpg';
-import millmaxcontroller from './millmax-controller.jpg';
-import millmaxsoldered from './millmax-soldered.jpg';
-import millmaxsolderedbottom from './millmax-soldered-bottom.jpg';
-import millmaxlongpinsguide1 from './millmax-long-pins-guide-1.jpg';
-import millmaxlongpinsguide2 from './millmax-long-pins-guide-2.jpg';
-
 import oledsocketsflat from './oled-sockets-flat.jpg';
 import oledsocketsnotflat from './oled-sockets-not-flat.jpg';
 
@@ -119,6 +112,12 @@ Find the hotswap sockets in your kit, follow these [instructions](https://github
 
 ## Controllers
 
+::: warning
+Before doing any soldering on the controller, ensure that the controllers are operational.
+
+Connect it to your computer and check that it boots properly: once connected, a USB removable drive should appear. If one doesn't, make sure your USB cable supports data transfer, and that your computer doesn't block removable drives.
+:::
+
 ### Sockets
 
 It's important for the controller sockets to be properly aligned to the PCB so the controller can be inserted and removed easily, and for the pointing device to be seated right. It can be a bit of a challenge to do this so take your time.
@@ -172,27 +171,11 @@ The best result is achieved when building a small and consistent solder cone on 
 ![controller-soldered](./controller-soldered.jpg)
 :::
 
-#### Mill-max
+#### Low profile headers
 
-Mill-max pins come in two lengths, the shorter ones are just enough to reach the microcontroller's top side:
+Most of the previous section applies to this style of headers as well.
 
-![millmaxcontroller](./millmax-controller.jpg)
-
-::: details Controller mounted pointing device
-When installing a controller mounted pointing device, we need to use a few longer pins so we can connect the pointing device to the appropriate pins on the microcontroller. Use the pointing device shield as a guide to know where to use the longer ones:
-
-<Images :paths="[millmaxlongpinsguide1, millmaxlongpinsguide2]" />
-
-Leave the long pins as is for now, we will cut them to length later on.
-:::
-
-Next, position the controller and solder it.
-
-::: warning
-Careful not to add too much solder to the point where the controller gets soldered to the sockets. You want solder at the top side of the controller through-holes.
-:::
-
-<Images :paths="[millmaxpins, millmaxcontroller, millmaxsoldered, millmaxsolderedbottom]" />
+The custom low profile headers come in two lengths, short ones for regular use and longer ones when installing a controller mounted pointing device so we can connect the pointing device to the appropriate pins on the microcontroller.
 
 ## OLED
 
