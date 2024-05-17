@@ -4,7 +4,7 @@
 
 holykeebs is a tiny store operated from Israel. I just like soldering.
 
-We specialize in ergonomic split keyboards with pointing devices such as trackballs and trackpoints.
+holykeebs specializes in ergonomic split keyboards with pointing devices such as trackballs, touchpads and trackpoints.
 
 ## Shipping
 
