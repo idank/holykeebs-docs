@@ -27,6 +27,7 @@ import topplatesflush from './top-plates-flush.jpg';
 import topplates1 from './top-plates-1.jpg';
 import topplates2 from './top-plates-2.jpg';
 
+import stabilizersbeforemounted from './stabilizers-before-mounted.jpg';
 import stabilizersmountedtop from './stabilizers-mounted-top.jpg';
 import stabilizersmountedbottom from './stabilizers-mounted-bottom.jpg';
 
@@ -249,17 +250,27 @@ Start by pushing a few keys at the edges of the plate, there should be a click o
 
 ::: details Installing 2u stabilizers
 
-The stabilizer sits between the PCB and the top plate and needs to be installed before joining the two. First, assemble the stabilizer:
+The stabilizer sits between the PCB and the top plate and needs to be installed before joining the two. The stabilizer is a two piece component with a housing and a shaft:
 
-pic
+![stabilizer-disassembled](./stabilizer-disassembled.jpg)
+
+On the left, we see an assembled stabilizer, shown from the bottom side. Take the shaft, with the groove you see on its bottom side facing the right direction, and push it from the top side of the housing. It should go in easily.
+
+![stabilizer-assembled](./stabilizer-assembled.jpg)
+
+Use the metal bar to finish the assembly:
+
+![stabilizer-with-metal-bar](./stabilizer-with-metal-bar.jpg)
 
 Mount the stabilizer onto the top plate by pushing it from the bottom (the metal bar goes needs to be on the bottom):
 
-<Images :paths="[stabilizersmountedtop, stabilizersmountedbottom]" />
+<Images :paths="[stabilizersbeforemounted, stabilizersmountedtop, stabilizersmountedbottom]" />
 
 Later on, when installing the keycaps, pay attention to the orientation of the 2u keycap: unlike the other keycaps, it is not symmetric and needs to be installed as follows:
 
 ![2u-key-orientation](./2u-key-orientation.jpg)
+
+If the keycap isn't aligning properly with the stabilizers, it's possible the stabilizer wasn't assembled correctly.
 
 Additional photos showing the rest of the installation:
 
