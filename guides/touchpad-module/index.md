@@ -41,13 +41,19 @@ First, we solder the adapter PCB to the controller.
 
 ### Step 1
 
-The adapter PCB in your kit is specific to the side you want to use the touchpad on. The top side is the side with the FFC connector:
+The adapter PCB in your kit is specific to the side you want to use the touchpad on. For a right sided touchpad, the top side is the side with the FFC connector:
 
 ![adapter pcb top view](./adapter-pcb-top-view.jpg)
 
-Position the PCB on the controller, check that it sits straight. If you're struggling to get it to sit straight, check if you have blobs of solder on the controller headers. If this is indeed the problem, you can try to remove the solder so it doesn't get in the way, or put a 1mm spacer piece between the controller and adapter PCB (if you have a 3d printer, [here's a simple 1mm one](https://github.com/idank/keyboards/blob/main/printed-cases/1mm_spacer.stl) I use, scale Z down/up as necessary).
+::: details Left side
+On a left sided touchpad, it's recommended to insert the FFC cable before soldering the adapter PCB as it can be a bit difficult after it's soldered on.
 
-<Images :paths="[shieldorientation1, shieldorientation2]" />
+![adapter pcb left side](./touchpad-left-cable.jpg)
+:::
+
+Position the PCB on the controller with the 3d printed spacer, check that it sits straight. If you're struggling to get it to sit straight, check if you have blobs of solder on the controller headers. If this is indeed the problem, reflow or remove solder until it sits flush on the spacer.
+
+<Images :paths="[shieldorientation2, shieldorientation1]" />
 
 ### Step 2
 
