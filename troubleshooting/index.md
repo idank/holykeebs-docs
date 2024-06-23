@@ -41,7 +41,8 @@ If an entire row or column is unresponsive, one of the controller pins is not fu
 
 If the keyboard is connected with the main side responding, while the peripheral side isn't, it's possible one of the controllers is faulty. The most common cause is hot-plugging the TRRS cable (i.e. connecting/disconnecting it while the the keyboard is powered), which can cause shorts at the controller GPIO pins (we specifically call this out when you open packages from us).
 
-1. First, verify solder joints of the TRRS jacks and the controller sockets are good.
+1. First, make sure you've pushed the TRRS cable into the connectors all the way through.
+1. Verify solder joints of the TRRS jacks and the controller sockets are good.
 1. Check the controller on the peripheral is getting power, its LED should be on. If it's not, recheck the solder joints and try a different TRRS cable (power off first).
 1. Power each side separately (disconnect the keyboard and the halves).
 1. Try swapping the controllers between the sides.
@@ -63,4 +64,4 @@ Flash both sides and try again.
 
 ## Trackball Is Skipping
 
-This happens on split keyboards with Sea Picros when only the master side is connected. Unpower it, connect the halves, and try again.
+This happens on split keyboards when only the master side is connected. Unpower it, connect the halves, and try again.
