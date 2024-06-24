@@ -44,6 +44,10 @@ Ship items back within: 30 days of delivery.
 
 Buyers are responsible for return shipping costs. If the item is not returned in its original condition, the buyer is responsible for any loss in value.
 
+::: danger NOTICE
+Returns on keyboards that were not bought with hotswap sockets are not possible.
+:::
+
 ## Wireless
 
 I'd love to do wireless builds but there isn't official support for the pointing devices we use in ZMK. There are various efforts but those aren't confirmed to fully work or be power efficient.
@@ -56,6 +60,8 @@ The difference between these two is the key spacing, i.e. how close the keys are
 1. Choc spacing uses 18x17mm squares, and produces a more tight arrangement with minimal key spacing. It is specifically designed for Kailh's choc switches (hence the name).
 
 For choc keyboards, we differentiate these two styles of spacing by calling the former Low Profile and the latter Choc.
+
+![key spacing](../guides/buyers-guide/spacing.jpg)
 
 ## New Keyboards
 

@@ -103,6 +103,8 @@ There are two standard "key spacing", i.e. how close the keys are to each other:
 
 For choc keyboards, we differentiate these two styles of spacing by calling the former Low Profile and the latter Choc.
 
+![key spacing](./spacing.jpg)
+
 ## Keycaps
 
 The keyboards we sell are exclusively using 1U, 1.5U and 2U key sizes. Unlike MX switches, there aren't many keycap options for choc switches.
@@ -144,7 +146,6 @@ A top plate is **required** if you'd like stabilizers for 2u keys, like the [Spa
 MX keyboards also have the option of having an additional acrylic piece at the top, which is a nice addition if LEDs are used and helps fill the gap between the PCB and top plate:
 
 ![plates breakdown](./plates-breakdown.jpg)
-
 
 ## Bottom Plates / Cases
 

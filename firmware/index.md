@@ -14,27 +14,32 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 ## Source Code
 
-The source code for all keyboards can be found on the `dev` and `dev-rp2040` branches of https://github.com/idank/qmk_firmware. This repo is periodically kept up to date with the `develop` branch of main QMK.
+The source code for all keyboards can be found on the `holykeebs-master` branch of https://github.com/idank/qmk_firmware. This repo is periodically kept up to date with main QMK.
 
-There's no requirement to use this repo, it is also possible to copy the relevant pieces (explained below) to your own clone.
+There's no requirement to use this repo, it is also possible to copy the relevant pieces to your own clone: the changes are contained to `users/idank` and the specific keyboard you're flashing for. Look at the changes by running this in your clone:
+
+```shell
+$ git remote add idank https://github.com/idank/qmk_firmware
+$ git diff idank/master...idank/holykeebs-master
+```
 
 ::: details Precompiled
-Due to the various configurations possible (trackpoint, trackball, touchpad, pro micro, rp2040, etc.), precomplied files are currently not published. Please build your own.
+Due to the various configurations possible (trackpoint, trackball, touchpad, oled, etc.), precomplied files are currently not published. Please build your own.
 :::
 
 ## Introduction
 
 Since many of our keyboards share common features such as OLED / Pointing Devices, these are supported via the [Userspace feature](https://docs.qmk.fm/#/feature_userspace): this allows the logic to be separated from a specific keyboard / keymap. See the files in [`users/idank`](https://github.com/idank/qmk_firmware/tree/dev/users/idank).
 
-Start by setting up a development environment per [QMK instructions](https://docs.qmk.fm/#/newbs). Clone the repo above and not the main QMK repo.
+Start by setting up a development environment per [QMK instructions](https://docs.qmk.fm/#/newbs). Clone the repo above and not the main QMK repo:
 
-Change branches to `dev-rp2040` if you're flashing a Sea Picro, and `dev` for Pro Micro.
+```shell
+# It's also possible to use qmk setup instead of git clone: qmk setup idank/qmk_firmware
+$ git clone --recurse-submodules https://github.com/idank/qmk_firmware -b holykeebs-master
+$ cd qmk_firmware
+```
 
-::: details
-Even though it is possible to use one configuration in QMK to describe a keyboard and "convert" a firmware to be compatible with different controllers, this conversion doesn't work in all cases.
-
-Importantly, it is not fully working when used in combination with several other features such as the PS/2 driver (needed for trackpoints), split support, OLED, etc.
-:::
+## Command
 
 The basic structure of the build and flash command is:
 
@@ -42,23 +47,23 @@ The basic structure of the build and flash command is:
 make <keyboard>:<keymap>[:flash] [-e feature1=value1]...
 ```
 
-## Command
-
 The value for `<keyboard>` should match the keyboard you are flashing for:
 
 | Keyboard      | Value |
 | ------------- | ----------- |
 | Corne | crkbd/rev1 |
 | Lily58 | lily58/rev1 |
-| Revuing41 | reviung/reviung41 |
+| Reviung41 | reviung/reviung41 |
 | Sweep | idank/sweeq |
 | Span | idank/spankbd |
+| Keyball39 | keyball/keyball39 |
 | Keyball44 | keyball/keyball44 |
+| Keyball61 | keyball/keyball61 |
 
 The `<keymap>` can be either `default` or `via` (enables VIA support).
 
 ::: info
-For Keyball, please see the dedicated section as the options below don't apply.
+For Keyball, please see the [dedicated section](#keyball) as the options below don't apply.
 :::
 
 The table below lists the possible flags that control what feature to turn on in the firmware.
@@ -66,7 +71,7 @@ The table below lists the possible flags that control what feature to turn on in
 | Flag          | Description |
 | ------------- | ----------- |
 | `-e POINTING_DEVICE=cirque35`<br>          `trackpoint`<br>          `trackball` | enable pointing device |
-| `-e POINTING_DEVICE_POSITION=left\|right\|thumb\|middle` | specify pointing device position |
+| `-e POINTING_DEVICE_POSITION=left`<br>      `right`<br>      `thumb_inner`<br>      `thumb_outer`<br>      `middle` | specify pointing device position |
 | `-e OLED=yes` | enable OLED screen |
 | `-e OLED_FLIP=yes` | swaps the left and right OLED roles |
 | `-e TRACKBALL_RGB_RAINBOW=yes` | enable a rainbow color animation on the trackball LED |
@@ -96,18 +101,13 @@ Breaking this down:
 
 ### Dual Pointing Devices
 
-When using multiple pointing devices, the pointing device specification turns to `-e POINTING_DEVICE=<left>_<right>` where left and right take one of `trackball`, `trackpoint` or `cirque35`. The `-e POINTING_DEVICE_POSITION` argument is only necessary when using a thumb trackball, in all other cases it can be omitted.
+When using multiple pointing devices, the pointing device specification turns to `-e POINTING_DEVICE=<left>_<right>` where left and right take one of `trackball`, `trackpoint` or `cirque35`. The `-e POINTING_DEVICE_POSITION` flag can be omitted since it's implied by the pointing device configuration.
 
-#### Trackpoint + Trackball/Touchpad
-
-The PS/2 driver in QMK is using a subsystem that doesn't play well with the pointing device subsystem, which trackball and touchpad use. For this reason, split keyboards with a trackpoint and trackball/touchpad have no support in stock QMK.
-
-The `dev-rp2040-combined` branch addresses these issues, but a slightly different command than the one above.
+Additionally, if each side is using a different pointing device, we now need to specify the side we're flashing with `-e SIDE=right` or `-e SIDE=left` because we need a different firmware per side.
 
 Example:
 
 ```shell
-# assumes dev-rp2040-combined is checked out
 make \
     crkbd/rev1:via:flash \
     -e USER_NAME=idank \
@@ -116,10 +116,7 @@ make \
     -j8
 ```
 
-Details:
-
-1. Possible values for `POINTING_DEVICE` are `trackball_trackpoint` for a keyboard with a trackball on left, trackpoint on right, or `trackpoint_trackball` for the reverse. Replace `trackball` with `cirque35` if using a touchpad.
-1. We can see that we now need to specify the side we're flashing with `-e SIDE=right|left`. The example above flashes the right side, which should be the side with the trackpoint.
+The example above flashes the right side, which should be the side with the trackpoint.
 
 The left side would be flashed as follows:
 
@@ -128,21 +125,20 @@ make \
     crkbd/rev1:via:flash \
     -e USER_NAME=idank \
     -e POINTING_DEVICE=trackball_trackpoint \
-    -e SIDE=left \
-    # optional:
     -e TRACKBALL_RGB_RAINBOW=yes \
+    -e SIDE=left \
     -j8
 ```
 
 ### Keyball
 
-Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers exists [here](https://github.com/idank/qmk_firmware/tree/dev-rp2040/keyboards/keyball).
+Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers exists [here](https://github.com/idank/qmk_firmware/tree/holykeebs-master/keyboards/keyball).
 
 ::: danger
 Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
 :::
 
-While on the `dev-rp2040` branch, flash both sides using:
+While on the `holykeebs-master` branch, flash both sides using:
 
 ```shell
 make keyball/keyball44:via:flash -j8
@@ -157,25 +153,31 @@ Run the command you built in the previous step, with `:flash` after the keymap n
 If the command succeeded, you should be seeing this at the end:
 
 ```shell
- * The firmware size is fine - 24844/28672 (86%, 3828 bytes free)
-Flashing for bootloader: caterina
-Waiting for USB serial port - reset your controller now (Ctrl+C to cancel)....
-```
 
-Or this for RP2040 controllers:
+ _           _       _             _
+| |__   ___ | |_   _| | _____  ___| |__  ___
+| '_ \ / _ \| | | | | |/ / _ \/ _ \ '_ \/ __|
+| | | | (_) | | |_| |   <  __/  __/ |_) \__ \
+|_| |_|\___/|_|\__, |_|\_\___|\___|_.__/|___/
+               |___/
 
-```shell
+Pointing Device: trackball
+OLED: yes
+Keyboard main side: right
+
+WARNING! Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
+
 Flashing for bootloader: rp2040
-Bootloader not found. Make sure the board is in bootloader mode. See https://docs.qmk.fm/#/newbs_flashing
- Trying again every 0.5s (Ctrl+C to cancel)....
+Waiting for drive to deploy...
 ```
+
+::: tip
+Make note of the `Flashing for bootloader` line: if you're not seeing this at the end of the output, you are not on the correct branch.
+:::
 
 Connect the controller to the computer. Sometimes it will go into bootloader if it hasn't been flashed before.
 
-If not, enter bootloader mode:
-
-1. Sea Picro: hold the reset button for ~1 second.
-1. Pro Micro: double tap the reset button.
+If not, enter bootloader mode by holding the reset button for ~1 second.
 
 On split keyboards, repeat the flashing process for the other controller.
 
@@ -186,9 +188,9 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 ## Testing
 
 1. On a split keyboard, connect the halves when none of the sides are powered.
-1. On a split keyboard, by default the side with the pointing device is the one that needs to be powered, connect that side to the computer (if no pointing device is used, use the right side).
+1. On a split keyboard, the output of the build/flash command will say which side needs to be connected to the computer.
 1. On first use, a dialog from the OS may open to configure a new keyboard, go through that.
-1. Go to config [https://config.qmk.fm/#/test](https://config.qmk.fm/#/test) to test that all of the keys work. Some keys (usually on the thumb clusters) don't generate a regular key. Try pressing those in combination with another key.
+1. Go to [test](https://config.qmk.fm/#/test) that all of the keys work. Some keys (usually on the thumb clusters) don't generate a regular key. Try pressing those in combination with another key. It's also possible to use VIA's test matrix tab.
 
 If one of the keys do not work, head over to [Troubleshooting](/troubleshooting/).
 
