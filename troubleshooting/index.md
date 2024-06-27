@@ -41,7 +41,14 @@ If an entire row or column is unresponsive, one of the controller pins is not fu
 
 If the keyboard is connected with the main side responding, while the peripheral side isn't, it's possible one of the controllers is faulty. The most common cause is hot-plugging the TRRS cable (i.e. connecting/disconnecting it while the the keyboard is powered), which can cause shorts at the controller GPIO pins (we specifically call this out when you open packages from us).
 
-1. First, make sure you've pushed the TRRS cable into the connectors all the way through.
+First, make sure you've pushed the TRRS cable into the connectors all the way through. Here's a cable that's not pushed all the way:
+
+![trrs cable](./trrs-cable-not-pushed.jpeg)
+
+Fix this by disconnecting the USB cable and pushing both sides of the TRRS cable all the way into the connector.
+
+If this doesn't fix the problem, try these:
+
 1. Verify solder joints of the TRRS jacks and the controller sockets are good.
 1. Check the controller on the peripheral is getting power, its LED should be on. If it's not, recheck the solder joints and try a different TRRS cable (power off first).
 1. Power each side separately (disconnect the keyboard and the halves).
