@@ -23,11 +23,16 @@ $ git remote add idank https://github.com/idank/qmk_firmware
 $ git diff idank/master...idank/holykeebs-master
 ```
 
-::: details Precompiled
-Due to the various configurations possible (trackpoint, trackball, touchpad, oled, etc.), precomplied files are currently not published. Please build your own.
-:::
+## Precompiled
 
-## Introduction
+Precompiled firmwares for all possible configurations are available [here](https://github.com/idank/qmk_firmware/releases/tag/holykeebs-master-latest). Each file is named according to its configuration, e.g.:
+
+- `crkbd_rev1_via_oled_trackball_left.uf2` is for a Corne, VIA, OLED and trackball on the left.
+- `idank_spankbd_via_trackball_trackpoint.uf2` is for a Span, trackball on the left, trackpoint on the right.
+
+Flashing is done by pressing the reset button for ~1 second and copying the uf2 file to the removable drive named `RPI-RP2`. After copying, the drive should disappear and the firmware will have updated.
+
+## Compiling
 
 Since many of our keyboards share common features such as OLED / Pointing Devices, these are supported via the [Userspace feature](https://docs.qmk.fm/#/feature_userspace): this allows the logic to be separated from a specific keyboard / keymap. See the files in [`users/idank`](https://github.com/idank/qmk_firmware/tree/holykeebs-master/users/idank).
 
@@ -39,7 +44,7 @@ $ git clone --recurse-submodules https://github.com/idank/qmk_firmware -b holyke
 $ cd qmk_firmware
 ```
 
-## Command
+### Building
 
 The basic structure of the build and flash command is:
 
@@ -99,6 +104,45 @@ Breaking this down:
 1. `-e OLED=yes` enables the OLED.
 1. `-j8` parallizes the build process.
 
+### Flashing
+
+Run the command you built in the previous step, with `:flash` after the keymap name to also flash after building.
+
+If the command succeeded, you should be seeing this at the end:
+
+```shell
+
+ _           _       _             _
+| |__   ___ | |_   _| | _____  ___| |__  ___
+| '_ \ / _ \| | | | | |/ / _ \/ _ \ '_ \/ __|
+| | | | (_) | | |_| |   <  __/  __/ |_) \__ \
+|_| |_|\___/|_|\__, |_|\_\___|\___|_.__/|___/
+               |___/
+
+Pointing Device: trackball
+OLED: yes
+Keyboard main side: right
+
+WARNING! Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
+
+Flashing for bootloader: rp2040
+Waiting for drive to deploy...
+```
+
+::: tip
+Make note of the `Flashing for bootloader` line: if you're not seeing this at the end of the output, you are not on the correct branch.
+:::
+
+Connect the controller to the computer. Sometimes it will go into bootloader if it hasn't been flashed before.
+
+If not, enter bootloader mode by holding the reset button for ~1 second.
+
+On split keyboards, repeat the flashing process for the other controller.
+
+::: danger
+Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
+:::
+
 ### Dual Pointing Devices
 
 When using multiple pointing devices, the pointing device specification turns to `-e POINTING_DEVICE=<left>_<right>` where left and right take one of `trackball`, `trackpoint` or `cirque35`. The `-e POINTING_DEVICE_POSITION` flag can be omitted since it's implied by the pointing device configuration.
@@ -145,45 +189,6 @@ make keyball/keyball44:via:flash -j8
 ```
 
 USB cable can be connected to either side of the keyboard.
-
-## Flashing
-
-Run the command you built in the previous step, with `:flash` after the keymap name to also flash after building.
-
-If the command succeeded, you should be seeing this at the end:
-
-```shell
-
- _           _       _             _
-| |__   ___ | |_   _| | _____  ___| |__  ___
-| '_ \ / _ \| | | | | |/ / _ \/ _ \ '_ \/ __|
-| | | | (_) | | |_| |   <  __/  __/ |_) \__ \
-|_| |_|\___/|_|\__, |_|\_\___|\___|_.__/|___/
-               |___/
-
-Pointing Device: trackball
-OLED: yes
-Keyboard main side: right
-
-WARNING! Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
-
-Flashing for bootloader: rp2040
-Waiting for drive to deploy...
-```
-
-::: tip
-Make note of the `Flashing for bootloader` line: if you're not seeing this at the end of the output, you are not on the correct branch.
-:::
-
-Connect the controller to the computer. Sometimes it will go into bootloader if it hasn't been flashed before.
-
-If not, enter bootloader mode by holding the reset button for ~1 second.
-
-On split keyboards, repeat the flashing process for the other controller.
-
-::: danger
-Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
-:::
 
 ## Testing
 
