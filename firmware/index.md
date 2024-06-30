@@ -32,6 +32,8 @@ Precompiled firmwares for all possible configurations are available [here](https
 
 Flashing is done by pressing the reset button for ~1 second and copying the uf2 file to the removable drive named `RPI-RP2`. After copying, the drive should disappear and the firmware will have updated.
 
+The [commands.txt](https://github.com/idank/qmk_firmware/releases/download/holykeebs-master-latest/commands.txt) has a list of file name to the make command that produced it and can be used as a reference.
+
 ## Compiling
 
 Since many of our keyboards share common features such as OLED / Pointing Devices, these are supported via the [Userspace feature](https://docs.qmk.fm/#/feature_userspace): this allows the logic to be separated from a specific keyboard / keymap. See the files in [`users/idank`](https://github.com/idank/qmk_firmware/tree/holykeebs-master/users/idank).
