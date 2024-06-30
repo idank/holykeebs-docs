@@ -28,7 +28,7 @@ $ git diff idank/master...idank/holykeebs-master
 Precompiled firmwares for all possible configurations are available [here](https://github.com/idank/qmk_firmware/releases/tag/holykeebs-master-latest). Each file is named according to its configuration, e.g.:
 
 - `crkbd_rev1_via_oled_trackball_left.uf2` is for a Corne, VIA, OLED and trackball on the left.
-- `idank_spankbd_via_trackball_trackpoint.uf2` is for a Span, trackball on the left, trackpoint on the right.
+- `idank_spankbd_via_trackball_trackpoint_left.uf2` is for a Span, trackball on the left, trackpoint on the right and should be flashed pn the left half (`idank_spankbd_via_trackball_trackpoint_right.uf2` should be flashed on the right).
 
 Flashing is done by pressing the reset button for ~1 second and copying the uf2 file to the removable drive named `RPI-RP2`. After copying, the drive should disappear and the firmware will have updated.
 
