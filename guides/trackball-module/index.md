@@ -51,9 +51,15 @@ With the shield's protrusion positioned correctly, solder the jumpers on the und
 
 ### Step 2
 
-Position the shield on the controller, check that it sits straight:
+Position the shield on the controller, check that it sits straight.
 
 <Images :paths="[shieldorientation1, shieldorientation2, shieldorientation3]" />
+
+If your trackball breakout board has this connector:
+
+![breakout-bottom](./breakout-bottom.jpg)
+
+Use the spacer in your kit and place it between the shield and the controller, this will add the necessary clearance for the connector. It is also possible to remove this connector altogether.
 
 ### Step 3
 
