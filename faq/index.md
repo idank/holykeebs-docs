@@ -14,15 +14,17 @@ Yes, if you don't see your country in the shipping page, please contact us.
 
 ### What shipping methods are available?
 
-Shipping to most countries is available with tracked or untracked options. Tracked packages usually take 10 to 15 days, with untracked taking around 30 days. Please do not use the untracked option if you're not willing to wait beyond 30 days, which can happen. Order cost / size may exclude the untracked option.
+We ship to most destinations using FedEx and the post office (this option is called Economy Post), both have tracking. In some remote countries, the post office doesn't have tracking and will only indicate the package has been sent (this option is called Registered Air Mail).
 
-For select countries, the shipping methods may differ.
+Transit times for FedEx is usually around 5 days, and the post office average is between 10 to 15 days.
+
+If you choose an untracked shipping option, please be aware that shipping times can highly vary. If you're not willing to wait beyond 30 days, which can happen, please use FedEx.
 
 ### My order's tracking has not been updating!
 
 This can be a customs issue, port issues, parcel / postal system overload, and many more reasons we cannot influence. Please reach out after you have not seen an about for at least a week.
 
-Once packages arrive in the destination, they will be delivered using the destination country's local postal service. Use the tracking number in the local systems to get detailed information on its whereabouts.
+If your shipping method wasn't FedEx, your package is delivered using the destination country's local postal service. Use the tracking number in your post office systems to get detailed information on its whereabouts.
 
 ## Warranty and Support
 
