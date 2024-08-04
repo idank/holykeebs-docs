@@ -1,3 +1,11 @@
+<script setup>
+import Images from '../components/Images.vue';
+
+import hardware1 from './hardware-screws.jpg';
+import hardware2 from './hardware-gold-spacers.jpg';
+import hardware3 from './hardware-silver-spacers.jpg';
+</script>
+
 # FAQ
 
 ## About
@@ -106,3 +114,14 @@ void ps2_mouse_moved_user(report_mouse_t *mouse_report) {
 
 If this doesn't solve your problem, reach out.
 
+## Hardware: Fasteners, Spacers
+
+All of our keyboards use these screws and spacers.
+
+- Flat head M2 H1.3 hex screws (5mm bottom side, 3mm top side).
+- M2 gold spacers (4mm low profile keyboards, 7mm MX keyboards).
+- M2 silver spacers for OLED (11mm for low profile sockets, 13mm for machine sockets).
+
+<Images :paths="[hardware1, hardware2, hardware3]" />
+
+These are common on Aliexpress in case you need to get additional ones (but feel free to reach out if you'd like us to send you some). You may try these links but they're not guaranteed to stay up or be the most affordable option ([screws](https://www.aliexpress.com/item/1005005267980793.html), [gold spacers](https://www.aliexpress.com/item/1005004564012666.html), [silver spacers](https://www.aliexpress.com/item/1005004416481151.html))
