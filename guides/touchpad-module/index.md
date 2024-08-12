@@ -29,7 +29,7 @@ If you have an existing controller, skip this step.
 
 The module comes with the following parts:
 
-- 35mm touchpad
+- 35/40mm touchpad
 - adapter PCB (either left or right sided)
 - 12-pin, 0.5 pitch FFC cable
 - 3d printed mount
@@ -45,7 +45,17 @@ The adapter PCB in your kit is specific to the side you want to use the touchpad
 
 ![adapter pcb top view](./adapter-pcb-top-view.jpg)
 
-::: details Left side
+::: details 40mm Touchpad
+On a 40mm touchpad, the adapter PCB is reversible so there's one board no matter the side it's installed on. When used on a right side of a split, the connector would go on top as mentioned above.
+
+Additionally, solder the 4 jumper pads accordingly:
+
+![40mm adapter pcb](./40mm-adapter-pcb.jpg)
+
+If installed on the left, you'd solder the LEFT pads, and flip over the PCB so the connector is facing down.
+:::
+
+::: details 35mm Left Side
 On a left sided touchpad, it's recommended to insert the FFC cable before soldering the adapter PCB as it can be a bit difficult after it's soldered on.
 
 ![adapter pcb left side](./touchpad-left-cable.jpg)

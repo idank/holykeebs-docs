@@ -125,6 +125,16 @@ Both of these keycaps are PBT and are slightly textured.
 Adding a few [colored keycaps](https://holykeebs.com/products/mbk-dyed-low-profile-keycaps) is a great way to make your keyboard unique!
 :::
 
+### LEDs
+
+Adds per-key and underglow RGB LEDs to your keyboard.
+
+You can get the LEDs soldered or unsoldered. There's an additional build charge on top of the build service cost for soldering LEDs due to the amount of extra work required.
+
+::: info
+Not all keyboards have this option.
+:::
+
 ## OLED
 
 ::: info
@@ -176,10 +186,6 @@ Keyball uses a 34mm trackball that's not included in your purchase. There are ma
 ### Thumb Cluster
 
 Keyball has a unique thumb cluster that allows either Kailh's choc low profile or MX switches. If you're building the keyboard yourself and you're not sure which one, add a pack of low profile hotswap sockets to your order to have both options.
-
-### LEDs
-
-We are doing a trial run of offering LEDs as part of our kits / build service. You can either get the LEDs unsoldered or soldered. There's an additional build charge on top of the build service cost for soldering LEDs due to the amount of extra work required.
 
 ## More
 
