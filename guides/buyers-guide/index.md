@@ -147,15 +147,17 @@ A small 128x32 OLED display that sits on top of the controller. These displays c
 
 ## Top Plates
 
-On keyboards with hotswap sockets, an FR4 top plate is used to better secure the switches to the keyboard (they are therefore sometimes called switch plates). Even though the keys will not fall off without one, it is recommended to have.
+Top plates, sometimes called switches plates, are what switches mechanically attach to. Generally speaking, top plates are mandatory.  Top plates can also be 3d printed for a budget build.
 
-They can also be added to non-hotswap builds for the aesthetics, even though we keep the top side of our PCBs super clean!
+Some boards support soldering the switches to the PCB rather than using hotswap sockets, and can work without top plates, but then present a problem for attaching a case since it screws into the top plates.
 
 ::: info
 A top plate is **required** if you'd like stabilizers for 2u keys, like the [Span](https://holykeebs.com/products/span) keyboard supports.
 :::
 
-MX keyboards also have the option of having an additional acrylic piece at the top, which is a nice addition if LEDs are used and helps fill the gap between the PCB and top plate:
+## Middle Plates
+
+MX keyboards have the option of having an additional acrylic piece between the PCB and top plates. This doesn't serve a functional purpose, but can improve sound, fills the gap between the PCB and top plates and is a nice addition if LEDs are used.
 
 ![plates breakdown](./plates-breakdown.jpg)
 
@@ -163,9 +165,11 @@ MX keyboards also have the option of having an additional acrylic piece at the t
 
 A bottom plate / case sits under the keyboard PCB and is a low cost option compared to a fully enclosed machined metal / plastic molded case.
 
+<Images :paths="[cases1, cases2, cases3, cases4]" />
+
 We carry a variety of colors for laser cut acrylic plates or 3d printed cases. Our 3d printed cases feature a thin bezel that is the same height as the top plate of the keyboard.
 
-<Images :paths="[cases1, cases2, cases3, cases4]" />
+![printed-colors](./printed-colors.jpg)
 
 ## Covers
 
