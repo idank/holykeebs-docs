@@ -1,9 +1,11 @@
 # Keyball Build Guide
 
-::: info
-This guide is a work in progress.
-:::
+Please refer to the canonical Keyball guide below:
 
-Please check the general purpose [Keyboard guide](../index.md), and the external [Keyball guide](https://github.com/Yowkees/keyball/blob/main/keyball61/doc/rev1/buildguide_en.md#4) for the trackball specific bits.
+- [Keyball39](https://github.com/Yowkees/keyball/blob/main/keyball39/doc/rev1/buildguide_en.md)
+- [Keyball44](https://github.com/Yowkees/keyball/blob/main/keyball44/doc/rev1/buildguide_en.md)
+- [Keyball61](https://github.com/Yowkees/keyball/blob/main/keyball61/doc/rev1/buildguide_en.md)
+
+For build help that's not specific to Keyball, you're welcome to visit the [Keyboard guide](../index.md) in these docs.
 
 Come back to the [Firmware guide](../../../firmware/index.md) when you're ready to flash.

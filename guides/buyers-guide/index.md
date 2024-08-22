@@ -109,6 +109,8 @@ For choc keyboards, we differentiate these two styles of spacing by calling the 
 
 ## Keycaps
 
+### Low Profile / Choc Switches
+
 The keyboards we sell are exclusively using 1U, 1.5U and 2U key sizes. Unlike MX switches, there aren't many keycap options for choc switches.
 
 [MBK keycaps](https://holykeebs.com/products/mbk-low-profile-keycaps) are the most popular low profile keycaps, which come either blank, colored or with legends.
@@ -125,6 +127,10 @@ Both of these keycaps are PBT and are slightly textured.
 Adding a few [colored keycaps](https://holykeebs.com/products/mbk-dyed-low-profile-keycaps) is a great way to make your keyboard unique!
 :::
 
+### MX Switches
+
+We carry several keycap options for MX switches, listed from highest profile to lowest: XDA, DSA, JWA and Tai-Hao Thins.
+
 ### LEDs
 
 Adds per-key and underglow RGB LEDs to your keyboard.
@@ -132,7 +138,7 @@ Adds per-key and underglow RGB LEDs to your keyboard.
 You can get the LEDs soldered or unsoldered. There's an additional build charge on top of the build service cost for soldering LEDs due to the amount of extra work required.
 
 ::: info
-Not all keyboards have this option.
+Not all keyboards have this option. It's not possible to ask for LEDs to be soldered without getting the rest of the keyboard soldered.
 :::
 
 ## OLED
