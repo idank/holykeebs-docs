@@ -34,6 +34,12 @@ This can be a customs issue, port issues, parcel / postal system overload, and m
 
 If your shipping method wasn't FedEx, your package is delivered using the destination country's local postal service. Use the tracking number in your post office systems to get detailed information on its whereabouts.
 
+## Taxes and Duties
+
+Import duties, taxes, and other fees are the responsibility of the customer and are not included. Your local carrier or customs office will notify you upon receiving the shipment if any payment is required.
+
+If you have any questions about how your package was declared, please reach out.
+
 ## Warranty and Support
 
 Whether you order a kit or use the build service, we do our best to test everything before shipping. If you discover an issue after unboxing, please reach out and we'll sort it out. For general firmware questions, please use the help-firmware discord channel. Other warranty and support services aren't provided.
