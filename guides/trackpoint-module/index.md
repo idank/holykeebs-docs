@@ -30,7 +30,7 @@ In addition to a soldering iron, an H1.3 M2 driver will be needed to install an 
 
 The module comes with the following parts:
 
-- Sprintek SK8707-01 driver and sensor PCBs
+- Sprintek SK8707-01 driver and sensor PCBs ([datasheet](https://cdn.shopify.com/s/files/1/0689/0812/2402/files/DS0048_SK8707-01_Compact_Pointing_Stick_Module_Datasheet.pdf?v=1726991386))
 - adapter PCB
 - red rubber cap
 - socket + header set
