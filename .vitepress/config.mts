@@ -26,9 +26,14 @@ export default defineConfig({
         text: 'Guides',
         items: [
           { text: 'Buyer\'s Guide', link: '/guides/buyers-guide/' },
-          { text: 'Keyboard', link: '/guides/keyboard/' },
-          { text: 'Keyball', link: '/guides/keyboard/keyball/' },
-          { text: 'Killer Whale', link: '/guides/keyboard/killer-whale/' },
+          {
+            text: 'Keyboards',
+            items: [
+              { text: 'General', link: '/guides/keyboard/' },
+              { text: 'Keyball', link: '/guides/keyboard/keyball/' },
+              { text: 'Killer Whale', link: '/guides/keyboard/killer-whale/' },
+            ]
+          },
           {
             text: 'Modules',
             items: [

@@ -66,7 +66,10 @@ The colorway lets you choose the colors of the various plates and mechanical par
 
 <Images :paths="[switchplatepcb, switchplateacrylic]" />
 
-- **Side Plates**: plates that cover the hardware in the side units. Comes in various acrylic colors.
+- **Side Plates**: plates that cover the hardware and OLEDs in the side units. Comes in various acrylic colors.
+
+![side-plates](./side-plates.jpg)
+
 - **Bottom Plates**: plates that cover the under side of the keyboard. Comes in various acrylic colors.
 
 ::: info
@@ -75,9 +78,9 @@ To fully customize the colors of this option, choose the Custom colorway and add
 
 ### Side Units
 
-<Images :paths="[sidetrackball, sidejoystick, sidedpad]" />
-
 Each half of the keyboard supports one of 3 side units:
+
+<Images :paths="[sidetrackball, sidejoystick, sidedpad]" />
 
 - A 34mm trackball using the high resolution PMW3360 sensor.
 - An analog joystick that can function as a mouse or for gaming.
@@ -91,7 +94,7 @@ To fully customize the colors of this option, choose the Custom colorway and add
 
 ### OLED
 
-A small 128x32 OLED display that sits on the side units. These displays come preprogrammed to display keyboard information such as current layer, todo
+A small 128x32 OLED display that sits on the side units. These displays come preprogrammed to display keyboard information such as current layer, mouse mode, etc.
 
 ## Build Guide
 
@@ -118,9 +121,9 @@ In order to position the TOP and SIDE units (and trackball), the keyboard uses a
 
 ### BASE
 
-The base unit is brains of the keyboard with Pi Pico controller and where all the sections connect to.
+The base unit is brains of the keyboard with Pi Pico controller and where all the sections connect to. The picos arrive with precut 20P headers.
 
-If soldering LEDs, only a diode is required here:
+If soldering LEDs, only a diode is required in the area labeled LED on the PCB.
 
 Continue by following the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/2_BASE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/2_BASE.md)).
 
@@ -130,11 +133,7 @@ Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/bl
 
 The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
 
-When assembling the trackball posts, if your kit came with printed ones, thread a washer and a bearing into a 10mm M2 screw and position like so:
-
-Secure the other side with a washer, spring washer and a nut:
-
-Repeat 2 more times.
+When assembling the trackball posts, if your kit came with printed ones, the build is a bit simpler and only requires threading a washer and a bearing into a 10mm M2 screw, secure the other side with a washer, spring washer and a nut. Repeat 2 more times.
 
 Place a square nut in each post, centering its hole with the screw hole, and position them on the PCB with an M3 screw.
 
@@ -155,6 +154,8 @@ The pin headers are inserted on the bottom side of the PCB (where everything was
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/4_TOP.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/4_TOP.md)), and take note of these things:
 
 The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
+
+If you chose acrylic switch plates, you'll find M3 screws with a flatter head than the rest of the M3 screws in the kit. Use these for fixturing the PCB to the pillars.
 
 ### ADD Unit
 
