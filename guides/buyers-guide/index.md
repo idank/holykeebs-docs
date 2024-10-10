@@ -27,6 +27,8 @@ We cover all options here. If a product you're looking at is missing something t
 
 ## Build Service
 
+At holykeebs, we offer kit, soldered, or fully assembled build services. Whether you're a DIYer at heart, or just want a keyboard to plug in - we have you covered.
+
 This option gives you a choice of:
 
 1. Getting all parts required to build a keyboard, you have to solder and assemble it.
