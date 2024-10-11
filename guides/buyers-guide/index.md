@@ -185,20 +185,6 @@ Covers can be mounted on trackpoints and OLEDs for a better look / protection. A
 
 ![covers](./covers.jpg)
 
-## Keyball
-
-Most of the guide above applies to Keyball lineup of keyboards as well, it stands out in a few ways described below.
-
-First, it's worth noting that our Keyball differ from the one sold by Yushakobo / Shirogane Lab. In terms of cosmetics, we use black PCBs, different thickness acrylic plates and different M2 screws. Additionally, we use Sea-Picro. The rest is identical.
-
-### 34mm Trackball
-
-Keyball uses a 34mm trackball that's not included in your purchase. There are many color options to choose from, and the ones made by [Perixx are a popular choice](https://www.amazon.com/Perixx-PERIPRO-303-GLG-Trackball-Compatible/dp/B07BDHK2MR).
-
-### Thumb Cluster
-
-Keyball has a unique thumb cluster that allows either Kailh's choc low profile or MX switches. If you're building the keyboard yourself and you're not sure which one, add a pack of low profile hotswap sockets to your order to have both options.
-
 ## More
 
 Still have questions? Visit our [discord](https://discord.com/invite/Hd6X7yd5xF) or [contact us](https://holykeebs.com/pages/contact).
