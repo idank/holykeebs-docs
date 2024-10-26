@@ -106,6 +106,19 @@ Breaking this down:
 1. `-e OLED=yes` enables the OLED.
 1. `-j8` parallizes the build process.
 
+::: info
+If the make command fails with `gcc: error: unrecognized command-line option ‘-mthumb’`, you can try this alternative command:
+```shell
+qmk flash \
+    -e USER_NAME=idank \
+    -e POINTING_DEVICE=trackball \
+    -e POINTING_DEVICE_POSITION=right \
+    -e TRACKBALL_RGB_RAINBOW=yes \
+    -e OLED=yes -j8 \
+    -kb crkbd/rev1 -km via
+```
+:::
+
 ### Flashing
 
 Run the command you built in the previous step, with `:flash` after the keymap name to also flash after building.
