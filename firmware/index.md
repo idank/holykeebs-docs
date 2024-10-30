@@ -106,7 +106,7 @@ Breaking this down:
 1. `-e OLED=yes` enables the OLED.
 1. `-j8` parallizes the build process.
 
-::: info
+::: Details gcc error
 If the make command fails with `gcc: error: unrecognized command-line option ‘-mthumb’`, you can try this alternative command:
 ```shell
 qmk flash \
