@@ -37,6 +37,10 @@ If an entire row or column is unresponsive, one of the controller pins is not fu
 1. Look at the controller sockets from under the PCB. Check they are all fully soldered.
 1. Do the same for the top side of the controller.
 
+## OS Doesn't Recognize Keyboard
+
+If your keyboard isn't connected directly to the computer, be it a KVM, USB hub, some form of virtualization, it could be the cause. Try to connect it directly.
+
 ## Split Side Is Not Working
 
 If the keyboard is connected with the main side responding, while the peripheral side isn't, it's possible one of the controllers is faulty. The most common cause is hot-plugging the TRRS cable (i.e. connecting/disconnecting it while the the keyboard is powered), which can cause shorts at the controller GPIO pins (we specifically call this out when you open packages from us).

@@ -119,13 +119,36 @@ Additionally, we have moved all components to be soldered on one side of the PCB
 In order to position the TOP and SIDE units (and trackball), the keyboard uses a clever support structure design (also called posts or pillars). There are two variants:
 
 - acrylic: these are built using 2mm plates that are spaced out using 3mm standoffs, combined to a thickness of 7mm. Assembling the acrylic posts is rather time consuming and repetitve as it involves many screws, nuts, washers and spacers.
+
+::: info
+The black acrylic posts come one matte, one side glossy. You may choose which side you want facing in / out when assembling BASE.
+:::
+
 - printed: these side step the lengthy build time of the acrylic posts by using far less hardware, only requiring the square nuts.
+
+::: info
+The printed posts are made on a textured surface, so you'll notice one side is textured and smooth. You may choose which side you want facing in / out when assembling BASE.
+:::
+
+### Switch Plates
+
+If you do not have acrylic switch plates, you may skip.
+
+Acrylic switch plates are laser cut, and due to the nature of the laser cutting process, the size of a hole will differ on its top side and bottom side, and there might be some variance in how tight or loose the switches are held in the holes.
+
+Your plates will arrive with one side having no protective film, and one side having one. First try pushing the switches from the side with no film. If you encounter too little or too much resistance, try pushing from the other side. Regardless, the switches will be secure once pushed into the hotswap sockets.
+
+::: warning
+Acrylic can be fragile in thin areas, support those areas when pushing the switches in.
+:::
 
 ### BASE
 
-The base unit is brains of the keyboard with Pi Pico controller and where all the sections connect to. The picos arrive with precut 20P headers.
+The base unit is brains of the keyboard, has the Pi Pico controller and where all the sections connect to. The picos arrive with precut 20P headers and sockets. It's recommended to use the sockets, but not mandatory.
 
 If soldering LEDs, only a diode is required in the area labeled LED on the PCB.
+
+If your kit came with printed posts, assembly is simpler: place a square nut in each post, centering its hole with the screw hole.
 
 Continue by following the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/2_BASE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/2_BASE.md)).
 
@@ -134,6 +157,8 @@ Continue by following the official guide ([left](https://github.com/Taro-Hayashi
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/3_SIDE_TRACKBALL.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/3_SIDE_TRACKBALL.md)), and take note of these things:
 
 The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
+
+As mentioned before, you'll see SMD components in your trackball bag - solder them similarly to what's explained in the official guide.
 
 When assembling the trackball posts, if your kit came with printed ones, the build is a bit simpler and only requires threading a washer and a bearing into a 10mm M2 screw, secure the other side with a washer, spring washer and a nut. Repeat 2 more times.
 
@@ -158,6 +183,12 @@ Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/bl
 The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
 
 If you chose acrylic switch plates, you'll find M3 screws with a flatter head than the rest of the M3 screws in the kit. Use these for fixturing the PCB to the pillars.
+
+When pushing switches into the switch plate, insert a couple around the edges and then push it gently into the PCB. You should have a gap between the switch plate and the PCB. Once the two are fixed together, start adding more switches, while maintaining the gap.
+
+::: warning
+When pushing switches into the sockets, don't use brute force as it may damage the PCB. If you encounter unusual resistance, check for bent pins on the switch, or whether the switch orientation is correct, or other things that may look wrong.
+:::
 
 ### ADD Unit
 

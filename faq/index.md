@@ -91,7 +91,7 @@ Yes, see [SPLIT_POINTING_ENABLE](https://docs.qmk.fm/#/feature_pointing_device?i
 
 ### Dual Pointing Devices
 
-It is possible to use both a 2x trackballs or a trackball + trackpoint. Two trackpoints are currently not possible due to lack of support in QMK.
+All combinations are possible except for two trackpoints due to lack of support in QMK.
 
 ### Remapping Keys
 
