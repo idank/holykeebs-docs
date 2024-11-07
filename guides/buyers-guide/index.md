@@ -179,6 +179,8 @@ We carry a variety of colors for laser cut acrylic plates or 3d printed cases. O
 
 ![printed-colors](./printed-colors.jpg)
 
+The list of colors changes over time. You may use [this service](https://filamentcolors.xyz/) to look up a particular color, but actual color may differ from photos.
+
 ## Covers
 
 Covers can be mounted on trackpoints and OLEDs for a better look / protection. All of our covers are laser cut acrylic in glossy, matte or translucent colors.
