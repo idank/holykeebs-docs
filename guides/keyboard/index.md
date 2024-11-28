@@ -342,6 +342,6 @@ Other guides:
 
 - [@KyekOfficial on YouTube](https://www.youtube.com/@KyekOfficial/videos).
 - [splitkb](https://docs.splitkb.com/hc/en-us/categories/360002241559-Build-Guides).
-- [typeractive](https://docs.typeractive.xyz/).
+- [TOTEM build guide](https://github.com/GEIGEIGEIST/TOTEM/blob/main/docs/buildguide.md).
 
 Lastly, please feel free to improve this guide to help those that follow you (by clicking `Edit this page` below).
