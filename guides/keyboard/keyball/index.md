@@ -32,4 +32,35 @@ Please refer to the canonical Keyball guide below:
 
 For build help that's not specific to Keyball, you're welcome to visit the [Keyboard guide](../index.md) in these docs.
 
-Come back to the [Firmware guide](../../../firmware/index.md) when you're ready to flash.
+## Firmware Features
+
+::: danger
+Keyball firmware is **not** compatible with VIA or Vial.
+:::
+
+Keyball comes with a custom keycodes that provides access to advanced features without needing to compile your own firmware. These features are accessible through the following *Special Keycodes* that can be assigned when using [Remap](https://remap-keys.app):
+
+| Keycode    | Value on Remap  | Hex      | Description                                                       |
+|:-----------|:----------------|:---------|:------------------------------------------------------------------|
+| `KBC_RST`  | `Kb 0`          | `0x7e00` | Reset Keyball configuration                                       |
+| `KBC_SAVE` | `Kb 1`          | `0x7e01` | Save Keyball configuration to memory (EEPROM)                     |
+| `CPI_I100` | `Kb 2`          | `0x7e02` | Increase pointer speed by 100 CPI (max 12000)                     |
+| `CPI_D100` | `Kb 3`          | `0x7e03` | Decrease pointer speed by 100 CPI (min 100)                       |
+| `CPI_I1K`  | `Kb 4`          | `0x7e04` | Increase pointer speed by 1000 CPI (max 12000)                    |
+| `CPI_D1K`  | `Kb 5`          | `0x7e05` | Decrease pointer speed by 1000 CPI (min 100)                      |
+| `SCRL_TO`  | `Kb 6`          | `0x7e06` | Toggle scroll mode                                                |
+| `SCRL_MO`  | `Kb 7`          | `0x7e07` | Enable scroll mode (while held)                                   |
+| `SCRL_DVI` | `Kb 8`          | `0x7e08` | Decrease scroll speed (max D7 = 1/128)                            |
+| `SCRL_DVD` | `Kb 9`          | `0x7e09` | Increase scroll speed (min D0 = 1/1)                              |
+| `AML_TO`   | `Kb 10`         | `0x7e0a` | Toggle automatic mouse layer                                      |
+| `AML_I50`  | `Kb 11`         | `0x7e0b` | Increase automatic mouse layer timeout by 50ms (max 1000ms)       |
+| `AML_D50`  | `Kb 12`         | `0x7e0c` | Decrease automatic mouse layer timeout by 50ms (min 100ms)        |
+| `SSNP_VRT` | `Kb 13`         | `0x7e0d` | Lock scroll direction to vertical only                            |
+| `SSNP_HOR` | `Kb 14`         | `0x7e0e` | Lock scroll direction to horizontal only                          |
+| `SSNP_FRE` | `Kb 15`         | `0x7e0f` | Disable scroll direction lock (free scroll)                       |
+
+If you wish to have your current configuration persist across reboots, use the `KBC_SAVE` keycode to save it to memory. Please note that each half of the Keyball has separate memory, so if you wish to have same behavior regardless of which half is plugged in, you will need to repeat the configuration for each half.
+
+## Building Your Own Firmware
+
+Please see the [Firmware guide](../../../firmware/index.md).
