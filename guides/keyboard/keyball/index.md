@@ -32,13 +32,13 @@ Please refer to the canonical Keyball guide below:
 
 For build help that's not specific to Keyball, you're welcome to visit the [Keyboard guide](../index.md) in these docs.
 
-## Firmware Features
+## Firmware
 
-::: danger
-Keyball firmware is **not** compatible with VIA or Vial.
+::: info
+Keyball firmware is **not** compatible with VIA or Vial. Use [Remap](https://remap-keys.app).
 :::
 
-Keyball comes with a custom keycodes that provides access to advanced features without needing to compile your own firmware. These features are accessible through the following *Special Keycodes* that can be assigned when using [Remap](https://remap-keys.app):
+Keyball comes with custom keycodes that provide access to Keyball features without needing to compile your own firmware. These features are accessible through the following *Special Keycodes* that can be assigned when using [Remap](https://remap-keys.app):
 
 | Keycode    | Value on Remap  | Hex      | Description                                                       |
 |:-----------|:----------------|:---------|:------------------------------------------------------------------|
