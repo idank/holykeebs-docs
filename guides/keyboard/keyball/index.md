@@ -30,13 +30,29 @@ Please refer to the canonical Keyball guide below:
 - [Keyball44](https://github.com/Yowkees/keyball/blob/main/keyball44/doc/rev1/buildguide_en.md)
 - [Keyball61](https://github.com/Yowkees/keyball/blob/main/keyball61/doc/rev1/buildguide_en.md)
 
+Come back to this page when you're at the firmware step, as it differs from the guide above.
+
 For build help that's not specific to Keyball, you're welcome to visit the [Keyboard guide](../index.md) in these docs.
 
 ## Firmware
 
-::: info
-Keyball firmware is **not** compatible with VIA or Vial. Use [Remap](https://remap-keys.app).
+Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers is available in this holykeebs [repository](https://github.com/idank/qmk_firmware/tree/holykeebs-master/keyboards/keyball).
+
+::: danger
+Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
 :::
+
+If you'd like to compile your own firmware, see the [Firmware](../../../firmware/index.md) page on setting up the environment.
+
+Once you have your own clone, while on the `holykeebs-master` branch, flash both sides using (adjust the name to the Keyball you have):
+
+```shell
+make keyball/keyball44:via:flash -j8
+```
+
+USB cable can be connected to either side of the keyboard. If your trackball doesn't work, try switching the cable to the side with the trackball.
+
+## Custom Keycodes
 
 Keyball comes with custom keycodes that provide access to Keyball features without needing to compile your own firmware. These features are accessible through the following *Special Keycodes* that can be assigned when using [Remap](https://remap-keys.app):
 

@@ -22,17 +22,20 @@ Yes, if you don't see your country in the shipping page, please contact us.
 
 ### What shipping methods are available?
 
-We ship to most destinations using FedEx and the post office (this option is called Economy Post), both have tracking. In some remote countries, the post office doesn't have tracking and will only indicate the package has been sent (this option is called Registered Air Mail).
+Economy methods:
 
-Transit times for FedEx is usually around 5 days, and the post office average is between 10 to 15 days.
+- To the US: items are sent to a fulfillment center in the east coast and then dispatched using USPS.
+- Rest of the world: items are sent to a fulfillment center in Belgium and then dispatched using Landmark Global. This method uses post office services for the last leg of the delivery.
 
-If you choose an untracked shipping option, please be aware that shipping times can highly vary. If you're not willing to wait beyond 30 days, which can happen, please use FedEx.
+Express shipping is available using FedEx.
+
+Transit time for economy shipping is around 10-15 days on average, while FedEx is around 5-10 days.
 
 ### My order's tracking has not been updating!
 
 This can be a customs issue, port issues, parcel / postal system overload, and many more reasons we cannot influence. Please reach out after you have not seen an about for at least a week.
 
-If your shipping method wasn't FedEx, your package is delivered using the destination country's local postal service. Use the tracking number in your post office systems to get detailed information on its whereabouts.
+Economy shipping options are delivered on the last leg using the destination country's postal service. The tracking number should show up in your local post office systems and will often have more detailed information (only works once the package arrived at the destination).
 
 ## Taxes and Duties
 
@@ -58,7 +61,9 @@ Contact me within: 14 days of delivery.
 
 Ship items back within: 30 days of delivery.
 
-Buyers are responsible for return shipping costs. If the item is not returned in its original condition, the buyer is responsible for any loss in value.
+- Buyers are responsible for return shipping costs, which must have tracking.
+- If the item is not returned in its original condition, the buyer is responsible for any loss in value.
+- If your order was sent to you using free shipping, $15 will be deducted from your refund.
 
 ::: danger NOTICE
 Returns on keyboards that were not bought with hotswap sockets are not possible.

@@ -34,6 +34,10 @@ Flashing is done by pressing the reset button for ~1 second and copying the uf2 
 
 The [commands.txt](https://github.com/idank/qmk_firmware/releases/download/holykeebs-master-latest/commands.txt) has a list of file name to the make command that produced it and can be used as a reference.
 
+::: danger
+Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
+:::
+
 ## Compiling
 
 Since many of our keyboards share common features such as OLED / Pointing Devices, these are supported via the [Userspace feature](https://docs.qmk.fm/#/feature_userspace): this allows the logic to be separated from a specific keyboard / keymap. See the files in [`users/idank`](https://github.com/idank/qmk_firmware/tree/holykeebs-master/users/idank).
@@ -51,7 +55,7 @@ $ cd qmk_firmware
 The basic structure of the build and flash command is:
 
 ```shell
-make <keyboard>:<keymap>[:flash] [-e feature1=value1]...
+make <keyboard>:via[:flash] -e USER_NAME=idank [-e feature1=value1]...
 ```
 
 The value for `<keyboard>` should match the keyboard you are flashing for:
@@ -66,8 +70,6 @@ The value for `<keyboard>` should match the keyboard you are flashing for:
 | Keyball39 | keyball/keyball39 |
 | Keyball44 | keyball/keyball44 |
 | Keyball61 | keyball/keyball61 |
-
-The `<keymap>` can be either `default` or `via` (enables VIA support).
 
 ::: info
 For Keyball, please see the [dedicated section](#keyball) as the options below don't apply.
