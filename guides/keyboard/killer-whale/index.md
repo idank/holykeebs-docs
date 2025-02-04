@@ -30,7 +30,7 @@ In addition to these functional features, Killer Whale offers a unique look with
 
 <Images :paths="[frontview, sideview]" />
 
-Killer Whale is also sold on Yushakobo, a popular Japanese marketplace. The version brought by holykeebs brings a few "quality of life" improvements that make the build easier, without sacrificing the tenets that make this keyboard awesome.
+Killer Whale is also sold on Yushakobo, a popular Japanese marketplace. The version brought by holykeebs brings a few "quality of life" improvements that make the build easier (detailed below), without sacrificing the tenets that make this keyboard awesome.
 
 ## Buyer's Guide
 
@@ -108,11 +108,9 @@ The keyboard can be thought of as having 3 sections (per half), illustrated belo
 
 ![sections](./sections.jpg)
 
-The TOP, SIDE and ADD sections all connect to the BASE, which is the black PCB sitting on the table. As these sections are all positioned at an angle relative to BASE, there are connection points between them with sockets and headers. An added benefit is that the SIDE units can moved around to your liking, or removed altogether for a bare bones, switches only keyboard.
+The TOP, SIDE and ADD sections all connect to the BASE, which is the black PCB sitting on the table. As these sections are all positioned at an angle relative to BASE, there are connection points between them. An added benefit is that the SIDE units can moved around to your liking, or removed altogether for a bare bones, switches only keyboard.
 
-One thing you'll notice when going over the Killer Whale guide is that we've provided a PCB where components are all SMD mounted (diodes, resistors, capacitors, etc.) instead of being through-hole. We believe this makes the build easier, while also making it hot plate/reflow oven friendly, aligning it with the rest of our keyboards.
-
-Additionally, we have moved all components to be soldered on one side of the PCBs.
+One thing you'll notice when going over the Killer Whale guide is that we've provided a PCB where components are all SMD mounted (diodes, resistors, capacitors) instead of being through-hole. Also, sockets and headers, used to connect the different PCBs, have been changed to use flexible cables. We believe this makes the build easier and much less time consuming, while also making it hot plate/reflow oven friendly, aligning it with the rest of our keyboards.
 
 ### Support Pillars
 
