@@ -1,3 +1,6 @@
+---
+outline: [2, 4]
+---
 <script setup>
 import Images from '../../../components/Images.vue';
 
@@ -10,6 +13,17 @@ import sidejoystick from './side-joystick.jpg';
 
 import switchplatepcb from './switch plates pcb.jpg';
 import switchplateacrylic from './switch plates acrylic.jpg';
+
+import trackballmount1 from './trackballmount1.png';
+import trackballmount2 from './trackballmount2.png';
+
+import connectingcables1 from './connecting-cables-1.png';
+import connectingcables2 from './connecting-cables-2.png';
+import connectingcables3 from './connecting-cables-3.png';
+import connectingcables4 from './connecting-cables-4.png';
+
+import joystick1 from './joystick-1.png';
+import joystick2 from './joystick-2.png';
 </script>
 
 # Killer Whale
@@ -45,6 +59,10 @@ Killer Whale is comprised of 3 distinct sections (per half):
 With these extra parts, the keyboard uses more components and fasteners compared to a "regular" DIY split keyboard like a Corne or a Lily58.
 
 If this is your first keyboard, the general purpose Build Guide is a recommended read, even though some of the options are not relevant to Killer Whale.
+
+### 34mm Trackball
+
+If you've chosen the trackball side unit, you'll need a 34mm trackball, which is not included in your purchase. There are many color options to choose from, and the ones made by [Perixx](https://www.amazon.com/Perixx-PERIPRO-303-GLG-Trackball-Compatible/dp/B07BDHK2MR) are a popular choice.
 
 ### Build Service
 
@@ -102,37 +120,76 @@ The build is covered in the official Killer Whale github repository: https://git
 
 Covered here are some general tips and commentary on the build, with specific instructions on parts we've changed to improve the build process.
 
+::: info
+
+If you purchased a soldered version, much of the guide below can be skipped. It's still recommended to go through it to gain
+an understanding how the keyboard comes together given its uniqueness.
+
+Before doing the final assembly, it's recommended to do an operation check by connecting the PCBs together and seeing everything works correctly.
+
+:::
+
 ### Introduction
 
 The keyboard can be thought of as having 3 sections (per half), illustrated below:
 
 ![sections](./sections.jpg)
 
-The TOP, SIDE and ADD sections all connect to the BASE, which is the black PCB sitting on the table. As these sections are all positioned at an angle relative to BASE, there are connection points between them. An added benefit is that the SIDE units can moved around to your liking, or removed altogether for a bare bones, switches only keyboard.
+The TOP, SIDE and ADD sections all connect to the BASE, which is the black PCB sitting on the table. As these sections are all positioned at an angle relative to BASE, there are connection points between them. An added benefit is that the SIDE units can be moved between the left and right sides to your liking.
 
-One thing you'll notice when going over the Killer Whale guide is that we've provided a PCB where components are all SMD mounted (diodes, resistors, capacitors) instead of being through-hole. Also, sockets and headers, used to connect the different PCBs, have been changed to use flexible cables. We believe this makes the build easier and much less time consuming, while also making it hot plate/reflow oven friendly, aligning it with the rest of our keyboards.
+One thing you'll notice when going over the Killer Whale guide is that we've made a few changes to the official kit, these are detailed below.
 
-### Support Pillars
+We believe this makes the build easier and much less time consuming. Please read through the information below and use it alongside the official guide to build your keyboard.
+
+#### SMD Components
+
+The PCBs now use SMD components where possible: diodes, resistors, capacitors, etc. These are used the same way as the equivalent through-hole components.
+
+The DIP switches can be soldered in either direction, but it's nice to have them all aligned the same. Shown below, the 2nd from the left is active.
+
+![dip-switch](dip-switch.png)
+
+#### FFC Connectors
+
+The connectors are used to connect the TOP and SIDE PCBs to BASE. You'll find two types: vertical (for BASE-SIDE) and horizontal (for BASE-TOP). Each pairing uses a 60mm reverse side FFC cable.
+
+Soldering the connectors is straight forward: align with the pads on the PCB, and align the vertical one such that the contacts side is on the same side as the black dot on the PCB.
+
+![vertical-ffc-connector](vertical-ffc-connector.png)
+
+::: warning
+
+Both connectors are prone to bridging, so watch out for those (use your phone camera zoom) and fix as needed.
+
+Here's an example of a subtle short in a vertical connector:
+
+![vertical-connector-short](vertical-connector-short.png)
+
+:::
+
+The connectors should be opened in order to insert the cables. The vertical one opens by lifting the sides:
+
+![vertical-ffc-connector-open](vertical-ffc-connector-open.png)
+
+Connect the units together as shown below:
+
+<Images :paths="[connectingcables1, connectingcables2, connectingcables3, connectingcables4]" />
+
+#### Support Pillars
 
 In order to position the TOP and SIDE units (and trackball), the keyboard uses a clever support structure design (also called posts or pillars). There are two variants:
 
-- acrylic: these are built using 2mm plates that are spaced out using 3mm standoffs, combined to a thickness of 7mm. Assembling the acrylic posts is rather time consuming and repetitve as it involves many screws, nuts, washers and spacers.
+- acrylic: these are built using 2mm plates that are spaced out using 3mm standoffs, combined to a thickness of 7mm. Assembling the acrylic posts is rather time consuming and repetitve as it involves many screws, nuts, washers and spacers. The black acrylic posts come one matte, one side glossy. You may choose which side you want facing in / out.
 
-::: info
-The black acrylic posts come one matte, one side glossy. You may choose which side you want facing in / out when assembling BASE.
-:::
+- printed: these don't have a lengthy assembly time like the acrylic posts, only requiring the square nuts. The printed posts are made on a textured surface, so you'll notice one side is textured and smooth. You may choose which side you want facing in / out.
 
-- printed: these side step the lengthy build time of the acrylic posts by using far less hardware, only requiring the square nuts.
+The official build guide uses the acrylic posts exclusively, but they're both mounted the same way on the PCBs.
 
-::: info
-The printed posts are made on a textured surface, so you'll notice one side is textured and smooth. You may choose which side you want facing in / out when assembling BASE.
-:::
-
-### Switch Plates
+#### Switch Plates
 
 If you do not have acrylic switch plates, you may skip.
 
-Acrylic switch plates are laser cut, and due to the nature of the laser cutting process, the size of a hole will differ on its top side and bottom side, and there might be some variance in how tight or loose the switches are held in the holes.
+Acrylic switch plates are laser cut, and due to the nature of the laser cutting process, the size of a hole will differ on its top and bottom sides, and there might be some variance in how tight or loose the switches are held in the holes.
 
 Your plates will arrive with one side having no protective film, and one side having one. First try pushing the switches from the side with no film. If you encounter too little or too much resistance, try pushing from the other side. Regardless, the switches will be secure once pushed into the hotswap sockets.
 
@@ -140,11 +197,37 @@ Your plates will arrive with one side having no protective film, and one side ha
 Acrylic can be fragile in thin areas, support those areas when pushing the switches in.
 :::
 
+The side unit switch plates have an orientation and should be used like so (with the no film side on top):
+
+![side-switch-plates](./side-switch-plates.png)
+
+#### OLED Cover
+
+The OLED cover for the joystick and d-pad sides is now part of the main acrylic piece, rather than being separate.
+
+![oled-covers](oled-covers.png)
+
+#### Trackball Mount
+
+The trackball holder has been updated to a more robust design that holds the ball better.
+
+![trackball-holder](trackball-holder.png)
+
 ### BASE
 
 The base unit is brains of the keyboard, has the Pi Pico controller and where all the sections connect to. The picos arrive with precut 20P headers and sockets. It's recommended to use the sockets, but not mandatory.
 
+::: warning
+The headers don't push in all the way into the sockets. This is as far as they'll go:
+
+![controller-sockets](./controller-sockets.jpg)
+
+Pushing the headers into the sockets takes a bit of force due to their length and tight tolerances.
+:::
+
 If soldering LEDs, only a diode is required in the area labeled LED on the PCB.
+
+Solder the [FFC connectors](#ffc-connectors). Do this before soldering the controller!
 
 If your kit came with printed posts, assembly is simpler: place a square nut in each post, centering its hole with the screw hole.
 
@@ -154,31 +237,43 @@ Continue by following the official guide ([left](https://github.com/Taro-Hayashi
 
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/3_SIDE_TRACKBALL.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/3_SIDE_TRACKBALL.md)), and take note of these things:
 
-The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
+As mentioned before, you'll see SMD components in the trackball bag - solder them similarly to what's explained in the official guide.
 
-As mentioned before, you'll see SMD components in your trackball bag - solder them similarly to what's explained in the official guide.
+Solder the vertical [FFC connector](#ffc-connectors).
 
-When assembling the trackball posts, if your kit came with printed ones, the build is a bit simpler and only requires threading a washer and a bearing into a 10mm M2 screw, secure the other side with a washer, spring washer and a nut. Repeat 2 more times.
+The trackball holder has been updated to a more robust design that holds the ball better. Screw the 3 bearings with M2x10mm screws:
 
-Place a square nut in each post, centering its hole with the screw hole, and position them on the PCB with an M3 screw.
+<Images :paths="[trackballmount1, trackballmount2]" />
+
+Mount the holder onto the PCB (notice the orientation, it matters) with M3 screws and square nuts. The holder cover goes **on top** of the switch plate.
+
+![trackballmounted](trackballmounted.png)
 
 ### SIDE: D-Pad
 
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/3_SIDE_DPAD.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/3_SIDE_DPAD.md)), and take note of these things:
 
-The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
+As mentioned before, you'll see SMD components in the d-pad bag - solder them similarly to what's explained in the official guide.
+
+Solder the vertical [FFC connector](#ffc-connectors).
+
+![d-pad-cover](d-pad-cover.png)
 
 ### SIDE: Joystick
 
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/3_SIDE_JOYSTICK.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/3_SIDE_JOYSTICK.md)), and take note of these things:
 
-The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
+As mentioned before, you'll see SMD components in the d-pad bag - solder them similarly to what's explained in the official guide.
+
+Solder the vertical [FFC connector](#ffc-connectors).
+
+<Images :paths="[joystick1, joystick2]" />
 
 ### TOP Unit
 
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/4_TOP.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/4_TOP.md)), and take note of these things:
 
-The pin headers are inserted on the bottom side of the PCB (where everything was soldered), with the long side going through the PCB. It's best to cut the pins on that side to be flush with the PCB before soldering.
+Solder the horizontal [FFC connector](#ffc-connectors).
 
 If you chose acrylic switch plates, you'll find M3 screws with a flatter head than the rest of the M3 screws in the kit. Use these for fixturing the PCB to the pillars.
 
@@ -195,3 +290,7 @@ Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/bl
 ### Assembly
 
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/6_ASSEMBLE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/6_ASSEMBLE.md)).
+
+See [FFC connector](#ffc-connectors) on how to connect the cables.
+
+![assembled](assembled.jpg)
