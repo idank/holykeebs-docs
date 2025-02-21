@@ -10,7 +10,7 @@ The trackball sits in an injected molded housing with 3 ceramic bearings. The ba
 
 Most of the general purpose [Buyer's Guide](../../buyers-guide/index.md) applies to Keyball lineup of keyboards as well, it stands out in a few ways described below.
 
-First, it's worth noting that our Keyball differ from the one sold by Yushakobo / Shirogane Lab. In terms of cosmetics, we use black PCBs, different thickness acrylic plates and different M2 screws. Additionally, we use Sea-Picro. The rest is identical.
+First, it's worth noting that our Keyball differ from the one sold by Yushakobo / Shirogane Lab. In terms of cosmetics, we use black PCBs, different thickness acrylic plates and different M2 screws. Additionally, we use RP2040 controllers with ample storage so firmware size is not an issue. The rest is identical.
 
 ### 34mm Trackball
 

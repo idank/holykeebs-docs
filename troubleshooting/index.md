@@ -76,3 +76,9 @@ Flash both sides and try again.
 ## Trackball Is Skipping
 
 This happens on split keyboards when only the master side is connected. Unpower it, connect the halves, and try again.
+
+## Reset Button Doesn't Go Into Bootloader
+
+In VIA (or Remap), try binding a key to Reset (QK_BOOT keycode) and pressing it:
+
+![via-reset-button](via-reset-button.png)
