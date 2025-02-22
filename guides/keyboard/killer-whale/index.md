@@ -161,7 +161,7 @@ Soldering the connectors is straight forward: align with the pads on the PCB, an
 
 Both connectors are prone to bridging, so watch out for those (use your phone camera zoom) and fix as needed.
 
-Here's an example of a subtle short in a vertical connector:
+Here's an example of an easy to miss short in a vertical connector:
 
 ![vertical-connector-short](vertical-connector-short.png)
 
@@ -292,5 +292,14 @@ Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/bl
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/6_ASSEMBLE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/6_ASSEMBLE.md)).
 
 See [FFC connector](#ffc-connectors) on how to connect the cables.
+
+Since the PCBs are reversible, it can be a bit confusing to know if a PCB belongs to the left or right half of the keyboard. This table shows the label you should be seeing **on the top surface of a PCB** to know which side it goes on:
+
+|      | left                        | right                       |
+| ---- | --------------------------- | --------------------------- |
+| base | top left                    | top right                   |
+| top  | left side mounting surface  | right side mounting surface |
+| add  | back right                  | back left                   |
+| side | n/a (pcb is non reversible) | n/a (pcb is non reversible) |
 
 ![assembled](assembled.jpg)
