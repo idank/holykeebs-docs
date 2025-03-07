@@ -43,7 +43,7 @@ Soldered but unassembled keyboards are electrically tested to the extent possibl
 
 All of the keyboards we sell use a top mounted USB-C microcontroller, with split keyboards using one on each keyboard half.
 
-[Sea Picro](https://joshajohnson.com/sea-picro/) is an open source microcontroller which uses an RP2040 chip with lots of storage. RP2040 based controllers are becoming the standard for DIY keyboards and are thus favored over Pro Micro clones (which we no longer offer), that are comparatively low on storage.
+RP2040 based controllers are the standard for wired DIY keyboards and are thus favored over Pro Micro clones (which we no longer offer), that are low on storage.
 
 ## Sockets, Headers
 
@@ -52,7 +52,7 @@ Socketing the controllers is always a good idea because removing a faulty contro
 All of the keyboards we build come with socketed controllers. We currently have two options, the main difference is how much height each one adds to the "controller stack" (these two options aren't compatible with one another).
 
 1. Machine headers (PCB to controller height: 7.5mm): a strip of pins + 3mm plastic that match the machine sockets. These are cut from 40 pin strips.
-1. Custom low profile headers (PCB to controller height: 5mm): these are custom made sockets and headers, that are ideal for low profile keyboards with a pointing device, as the reduced height can be an improvement for finger movement.
+1. Custom low profile headers (PCB to controller height: 5mm): these are custom made sockets and headers, that are ideal for low profile keyboards with a pointing device, as the reduced height can be an improvement for finger movement. These are also less prone to bending, which is a common problem when removing the former from their sockets.
 
 ::: warning
 When choosing the headers for a pointing device module for an existing keyboard you own, make sure your sockets are compatible with the ones you pick (or use your own headers).
