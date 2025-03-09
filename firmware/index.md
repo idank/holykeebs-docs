@@ -30,7 +30,12 @@ Precompiled firmwares for all possible configurations are available [here](https
 - `crkbd_rev1_via_oled_trackball_left.uf2` is for a Corne, VIA, OLED and trackball on the left.
 - `idank_spankbd_via_trackball_trackpoint_left.uf2` is for a Span, trackball on the left, trackpoint on the right and should be flashed pn the left half (`idank_spankbd_via_trackball_trackpoint_right.uf2` should be flashed on the right).
 
-Flashing is done by pressing the reset button for ~1 second and copying the uf2 file to the removable drive named `RPI-RP2`. After copying, the drive should disappear and the firmware will have updated.
+To flash, we need to get into the bootloader and copy the firmware file into the USB drive called `RPI-RP2`. After copying, the drive should disappear and the firmware will have updated.
+
+Entering the bootloader:
+
+- On a Sea Picro, press the reset button for ~1 second.
+- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button.
 
 The [commands.txt](https://github.com/idank/qmk_firmware/releases/download/holykeebs-master-latest/commands.txt) has a list of file name to the make command that produced it and can be used as a reference.
 
@@ -152,7 +157,10 @@ Make note of the `Flashing for bootloader` line: if you're not seeing this at th
 
 Connect the controller to the computer. Sometimes it will go into bootloader if it hasn't been flashed before.
 
-If not, enter bootloader mode by holding the reset button for ~1 second.
+If not, enter bootloader manually:
+
+- On a Sea Picro, press the reset button for ~1 second.
+- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button.
 
 On split keyboards, repeat the flashing process for the other controller.
 

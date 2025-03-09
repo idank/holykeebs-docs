@@ -8,6 +8,8 @@ import driverpcbsoldered2 from './driver-pcb-soldered-2.jpg';
 import sensorpcb1 from './sensor-pcb-1.jpg';
 import sensorpcb2 from './sensor-pcb-2.jpg';
 import sensorpcb3 from './sensor-pcb-3.jpg';
+import sensorholes1 from './sensor-holes-1.jpg';
+import sensorholes2 from './sensor-holes-2.jpg';
 import washers from './washers.jpg';
 import washersideview from './washers-side-view.jpg';
 </script>
@@ -91,11 +93,17 @@ The two right most holes on the sensor are split, solder both to their correspon
 
 ### Step 6
 
+Mechanically secure the 4 mounting holes on the sensor to the adapter PCB. If your adapter PCB has pads under the holes, solder them. Otherwise, you may use a thick super glue:
+
+<Images :paths="[sensorholes1, sensorholes2]" />
+
+### Step 7
+
 We're now ready to work on the controller. Grab the headers that came with the trackpoint kit, one of which will have 8 of its pins cut short (this is done to make room for the driver which sits between the controller and adapter PCBs).
 
 ![headers](./headers.jpg)
 
-### Step 7
+### Step 8
 
 The headers should be put as follows:
 
@@ -109,7 +117,7 @@ Refer to the keyboard build guide for some tips if this is the first controller 
 
 ![controller-headers-soldered](./controller-headers-soldered.jpg)
 
-### Step 8
+### Step 9
 
 Position the adapter PCB on the soldered controller. Make sure it sits flush:
 
@@ -119,7 +127,7 @@ Not flush:
 
 ![db-not-straight](./db-not-straight.jpg)
 
-### Step 9
+### Step 10
 
 Solder the 4 highlighted pins on the adapter PCB. It's helpful to grab the PCB on the top and bottom sides so it stays straight when doing the first pin.
 
@@ -129,7 +137,7 @@ After this soldering it'll become extremely hard to separate the two PCBs. Pleas
 
 ![db-soldered](./db-soldered.jpg)
 
-### Step 10
+### Step 11
 
 Soldering done! 👏 Remove the protective film from the surface mounted nuts and cover. If you don't have one, skip the rest of this step.
 
@@ -139,7 +147,7 @@ Put a washer on each nut and screw the cover on. The washers support the cover d
 
 <Images :paths="[washers, washersideview]" />
 
-### Step 11
+### Step 12
 
 Put the rubber cap on, and you're done! Head over to [Firmware](/firmware/) to flash your controller with trackpoint support.
 
