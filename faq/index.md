@@ -24,7 +24,7 @@ Yes, if you don't see your country in the shipping page, please contact us.
 
 Economy methods:
 
-- To the US: items are sent to a fulfillment center in the east coast and then dispatched using USPS.
+- To the US: items are sent to a fulfillment center in the east coast and then dispatched using USPS or FedEx Ground.
 - Rest of the world: items are sent to a fulfillment center in Belgium and then dispatched using Landmark Global. This method uses post office services for the last leg of the delivery.
 
 Express shipping is available using FedEx.
@@ -33,7 +33,9 @@ Transit time for economy shipping is around 10-15 days on average, while FedEx i
 
 ### My order's tracking has not been updating!
 
-This can be a customs issue, port issues, parcel / postal system overload, and many more reasons we cannot influence. Please reach out after you have not seen an about for at least a week.
+Orders are sent to a distribution center then shipped to the final destination. The tracking information will not update until the package is scanned at the distribution center, which may take up to 7 days.
+
+In other cases, there could be a customs issue, port issues, parcel / postal system overload, and many more reasons we cannot influence. Please reach out after you have not seen an about for at least a week.
 
 Economy shipping options are delivered on the last leg using the destination country's postal service. The tracking number should show up in your local post office systems and will often have more detailed information (only works once the package arrived at the destination).
 
