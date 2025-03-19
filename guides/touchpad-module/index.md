@@ -1,122 +1,146 @@
 <script setup>
 import Images from '../../components/Images.vue';
 
-import shieldorientation1 from './shield-orientation-1.jpg';
-import shieldorientation2 from './shield-orientation-2.jpg';
+import covernotch from './cover-notch.jpg';
+import coverfastened from './cover-fastened.jpg';
 
-import mountscrewed1 from './mount-screwed-1.jpg';
-import mountscrewed2 from './mount-screwed-2.jpg';
-import mountscrewed3 from './mount-screwed-3.jpg';
+import touchpadincover1 from './touchpad-in-cover-1.jpg';
+import touchpadincover2 from './touchpad-in-cover-2.jpg';
+
+import coverontouchpad1 from './cover-on-touchpad-1.jpg';
+import coverontouchpad2 from './cover-on-touchpad-2.jpg';
+
 </script>
 
 # Touchpad Module
 
-The touchpad module consists of a small adapter PCB (shield) that sits on a top mounted controller, and creates the necessary connections to easily use the Cirque 35mm touchpad.
+The touchpad module consists of a small adapter PCB (shield) that sits on a top mounted controller, and creates the necessary connections to easily use an Azoteq TPS43 touchpad.
 
-![corne with touchpad](./result-top.jpg)
+The TPS43 is a 43x40mm touchpad, supporting multitouch and gestures.
+
+::: info
+
+This guide has been updated to a newer, more capable touchpad. For the previous 35/40mm round touchpads, go [here](../touchpad-module-cirque/index.md).
+
+:::
+
+![lily choc with touchpad](./result.jpg)
 
 ## Tools
 
 In addition to a soldering iron, you will need an H1.3 M2 hex key.
 
-## Controller
+## BOM
 
-See the [Controllers section](/guides/keyboard/#controllers) in the more general purpose keyboard build guide.
+|   | description                | qty |
+|---|----------------------------|-----|
+| 1 | RP2040 controller          | 1   |
+| 2 | Custom low profile sockets | 2   |
+| 3 | adapter PCB                | 1   |
+| 4 | M2x4mm screw, spring washer| 2   |
+| 5 | 1mm spacer                 | 1   |
+| 6 | TPS43-201A-B               | 1   |
+| 7 | 6-pin, 0.5 pitch FFC cable | 1   |
+| 8 | 3d printed mount           | 1   |
+| 9 | 2mm matte acrylic cover    | 1   |
 
-If you have an existing controller, skip this step.
 
-## Module
+![kit contents](./kit-contents.jpg)
 
-The module comes with the following parts:
+## Step 1
 
-- 35/40mm touchpad
-- adapter PCB (either left or right sided)
-- 12-pin, 0.5 pitch FFC cable
-- 3d printed mount
-- 2 x 4mm M2 screws to fasten the mount to the adapter PCB
+First, we need a soldered controller to mount the touchpad on. Wether you got one in your kit, or you're bringing your own, solder it. See the [Controllers section](/guides/keyboard/#controllers) in the general keyboard build guide for soldering tips.
 
-![kit contents](./kit.jpg)
+![soldered controller](controller.jpg)
 
-First, we solder the adapter PCB to the controller.
+## Step 2
 
-### Step 1
+The adapter PCB is reversible: for a right sided setup, you should see "top right" on the top side of the adapter PCB (the FFC connectors would be visible as well).
 
-The adapter PCB in your kit is specific to the side you want to use the touchpad on. For a right sided touchpad, the top side is the side with the FFC connector:
+Put the 1mm spacer on your controller, and the adapter PCB on top. This ensures the adapter sits at a consistent distance from the controller. Check that it sits straight: if it's not straight, check if you have blobs of solder on the controller headers. If this is indeed the problem, reflow or remove solder until it sits flush on the spacer.
 
-![adapter pcb top view](./adapter-pcb-top-view.jpg)
+::: warning
 
-::: details 40mm Touchpad
-On a 40mm touchpad, the adapter PCB is reversible so there's one board no matter the side it's installed on. When used on a right side of a split, the connector would go on top as mentioned above.
+Make sure the through holes on the adapter are correctly lined up with the controller headers!
 
-Additionally, solder the 4 jumper pads accordingly:
-
-![40mm adapter pcb](./40mm-adapter-pcb.jpg)
-
-If installed on the left, you'd solder the LEFT pads, and flip over the PCB so the connector is facing down.
 :::
 
-::: details 35mm Left Side
-On a left sided touchpad, it's recommended to insert the FFC cable before soldering the adapter PCB as it can be a bit difficult after it's soldered on.
+Proceed by soldering one of the circled holes:
 
-![adapter pcb left side](./touchpad-left-cable.jpg)
-:::
+![one hole soldered](./one-hole-soldered.jpg)
 
-Position the PCB on the controller with the 3d printed spacer, check that it sits straight. If you're struggling to get it to sit straight, check if you have blobs of solder on the controller headers. If this is indeed the problem, reflow or remove solder until it sits flush on the spacer.
+## Step 3
 
-<Images :paths="[shieldorientation2, shieldorientation1]" />
+Check for flatness:
 
-### Step 2
+![one hole soldered flat](./one-hole-soldered-flat.jpg)
 
-There are 2 pins to solder on each column. Add a bit of solder to one of the pins on each column while holding it with your finger, locking the PCB in place. Check that it's indeed straight. Finish soldering all 4 but avoid overdoing it resulting in a ball of solder that later interfere with 3d printed mount.
+Finish soldering all 4, but avoid overdoing it resulting in a ball of solder that later interfere with 3d printed mount.
 
-![soldered adapter pcb](./soldered-adapter-pcb.jpg)
+![soldered adapter](soldered-adapter.jpg)
 
-### Step 3
+Pull the spacer out.
 
-Let's get the soldering part out of the way by getting the touchpad to speak I2C (by default it speaks SPI). Take it out, components side facing you. We need to remove this resistor:
-
-![resistor before removal](./resistor-before.jpg)
-
-Add a bit of solder to the tip of the iron, and touch both pads of the resistor simultaneously for a few seconds and it should pop out.
-
-![resistor after removal](./resistor-after.jpg)
+## Step 4
 
 Soldering part done! 👏
 
-### Step 4
+Next, we're going to fix the touchpad mount to the adapter PCB. The mount has a little notch on one of its internal sides.
 
-Connect the FFC cable to the connector on the adapter PCB (note which side of the cable is facing up):
+![touchpad mount](touchpad-mount.jpg)
 
-![ffc cable connected](./ffc-cable-connected.jpg)
+For a right sided touchpad, the notch should be on the south side of the adapter PCB. And for a left sided, on the the north side. In the pictures below, we have it on the south side for a right sided setup.
 
-### Step 5
+Remove the controller from the sockets, and using the M2 screws and spring washers, screw the two together (only two holes are necessary).
 
-Next, we screw to the 3d printed mount to the adapter PCB. If the controller is mounted on a PCB which doesn't let you access the bottom side of the screw holes, you may need to remove it: **do not take it out by pulling on the adapter PCB**. Use the back side of tweezers and push the underside of the controller from both ends, switching back and forth until it pops out.
+<Images :paths="[covernotch, coverfastened]" />
 
-The screw holes in the 3d printed piece are small such that screwing into them will hold the screws firmly in place.
+## Step 5
 
-<Images :paths="[mountscrewed1, mountscrewed2, mountscrewed3]" />
+We're going to fix the touchpad top cover to the touchpad PCB. The cover is a 2mm acrylic piece that's one side matte, one side glossy. The matte side is smooth to the touch and is going to be the surface of the touchpad.
 
-Finish by pulling the FFC cable through the middle slot.
+Start by positioning the touchpad inside the mount, aligning the notches:
 
-### Step 6
+<Images :paths="[touchpadincover1, touchpadincover2]" />
 
-We're going to secure the touchpad to the mount we just screwed. Push one corner of the touchpad to the notches on the mount as follows, it should sit flush on this corner, with the connector going into the slot on the adapter PCB.
+## Step 6
 
-![touchpad on mount partial](./touchpad-on-mount-partial.jpg)
+Remove the protective film off the cover and touchpad, exposing the sticky side of the touchpad.
 
-Next, apply pressure on the outside edge of the touchpad to push it into the mount. It's a press fit and should require some force, but not an excessive amount.
+![touchpad sticky exposed](./touchpad-sticky-exposed.jpg)
 
-![touchpad flush](./touchpad-flush.jpg)
+Press the cover into the mount, matte side up, adhereing it to the touchpad. The cover is a press fit into the mount and should end up flush.
 
-### Step 7
+::: danger
 
-Finally, connect the cable to the touchpad connector:
+Once the cover is on the touchpad, it's basically impossible to separate the two. Make sure it's aligned properly!
 
-![cable connected](./cable-connected.jpg)
+:::
 
-### Step 8
+<Images :paths="[coverontouchpad1, coverontouchpad2]" />
 
-Done! Head over to [Firmware](/firmware/) to flash your controller with touchpad support.
+## Step 7
 
-![module](./result.jpg)
+In this last step, we're going to connect the touchpad to the connector on the adapter PCB. Remove the touchpad (together with the cover) from the mount and open the connector on the touchpad's bottom side by pulling it out.
+
+![touchpad connector open](touchpad-connector-open.jpg)
+
+Push the cable into the connector (with the blue stiffener on top), and close it.
+
+![touchpad connector with cable](touchpad-connector-with-cable.jpg)
+
+Connect the other side of the cable to the connector on the adapter PCB. It might help to use tweezers or needle nose pliers to push it in.
+
+![cable both sides connected](cable-both-sides-connected.jpg)
+
+## Step 8
+
+Push the touchpad back into the mount.
+
+![cable bottom side connected](cable-bottom-side-connected.jpg)
+
+## Step 9
+
+Done! Head over to [Firmware](/firmware/) to flash the controller with touchpad support.
+
+![done](./done.jpg)

@@ -84,7 +84,7 @@ The table below lists the possible flags that control what feature to turn on in
 
 | Flag          | Description |
 | ------------- | ----------- |
-| `-e POINTING_DEVICE=cirque35`<br>          `trackpoint`<br>          `trackball` | enable pointing device |
+| `-e POINTING_DEVICE=tps43`<br>          `trackpoint`<br>          `trackball`<br>          `cirque35`<br>          `cirque40` | enable pointing device |
 | `-e POINTING_DEVICE_POSITION=left`<br>      `right`<br>      `thumb_inner`<br>      `thumb_outer`<br>      `middle` | specify pointing device position |
 | `-e OLED=yes` | enable OLED screen |
 | `-e OLED_FLIP=yes` | swaps the left and right OLED roles |
@@ -170,9 +170,9 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 ### Dual Pointing Devices
 
-When using multiple pointing devices, the pointing device specification turns to `-e POINTING_DEVICE=<left>_<right>` where left and right take one of `trackball`, `trackpoint` or `cirque35`. The `-e POINTING_DEVICE_POSITION` flag can be omitted since it's implied by the pointing device configuration.
+When using multiple pointing devices, the pointing device specification turns to `-e POINTING_DEVICE=<left>_<right>` where left and right take one of `tps43`, `trackball`, `trackpoint`, `cirque40` or `cirque35`. The `-e POINTING_DEVICE_POSITION` flag can be omitted since it's implied by the pointing device configuration.
 
-Additionally, if each side is using a different pointing device, we now need to specify the side we're flashing with `-e SIDE=right` or `-e SIDE=left` because we need a different firmware per side.
+Additionally, if each side is using a different pointing device, we now need to specify the side we're flashing with `-e SIDE=right` or `-e SIDE=left` because we need a different firmware to be flashed on each side.
 
 Example:
 
@@ -185,7 +185,7 @@ make \
     -j8
 ```
 
-The example above flashes the right side, which should be the side with the trackpoint.
+The example above flashes the right side, which should be the side with the trackpoint (since it appears on the right of POINTING_DEVICE).
 
 The left side would be flashed as follows:
 
