@@ -16,7 +16,7 @@ import coverontouchpad2 from './cover-on-touchpad-2.jpg';
 
 The touchpad module consists of a small adapter PCB (shield) that sits on a top mounted controller, and creates the necessary connections to easily use an Azoteq TPS43 touchpad.
 
-The TPS43 is a 43x40mm touchpad, supporting multitouch and gestures.
+The [TPS43](https://www.mouser.com/datasheet/2/42/proxsense_i2c_trackpad_datasheet-1626845.pdf) is a 43x40mm touchpad, supporting multitouch and gestures.
 
 ::: info
 
@@ -75,7 +75,7 @@ Check for flatness:
 
 ![one hole soldered flat](./one-hole-soldered-flat.jpg)
 
-Finish soldering all 4, but avoid overdoing it resulting in a ball of solder that later interfere with 3d printed mount.
+Finish soldering all 4, but avoid overdoing it resulting in a ball of solder that would later interfere with the the printed mount.
 
 ![soldered adapter](soldered-adapter.jpg)
 

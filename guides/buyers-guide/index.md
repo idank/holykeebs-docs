@@ -64,20 +64,18 @@ When choosing the headers for a pointing device module for an existing keyboard 
 
 <Images :paths="[pointingdevice1, pointingdevice2]" />
 
-1. [Cirque 35/40mm Touchpad](https://www.cirque.com/glidepoint-circle-trackpads): a compact, high resolution, gesture enabled touchpad.
-1. [Pimoroni Trackball](https://shop.pimoroni.com/products/trackball-breakout?variant=27672765038675): a small, RGBW-illuminated, clickable trackball.
+1. [TPS43](https://www.mouser.com/datasheet/2/42/proxsense_i2c_trackpad_datasheet-1626845.pdf): a 43x40mm touchpad, supporting 1/2 finger multitouch and gestures.
 1. [Trackpoint](https://www.sprintek.com/en/products/PointingStick.aspx): these are commonly found in Lenovo laptops. If you've used one in the past, you can expect similar movement and sensitivity.
+1. [Pimoroni Trackball](https://shop.pimoroni.com/products/trackball-breakout?variant=27672765038675): a small, RGBW-illuminated, clickable trackball.
 
-While the trackball is a usable pointing device, given its size it is the least accurate of the 3 and is mostly recommended as an off-hand device, rather than a mouse replacement. Some do find it adequete as a main pointing device (author included).
+Given the trackball size it is the least accurate of the 3 and is mostly recommended as an off-hand device (scroll, click), rather than a mouse replacement.
 
 Both trackball and touchpad support clicking, and it is common to use [mouse keys](https://docs.qmk.fm/#/feature_mouse_keys) on the peripheral side without the pointing device. For example, if the right side of the keyboard has a trackpoint, on the left side a few keys are assigned to do left click, right click, scroll mode, etc.
-
-The touchpad is available in two sizes: 35mm or 40mm. Small keyboards like the Sweep might benefit from the smaller of the two.
 
 Generally speaking, all pointing devices are great for navigation, browsing, code editing and doing other activities that complement otherwise "standard" computer usage. They are not suitable for gaming.
 
 ::: info
-A pointing device and OLED display share the same location on the keyboard, it is possible to only have one or the other on a given side.
+A pointing device and OLED display share the same location on the keyboard, it's not possible to have both on the same side.
 :::
 
 ## Switches
