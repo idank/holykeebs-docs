@@ -28,7 +28,7 @@ This guide has been updated to a newer, more capable touchpad. For the previous 
 
 ## Tools
 
-In addition to a soldering iron, you will need an H1.3 M2 hex key.
+In addition to a soldering iron, you will need an H1.3 M2 hex key. Parallel pliers can help with pushing the acrylic cover into the mount.
 
 ## BOM
 
@@ -75,7 +75,7 @@ Check for flatness:
 
 ![one hole soldered flat](./one-hole-soldered-flat.jpg)
 
-Finish soldering all 4, but avoid overdoing it resulting in a ball of solder that would later interfere with the the printed mount.
+Finish soldering all 4, but avoid overdoing it resulting in a ball of solder that would later interfere with the printed mount.
 
 ![soldered adapter](soldered-adapter.jpg)
 
@@ -109,7 +109,7 @@ Remove the protective film off the cover and touchpad, exposing the sticky side 
 
 ![touchpad sticky exposed](./touchpad-sticky-exposed.jpg)
 
-Press the cover into the mount, matte side up, adhereing it to the touchpad. The cover is a press fit into the mount and should end up flush.
+Press the cover into the mount, matte side up, adhereing it to the touchpad. The cover is a press fit into the mount and should end up flush. Use parallel pliers if you can't do the last corner with your fingers.
 
 ::: danger
 
