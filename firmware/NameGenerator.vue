@@ -39,7 +39,11 @@ const firmwareName = computed(() => {
         return [`${keyboardToQmkName[selected_keyboard.value]}_via.uf2`];
     }
 
-    const base_name = `${keyboardToQmkName[selected_keyboard.value]}_via_${pointingToFileName[selected_left_controller.value]}_${pointingToFileName[selected_right_controller.value]}`;
+    let keymap = "via";
+    if (isPointingDevice(selected_left_controller.value) || isPointingDevice(selected_right_controller.value)) {
+        keymap = "hk";
+    }
+    const base_name = `${keyboardToQmkName[selected_keyboard.value]}_${keymap}_${pointingToFileName[selected_left_controller.value]}_${pointingToFileName[selected_right_controller.value]}`;
 
     // We have a firmware per side.
     if (isPointingDevice(selected_left_controller.value) && isPointingDevice(selected_right_controller.value)) {
