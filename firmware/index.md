@@ -299,7 +299,7 @@ TODO: add an image.
 
 ### Usage
 
-The following keycodes allow control of the above features. Orders that use the build service and have a pointing device come flashed with a default firmware that already puts these keys at sane locations. See [keymaps](./keymaps/index.md) for more details.
+The following keycodes allow control of the above features. Orders that use the build service and have a pointing device come flashed with a default firmware that already puts these keys at sane locations. See [keymaps](../keymaps/index.md) for more details.
 
 | Keycode        | Value on Remap  | VIA code | Description                                                                 |
 |:---------------|:----------------|:---------|:----------------------------------------------------------------------------|
