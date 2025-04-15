@@ -1,0 +1,26 @@
+layout:
+  qmk_keyboard: crkbd/rev1
+  layout_name: LAYOUT_split_3x6_3
+layers:
+  BASE:
+    - ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Bspace"]
+    - ["LCtrl", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'"]
+    - ["LShft", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Esc"]
+    - ["LGui", "Lower", "Space", "Enter", "Upper", "RAlt"]
+  LOWER:
+    - ["Tab", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Bspace"]
+    - ["LCtrl", "BT 3", "BT 4", "BT 5", "BT 1", "Snipe", "Left", "Down", "Up", "Right", null, null]
+    - ["LShft", null, null, null, "BT 2", "Drag", null, null, null, null, null, null]
+    - ["LGui", {type: held}, "Space", "Enter", null, "RAlt"]
+  UPPER:
+    - ["Tab", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "Bspace"]
+    - ["LCtrl", null, null, null, null, null, "-", "=", "[", "]", "\\", "`"]
+    - ["LShft", null, null, null, null, null, "_", "+", "{", "}", "|", "~"]
+    - ["LGui", null, "Space", "Enter", {type: held}, "RAlt"]
+  POINTER:
+    - ["Boot", "Dump Config", "Save Config", "Reset Config", null, "Cycle Scroll Mode", null, null, null, null, null, "Boot"]
+    - ["Clear EEPROM", "Set Default", "Set Sniping", "Set Scroll", null, "Toggle Sniping", "Up", "Down", null, null, null, "Clear EEPROM"]
+    - ["LShft", null, null, null, null, "Toggle Default", null, null, null, null, null, null]
+    - ["LGui", {type: held}, "Space", "Enter", {type: held}, "RAlt"]
+combos:
+  - {p: [37, 40], k: POINTER, a: bottom, l: ['BASE'], offset: 1}

@@ -1,0 +1,30 @@
+layout:
+  qmk_keyboard: lily58/rev1
+  layout_name: LAYOUT
+layers:
+  BASE:
+    - ["Esc", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "~"]
+    - ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "-"]
+    - ["LCtrl", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'"]
+    - ["LShft", "Z", "X", "C", "V", "B", "[", "]", "N", "M", ",", ".", "/", "RShift"]
+    - ["Lower", "LGui", "LAlt", "Space", "Enter", "Bspace", "RGui", "Upper"]
+  LOWER:
+    - [null, null, null, null, null, null, null, null, null, null, null, null]
+    - [null, "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", null]
+    - [null, "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", null]
+    - [null, "Drag", "Mouse Btn 4", "Mouse Btn 5", "Mouse Btn 1", "Mouse Btn 2", "Snipe", null, null, null, null, null, null, null]
+    - [{type: held}, null, null, null, null, null, null, null]
+  UPPER:
+    - [null, null, null, null, null, null, null, null, null, null, null, null]
+    - ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"]
+    - [null, null, null, null, null, null, null, "Left", "Down", "Up", "Right", null]
+    - [null, null, null, null, null, null, null, null, "+", "=", "{", "}", "\\", null]
+    - [null, null, null, null, null, null, null, {type: held}]
+  POINTER:
+    - [null, null, null, null, null, null, null, null, null, null, null, null]
+    - ["Boot", "Dump Config", "Save Config", "Reset Config", null, "Cycle Scroll Mode", null, null, null, null, null, "Boot"]
+    - ["Clear EEPROM", "Set Default", "Set Sniping", "Set Scroll", null, "Toggle Sniping", "Up", "Down", null, null, null, "Clear EEPROM"]
+    - ["LShft", null, null, null, null, "Toggle Default", null, null, null, null, null, null, null, null]
+    - [{type: held}, null, null, null, null, null, null, {type: held}]
+combos:
+  - {p: [50, 57], k: POINTER, a: bottom, l: ['BASE'], offset: 1}

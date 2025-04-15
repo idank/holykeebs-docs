@@ -1,11 +1,28 @@
+<script setup>
+import NameGenerator from './NameGenerator.vue'
+</script>
+
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-prefixed.min.css">
+</head>
+
 # Firmware
 
-[QMK](https://docs.qmk.fm/#/) is a popular free and open-source keyboard firmware. All of our keyboards are supported by QMK.
+[QMK](https://docs.qmk.fm/#/) is a popular free and open-source keyboard firmware. All of our keyboards are supported by QMK and VIA / Remap for dynamic key assignments and layering. The firmware provides features that streamline pointing device usage, which is a focus of the store. These include:
 
-This page covers how to flash your microcontrollers with QMK.
+- scaled movement: transforms the x/y that's read from the pointing device. This is useful for large screens or cases where fine grained move is necessary. Supports two modes: default and "sniping", each with its own multiplier.
+- drag scroll mode: convert mouse moves into scrolling (similar to middle mouse click).
+- buffered scroll: slows down scrolling for more control.
+- scroll lock: constraints scrolling to vertical / horizontal only.
+
+All of the above can be adjusted on the fly without flashing a new firmware. See [below](#features) for a more in-depth walkthrough.
+
+::: details Keyball/Killer Whale
+These keyboards have a firmware specific to them with similar features as above.
+:::
 
 ::: info
-Fully built keyboards already come flashed and tested. You can use these instructions to customize it, e.g. add scrolling mode, adjust the pointing device, OLED and more.
+Fully built keyboards already come flashed and tested. You can use these instructions to learn how to flash your own keymap / custom logic onto the standard firmware we provide.
 :::
 
 ::: danger
@@ -14,30 +31,39 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 ## Source Code
 
-The source code for all keyboards can be found on the `holykeebs-master` branch of https://github.com/idank/qmk_firmware. This repo is periodically kept up to date with main QMK.
+The source code for all keyboards can be found on the `hk-master` branch of https://github.com/holykeebs/qmk_firmware. This repo is periodically kept up to date with main QMK.
 
-There's no requirement to use this repo, it is also possible to copy the relevant pieces to your own clone: the changes are contained to `users/idank` and the specific keyboard you're flashing for. Look at the changes by running this in your clone:
+To gain access to the repository, please use this [form](http://holykeebs.com/github-access).
+
+::: details Why is this necessary?
+
+Sometime in 2024, DIY keyboards have started to hit Aliexpress. While this have had some positive effects on our niche little hobby, it has also brought less nice things, one of which is misuse of source code. An example of this is using a firmware - that we've worked hard on developing, testing and keeping up to date with QMK - with the keyboards that are sold on Aliexpress. In and of itself this wouldn't be an issue, but what reality shows is that these stores do not provide any customer support and their customers end up seeking help with us.
+
+In an attempt to limit this from happening, the source code is now invite only. If you're a customer or a diy'er with no commercial intentions, you're welcome to request access and use it.
+
+:::
+
+Most of the custom logic is contained to `users/holykeebs` and the specific keyboard you're flashing for. Some scaffolding changes were also required in core QMK, but these are quite limited.
+
+If you wish to bring the changes into your own fork of QMK, please make sure you've copied them all. The diff can be obtained as follows:
 
 ```shell
-$ git remote add idank https://github.com/idank/qmk_firmware
-$ git diff idank/master...idank/holykeebs-master
+$ git remote add holykeebs https://github.com/holykeebs/qmk_firmware
+$ git diff holykeebs/master...holykeebs/hk-master
 ```
 
 ## Precompiled
 
-Precompiled firmwares for all possible configurations are available [here](https://github.com/idank/qmk_firmware/releases/tag/holykeebs-master-latest). Each file is named according to its configuration, e.g.:
+Precompiled firmwares for all possible configurations are available [here](https://github.com/holykeebs/qmk_compiled/releases/tag/latest). Each file is named according to its configuration. Change the selection below according:
 
-- `crkbd_rev1_via_oled_trackball_left.uf2` is for a Corne, VIA, OLED and trackball on the left.
-- `idank_spankbd_via_trackball_trackpoint_left.uf2` is for a Span, trackball on the left, trackpoint on the right and should be flashed pn the left half (`idank_spankbd_via_trackball_trackpoint_right.uf2` should be flashed on the right).
-
-To flash, we need to get into the bootloader and copy the firmware file into the USB drive called `RPI-RP2`. After copying, the drive should disappear and the firmware will have updated.
+<NameGenerator />
 
 Entering the bootloader:
 
 - On a Sea Picro, press the reset button for ~1 second.
-- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button.
+- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button on the keyboard itself.
 
-The [commands.txt](https://github.com/idank/qmk_firmware/releases/download/holykeebs-master-latest/commands.txt) has a list of file name to the make command that produced it and can be used as a reference.
+The [commands.txt](https://github.com/holykeebs/qmk_compiled/releases/download/latest/commands.txt) has a list of file name to the make command that produced it and can be used as a reference.
 
 ::: danger
 Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
@@ -45,13 +71,13 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 ## Compiling
 
-Since many of our keyboards share common features such as OLED / Pointing Devices, these are supported via the [Userspace feature](https://docs.qmk.fm/#/feature_userspace): this allows the logic to be separated from a specific keyboard / keymap. See the files in [`users/idank`](https://github.com/idank/qmk_firmware/tree/holykeebs-master/users/idank).
+Since many of our keyboards share common features such as OLED / Pointing Devices, these are supported via the [Userspace feature](https://docs.qmk.fm/#/feature_userspace): this allows the logic to be separated from a specific keyboard / keymap. See the files in [`users/holykeebs`](https://github.com/holykeebs/qmk_firmware/tree/hk-master/users/holykeebs).
 
 Start by setting up a development environment per [QMK instructions](https://docs.qmk.fm/#/newbs). Clone the repo above and not the main QMK repo:
 
 ```shell
-# It's also possible to use qmk setup instead of git clone: qmk setup idank/qmk_firmware
-$ git clone --recurse-submodules https://github.com/idank/qmk_firmware -b holykeebs-master
+# It's also possible to use qmk setup instead of git clone: qmk setup holykeebs/qmk_firmware
+$ git clone --recurse-submodules https://github.com/holykeebs/qmk_firmware -b hk-master
 $ cd qmk_firmware
 ```
 
@@ -60,18 +86,17 @@ $ cd qmk_firmware
 The basic structure of the build and flash command is:
 
 ```shell
-make <keyboard>:via[:flash] -e USER_NAME=idank [-e feature1=value1]...
+make <keyboard>:via[:flash] -e USER_NAME=holykeebs [-e feature1=value1]...
 ```
 
 The value for `<keyboard>` should match the keyboard you are flashing for:
 
-| Keyboard      | Value |
-| ------------- | ----------- |
-| Corne | crkbd/rev1 |
-| Lily58 | lily58/rev1 |
-| Reviung41 | reviung/reviung41 |
-| Sweep | idank/sweeq |
-| Span | idank/spankbd |
+| Keyboard  | Value |
+| --------- | ----------------- |
+| Corne     | crkbd/rev1        |
+| Lily58    | lily58/rev1       |
+| Sweep     | holykeebs/sweeq   |
+| Span      | holykeebs/spankbd |
 | Keyball39 | keyball/keyball39 |
 | Keyball44 | keyball/keyball44 |
 | Keyball61 | keyball/keyball61 |
@@ -84,10 +109,9 @@ The table below lists the possible flags that control what feature to turn on in
 
 | Flag          | Description |
 | ------------- | ----------- |
-| `-e POINTING_DEVICE=tps43`<br>          `trackpoint`<br>          `trackball`<br>          `cirque35`<br>          `cirque40` | enable pointing device |
+| `-e POINTING_DEVICE=tps43`<br>         ` trackpoint`<br>         ` trackball`<br>         ` cirque35`<br>         ` cirque40` | enable pointing device |
 | `-e POINTING_DEVICE_POSITION=left`<br>      `right`<br>      `thumb_inner`<br>      `thumb_outer`<br>      `middle` | specify pointing device position |
 | `-e OLED=yes` | enable OLED screen |
-| `-e OLED_FLIP=yes` | swaps the left and right OLED roles |
 | `-e TRACKBALL_RGB_RAINBOW=yes` | enable a rainbow color animation on the trackball LED |
 
 An example command might look like this:
@@ -95,7 +119,7 @@ An example command might look like this:
 ```shell
 make \
     crkbd/rev1:via:flash \
-    -e USER_NAME=idank \
+    -e USER_NAME=holykeebs \
     -e POINTING_DEVICE=trackball \
     -e POINTING_DEVICE_POSITION=right \
     -e TRACKBALL_RGB_RAINBOW=yes \
@@ -106,24 +130,26 @@ make \
 Breaking this down:
 
 1. `crkbd/rev1:via:flash` flashes for a Corne with VIA. Omitting `:flash` would just build the firmware without flashing.
-1. `-e USER_NAME=idank` to also pull code from `users/idank`.
+1. `-e USER_NAME=holykeebs` to also pull code from `users/holykeebs`.
 1. `-e POINTING_DEVICE=trackball` configures the trackball.
 1. `-e POINTING_DEVICE_POSITION=right` configures the trackball to the right side of a split keyboard.
 1. `-e TRACKBALL_RGB_RAINBOW=yes` configures the rainbow effect on the trackball.
 1. `-e OLED=yes` enables the OLED.
 1. `-j8` parallizes the build process.
 
-::: Details gcc error
+::: details gcc error
+
 If the make command fails with `gcc: error: unrecognized command-line option ‘-mthumb’`, you can try this alternative command:
 ```shell
 qmk flash \
-    -e USER_NAME=idank \
+    -e USER_NAME=holykeebs \
     -e POINTING_DEVICE=trackball \
     -e POINTING_DEVICE_POSITION=right \
     -e TRACKBALL_RGB_RAINBOW=yes \
     -e OLED=yes -j8 \
     -kb crkbd/rev1 -km via
 ```
+
 :::
 
 ### Flashing
@@ -160,7 +186,7 @@ Connect the controller to the computer. Sometimes it will go into bootloader if 
 If not, enter bootloader manually:
 
 - On a Sea Picro, press the reset button for ~1 second.
-- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button.
+- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button on the keyboard itself.
 
 On split keyboards, repeat the flashing process for the other controller.
 
@@ -172,27 +198,27 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 When using multiple pointing devices, the pointing device specification turns to `-e POINTING_DEVICE=<left>_<right>` where left and right take one of `tps43`, `trackball`, `trackpoint`, `cirque40` or `cirque35`. The `-e POINTING_DEVICE_POSITION` flag can be omitted since it's implied by the pointing device configuration.
 
-Additionally, if each side is using a different pointing device, we now need to specify the side we're flashing with `-e SIDE=right` or `-e SIDE=left` because we need a different firmware to be flashed on each side.
+Additionally, we now need to specify the side we're flashing with `-e SIDE=right` or `-e SIDE=left` because we need a different firmware to be flashed on each side.
 
 Example:
 
 ```shell
 make \
     crkbd/rev1:via:flash \
-    -e USER_NAME=idank \
+    -e USER_NAME=holykeebs \
     -e POINTING_DEVICE=trackball_trackpoint \
     -e SIDE=right \
     -j8
 ```
 
-The example above flashes the right side, which should be the side with the trackpoint (since it appears on the right of POINTING_DEVICE).
+The example above flashes the right side, which should be the side with the trackpoint (since it appears on the right of `POINTING_DEVICE`).
 
 The left side would be flashed as follows:
 
 ```shell
 make \
     crkbd/rev1:via:flash \
-    -e USER_NAME=idank \
+    -e USER_NAME=holykeebs \
     -e POINTING_DEVICE=trackball_trackpoint \
     -e TRACKBALL_RGB_RAINBOW=yes \
     -e SIDE=left \
@@ -201,15 +227,22 @@ make \
 
 ### Keyball
 
-Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers exists [here](https://github.com/idank/qmk_firmware/tree/holykeebs-master/keyboards/keyball).
+The Keyball firmware lives [here](https://github.com/holykeebs/qmk_firmware/tree/hk-master/keyboards/keyball). It uses a different set of custom keycodes than mentioned before, but the general usage is similar.
+
+::: details
+The "official" Keyball firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. It rewrites some of the functionality that nowadays exists in QMK, and disables a number of features to save space on the low memory Pro Micro controllers.
+
+We've modernized the firmware by supporting RP2040 controllers, and making use of as much standard QMK code as possible, such as the native PMW3360 driver, split pointing and more. The net result is an easier to maintain firmware with less bugs.
+:::
 
 ::: danger
 Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
 :::
 
-While on the `holykeebs-master` branch, flash both sides using:
+While on the `hk-master` branch, flash both sides using:
 
 ```shell
+# Replace 44 with the Keyball you have (39, 44 or 61).
 make keyball/keyball44:via:flash -j8
 ```
 
@@ -220,9 +253,69 @@ USB cable can be connected to either side of the keyboard.
 1. On a split keyboard, connect the halves when none of the sides are powered.
 1. On a split keyboard, the output of the build/flash command will say which side needs to be connected to the computer.
 1. On first use, a dialog from the OS may open to configure a new keyboard, go through that.
-1. Go to [test](https://config.qmk.fm/#/test) that all of the keys work. Some keys (usually on the thumb clusters) don't generate a regular key. Try pressing those in combination with another key. It's also possible to use VIA's test matrix tab.
+1. Use VIA's test matrix tab (Remap has a similar dialog) to check all of the keys work.
 
 If one of the keys do not work, head over to [Troubleshooting](/troubleshooting/).
+
+## Features
+
+::: info
+The Keyball and Killer Whale firmwares have their own dedicated implementation that overlaps with the functionality described below. Please refer to their respective documentation for more details.
+:::
+
+The default firmware facilitates pointing device usage by extending QMK with some useful and common functionality. This functionality is exposed via a collection of keycodes that can be bound to your liking. The `hk` keymap provides a batteries included mapping in a dedicated `POINTER` layer to make use of these keycodes.
+
+### Scaling
+
+Often the stock movement speed of the pointing device isn't a good fit for your setup. This allows scaling the output of the movement before its sent to the host.
+
+Scaling is supported on a default profile and a secondary, "sniping" profile.
+
+::: details
+The current implementation intentionally doesn't alter the related CPI/DPI setting as this doesn't work well with all pointing devices (e.g. on a touchpad where a lot of different settings are derived from the CPI and cease to function properly).
+:::
+
+### Sniping
+
+Sniping is simply another scale profile that can be applied to a pointing device, either by holding a key or toggling the mode. It's called sniping because this mode usually uses a smaller scale than the default profile, thus allowing finer movement.
+
+### Drag Scroll
+
+Drag scroll lets you move a pointing device and have those moves translate to scrolls, figuratively dragging the mouse to scroll.
+
+### Buffered Scroll
+
+Moving the mouse to scroll often results in an unusable scroll amount. This buffers a specified amount of move before sending a scroll to the host, effectively slowing it down.
+
+### Scroll Lock
+
+Locks scrolling to the horizontal or vertical axis.
+
+### OLED
+
+On a keyboard with a pointing device and screen, the screen will display the following information:
+
+TODO: add an image.
+
+### Usage
+
+The following keycodes allow control of the above features. Orders that use the build service and have a pointing device come flashed with a default firmware that already puts these keys at sane locations. See [keymaps](./keymaps/index.md) for more details.
+
+| Keycode        | Value on Remap  | VIA code | Description                                                                 |
+|:---------------|:----------------|:---------|:----------------------------------------------------------------------------|
+| `HK_RESET`     | `Kb 0`          | `0x7e00` | Resets the configuration to its default state                               |
+| `HK_SAVE`      | `Kb 1`          | `0x7e01` | Saves the current config, making it persist across keyboard restart         |
+| `HK_DUMP`      | `Kb 2`          | `0x7e02` | Dumps the current config to the console (needs `CONSOLE_ENABLE=yes`)        |
+| `HK_P_SET_D`   | `Kb 3`          | `0x7e03` | When held*, tapping up/down increases/decreases the default profile's scale |
+| `HK_P_SET_S`   | `Kb 4`          | `0x7e04` | When held*, tapping up/down increases/decreases the sniping profile's scale |
+| `HK_P_SET_BUF` | `Kb 5`          | `0x7e05` | When held*, pressing up/down increases/decreases the scroll buffer          |
+| `HK_S_MODE`    | `Kb 6`          | `0x7e06` | When held*, enables sniping                                                 |
+| `HK_S_MODE_T`  | `Kb 7`          | `0x7e07` | Toggles sniping                                                             |
+| `HK_D_MODE`    | `Kb 8`          | `0x7e08` | When held*, enables the drag scroll                                         |
+| `HK_D_MODE_T`  | `Kb 9`          | `0x7e09` | Toggles drag scroll                                                         |
+| `HK_C_SCROLL`  | `Kb 10`         | `0x7e0a` | Cycles the scroll lock between off, horizontal and vertical                 |
+
+\* Holding shift while using any of the config keycodes that need to be held will affect the peripheral pointing device.
 
 ## Community Keymaps
 

@@ -43,6 +43,7 @@ export default defineConfig({
             ]
           },
           { text: 'Firmware', link: '/firmware/' },
+          { text: 'Keymaps', link: '/keymaps/' },
         ]
       },
       {
