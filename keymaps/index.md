@@ -6,6 +6,7 @@ aside: false
 
 - [Corne](./corne/index.md)
 - [Lily58](./lily58/index.md)
+- [Sweeq](./sweeq/index.md)
 
 ## Corne
 
@@ -15,3 +16,6 @@ aside: false
 
 ![lily58 keymap](./lily58.svg)
 
+# Sweeq
+
+![sweeq keymap](./sweeq.svg)

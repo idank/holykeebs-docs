@@ -1,0 +1,26 @@
+layout:
+  qmk_keyboard: ferris/sweep
+  layout_name: LAYOUT_split_3x5_2
+layers:
+  BASE:
+    - ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"]
+    - [{t: A, h: LCtrl}, "S", "D", "F", "G", "H", "J", "K", "L", ";"]
+    - [{t: Z, h: LShft}, "X", "C", "V", "B", "N", "M", ",", ".", "/"]
+    - [{t: "`", h: LCtrl}, {t: "Bspace", h: Lower}, {t: "Space", h: Upper}, {t: "Tab", h: Gui}]
+  LOWER:
+    - ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    - ["GEsc", "Home", "Page Down", "Page Up", "End", "Left", "Down", "Up", "Right", "'"]
+    - [null, "Drag", "Snipe", "Mouse Btn 1", "Mouse Btn 2", "Mouse Btn 3", "Mouse Btn 4", "Mouse Btn 5", null, "Enter"]
+    - [{t: "`", h: LCtrl}, {type: held}, {t: "Space", h: Upper}, {t: "Tab", h: Gui}]
+  UPPER:
+    - ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10"]
+    - ["Tab", null, null, null, null, "-", "=", "[", "]", "|"]
+    - [null, null, null, null, null, "_", "+", null, null, "Boot"]
+    - [{t: "`", h: LCtrl}, {t: "Bspace", h: Lower}, {type: held}, {t: "Tab", h: Gui}]
+  POINTER:
+    - ["Boot", "Dump Config", "Save Config", "Reset Config", "Cycle Scroll Mode", null, null, null, null, "Boot"]
+    - ["Clear EEPROM", "Set Default", "Set Sniping", "Set Scroll", "Toggle Sniping", "Up", "Down", null, null, "Clear EEPROM"]
+    - ["LShft", null, null, null, "Toggle Default", null, null, null, null, null]
+    - [{t: "`", h: LCtrl}, {type: held}, {type: held}, {t: "Tab", h: Gui}]
+combos:
+  - {p: [31, 32], k: POINTER, a: bottom, l: ['BASE'], offset: 1}
