@@ -317,6 +317,16 @@ The following keycodes allow control of the above features. Orders that use the 
 
 \* Holding shift while using any of the config keycodes that need to be held will affect the peripheral pointing device.
 
+## Patterns
+
+### Permanent Scroll
+
+On a dual pointing device setup, it's often desirable to set one of the pointing devices to always scroll (this is done by default if the secondary one is a Pimoroni Trackball).
+
+To do this, hold shift and tap `HK_D_MODE_T`. This will toggle drag scroll on the peripheral pointing device. Test if the scroll speed is comfortable, and if not adjust it by setting the scale/scroll buffer.
+
+Finish by pressing `HK_SAVE` to persist the changes.
+
 ## Community Keymaps
 
 This section is dedicated to keymaps written by community members, describing the special aspects that were implemented:
