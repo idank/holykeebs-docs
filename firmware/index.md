@@ -317,6 +317,49 @@ The following keycodes allow control of the above features. Orders that use the 
 
 \* Holding shift while using any of the config keycodes that need to be held will affect the peripheral pointing device.
 
+### Debugging
+
+Without an OLED, it's impossible to know what the values above are set to. If you'd like to tune them or just see what's going
+on behind the scenes, you can turn on debug mode.
+
+When compiling your own firmware, simply set `CONSOLE_ENABLED=yes` in `users/holykeebs/rules.mk` or in any other `rules.mk` in your
+keyboard tree.
+
+When using the precompiled firmwares, debug mode is turned on if the file begins with `debug_`.
+
+Once debug mode is turned on, run `qmk console` with the keyboard plugged in. Example output when tapping the `HK_DUMP` key:
+
+```shell
+liliums:Lily58:1: keyboard_post_init_user: reading eeprom, check: 1
+liliums:Lily58:1: init_state
+liliums:Lily58:1: debug_hk: state = {
+liliums:Lily58:1:       is_main_side=1
+liliums:Lily58:1:       setting_default_scale=0
+liliums:Lily58:1:       setting_sniping_scale=0
+liliums:Lily58:1:       setting_scroll_buffer=0
+liliums:Lily58:1:       main=
+liliums:Lily58:1:       {
+liliums:Lily58:1:               pointer_kind=trackpoint
+liliums:Lily58:1:               cursor_mode=default
+liliums:Lily58:1:               drag_scroll=0
+liliums:Lily58:1:               scroll_lock=off
+liliums:Lily58:1:               pointer_default_multiplier=2.00
+liliums:Lily58:1:               pointer_sniping_multiplier=1.00
+liliums:Lily58:1:               pointer_scroll_buffer_size=5
+liliums:Lily58:1:       }
+liliums:Lily58:1:       peripheral=
+liliums:Lily58:1:       {
+liliums:Lily58:1:               pointer_kind=tps43
+liliums:Lily58:1:               cursor_mode=default
+liliums:Lily58:1:               drag_scroll=0
+liliums:Lily58:1:               scroll_lock=off
+liliums:Lily58:1:               pointer_default_multiplier=1.50
+liliums:Lily58:1:               pointer_sniping_multiplier=1.00
+liliums:Lily58:1:               pointer_scroll_buffer_size=5
+liliums:Lily58:1:       }
+liliums:Lily58:1: }
+```
+
 ## Patterns
 
 ### Permanent Scroll
