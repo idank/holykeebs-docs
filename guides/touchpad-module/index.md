@@ -47,13 +47,15 @@ In addition to a soldering iron, you will need an H1.3 M2 hex key. Parallel plie
 
 ![kit contents](./kit-contents.jpg)
 
-## Step 1
+## Soldering
+
+### Step 1
 
 First, we need a soldered controller to mount the touchpad on. Wether you got one in your kit, or you're bringing your own, solder it. See the [Controllers section](/guides/keyboard/#controllers) in the general keyboard build guide for soldering tips.
 
 ![soldered controller](controller.jpg)
 
-## Step 2
+### Step 2
 
 The adapter PCB is reversible: for a right sided setup, you should see "top right" on the top side of the adapter PCB (the FFC connectors would be visible as well).
 
@@ -69,7 +71,7 @@ Proceed by soldering one of the circled holes:
 
 ![one hole soldered](./one-hole-soldered.jpg)
 
-## Step 3
+### Step 3
 
 Check for flatness:
 
@@ -81,9 +83,11 @@ Finish soldering all 4, but avoid overdoing it resulting in a ball of solder tha
 
 Pull the spacer out.
 
-## Step 4
-
 Soldering part done! 👏
+
+## Assembly
+
+### Step 1
 
 Next, we're going to fix the touchpad mount to the adapter PCB. The mount has a little notch on one of its internal sides.
 
@@ -95,7 +99,7 @@ Remove the controller from the sockets, and using the M2 screws and spring washe
 
 <Images :paths="[covernotch, coverfastened]" />
 
-## Step 5
+### Step 2
 
 We're going to fix the touchpad top cover to the touchpad PCB. The cover is a 2mm acrylic piece that's one side matte, one side glossy. The matte side is smooth to the touch and is going to be the surface of the touchpad.
 
@@ -103,7 +107,7 @@ Start by positioning the touchpad inside the mount, aligning the notches:
 
 <Images :paths="[touchpadincover1, touchpadincover2]" />
 
-## Step 6
+### Step 3
 
 Remove the protective film off the cover and touchpad, exposing the sticky side of the touchpad.
 
@@ -119,7 +123,7 @@ Once the cover is on the touchpad, it's basically impossible to separate the two
 
 <Images :paths="[coverontouchpad1, coverontouchpad2]" />
 
-## Step 7
+### Step 4
 
 In this last step, we're going to connect the touchpad to the connector on the adapter PCB. Remove the touchpad (together with the cover) from the mount and open the connector on the touchpad's bottom side by pulling it out.
 
@@ -133,14 +137,30 @@ Connect the other side of the cable to the connector on the adapter PCB. It migh
 
 ![cable both sides connected](cable-both-sides-connected.jpg)
 
-## Step 8
+### Step 5
 
 Push the touchpad back into the mount.
 
 ![cable bottom side connected](cable-bottom-side-connected.jpg)
 
-## Step 9
+### Step 6
 
 Done! Head over to [Firmware](/firmware/) to flash the controller with touchpad support.
 
 ![done](./done.jpg)
+
+## Firmware
+
+The [precompiled firmware](../../firmware/index.md#precompiled) is the easiest way to enable the touchpad on your keyboard.
+
+If you'd like to code it yourself for some reason, see QMK [docs](https://docs.qmk.fm/features/pointing_device#azoteq-iqs5xx-trackpad).
+
+## Troubleshooting
+
+1. Ensure your firmware enables the touchpad.
+1. Ensure all 4 solder joints on the adapter PCB are making a connection to the controller.
+1. Ensure the FFC cable is connected correctly:
+    1. Is the cable oriented correctly?
+    1. Do the cable contacts all look good?
+
+Still having issues? Reach out to [support](https://holykeebs.com/pages/contact).
