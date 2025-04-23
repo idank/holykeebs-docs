@@ -28,18 +28,23 @@ The trackpoint driver and sensor PCBs are thinner and more delicate than the usu
 
 In addition to a soldering iron, an H1.3 M2 driver will be needed to install an optional acrylic cover.
 
-## Module
+## BOM
 
-The module comes with the following parts:
+|   | description                    | qty |
+|---|--------------------------------|-----|
+| 1 | Sprintek SK8707-01             | 1   |
+| 2 | Sockets and precut headers set | 1   |
+| 3 | Adapter PCB                    | 1   |
+| 4 | Red rubber cap                 | 1   |
+| 5 | Acrylic cover\*                | 1   |
+| 6 | M2x4mm screw, washer\*         | 2   |
+| 7 | RP2040 controller\*            | 1   |
 
-- Sprintek SK8707-01 driver and sensor PCBs ([datasheet](https://cdn.shopify.com/s/files/1/0689/0812/2402/files/DS0048_SK8707-01_Compact_Pointing_Stick_Module_Datasheet.pdf?v=1726991386))
-- adapter PCB
-- red rubber cap
-- socket + header set
-- optional: Sea-Picro RP2040 controller
-- optional: acrylic cover + 2x4mm M2 screws + 2x0.5mm M2 washers
+\* optional, depends on chosen configuration.
 
 ![kit contents](./kit.jpg)
+
+## Soldering
 
 ### Step 1
 
@@ -135,11 +140,15 @@ Solder the 4 highlighted pins on the adapter PCB. It's helpful to grab the PCB o
 After this soldering it'll become extremely hard to separate the two PCBs. Please make sure everything up to this point was done correctly. If you're worried about something, feel free to stop by Discord to ask. While adding some extra work, it's also possible to solder jumper wires between the two PCBs to test everything works before continuing.
 :::
 
+Soldering done! 👏
+
 ![db-soldered](./db-soldered.jpg)
 
-### Step 11
+## Assembly
 
-Soldering done! 👏 Remove the protective film from the surface mounted nuts and cover. If you don't have one, skip the rest of this step.
+### Step 1
+
+Remove the protective film from the surface mounted nuts and cover. If you don't have one, skip the rest of this step.
 
 ![film-removed](./film-removed.jpg)
 
@@ -147,7 +156,7 @@ Put a washer on each nut and screw the cover on. The washers support the cover d
 
 <Images :paths="[washers, washersideview]" />
 
-### Step 12
+### Step 2
 
 Put the rubber cap on, and you're done! Head over to [Firmware](/firmware/) to flash your controller with trackpoint support.
 
