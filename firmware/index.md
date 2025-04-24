@@ -295,7 +295,15 @@ Locks scrolling to the horizontal or vertical axis.
 
 On a keyboard with a pointing device and screen, the screen will display the following information:
 
-TODO: add an image.
+![oled](oled.png)
+
+| Row | Description                                                                                     |
+|:----|:------------------------------------------------------------------------------------------------|
+|  0  | Displays information on the last pressed key, and any held ones                                 |
+|  1  | Displays the current pointing device (or NONE) and the last x/y/v/h movements                   |
+|  2  | On the left, displays the current pointing profile (D for default, S for sniping)               |
+|  2  | On the right, displays the scaling multpilier, scroll buffer, drag scroll mode, and scroll lock |
+|  3  | Displays the active layers and whether automatic mouse layer is on                              |
 
 ### Usage
 
