@@ -87,6 +87,12 @@ Soldering part done! 👏
 
 ## Assembly
 
+::: info
+
+Your kit may have the touchpad sandwiched with the top surface, already inside the printed mount. Skip these steps below.
+
+:::
+
 ### Step 1
 
 Next, we're going to fix the touchpad mount to the adapter PCB. The mount has a little notch on one of its internal sides.
