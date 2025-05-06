@@ -54,7 +54,7 @@ $ git diff holykeebs/master...holykeebs/hk-master
 
 ## Precompiled
 
-Precompiled firmwares for all possible configurations are available [here](https://github.com/holykeebs/qmk_compiled/releases/tag/latest). Each file is named according to its configuration. Change the selection below according:
+Precompiled firmwares for all possible configurations are available [here](https://github.com/holykeebs/qmk_compiled/releases/tag/latest). Each file is named according to its configuration. Change the selection below to match your keyboard:
 
 <NameGenerator />
 
