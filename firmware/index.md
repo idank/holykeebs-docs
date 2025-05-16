@@ -48,7 +48,7 @@ Most of the custom logic is contained to `users/holykeebs` and the specific keyb
 If you wish to bring the changes into your own fork of QMK, please make sure you've copied them all. The diff can be obtained as follows:
 
 ```shell
-$ git remote add holykeebs https://github.com/holykeebs/qmk_firmware
+$ git remote add holykeebs git@github.com:holykeebs/qmk_firmware.git
 $ git diff holykeebs/master...holykeebs/hk-master
 ```
 
@@ -77,7 +77,7 @@ Start by setting up a development environment per [QMK instructions](https://doc
 
 ```shell
 # It's also possible to use qmk setup instead of git clone: qmk setup holykeebs/qmk_firmware
-$ git clone --recurse-submodules https://github.com/holykeebs/qmk_firmware -b hk-master
+$ git clone --recurse-submodules git@github.com:holykeebs/qmk_firmware.git -b hk-master
 $ cd qmk_firmware
 ```
 
