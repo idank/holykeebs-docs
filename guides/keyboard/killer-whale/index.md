@@ -289,17 +289,21 @@ Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/bl
 
 ### Assembly
 
-Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/6_ASSEMBLE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/6_ASSEMBLE.md)).
+Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/6_ASSEMBLE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/6_ASSEMBLE.md)), take note of the information below:
 
-See [FFC connector](#ffc-connectors) on how to connect the cables.
+1. See [FFC connector](#ffc-connectors) on how to connect the cables.
 
-Since the PCBs are reversible, it can be a bit confusing to know if a PCB belongs to the left or right half of the keyboard. This table shows the label you should be seeing **on the top surface of a PCB** to know which side it goes on:
+2. Set the DIP switch on BASE according to the SIDE unit being used. In the image below, the marked switch is the one that's "on". Above the switch (not visible in the photo, are labels that show the side unit kind this switch activates). Note that your PCB may have 3 instead of 4 total switches.
 
-|      | left                        | right                       |
-| ---- | --------------------------- | --------------------------- |
-| base | top left                    | top right                   |
-| top  | left side mounting surface  | right side mounting surface |
-| add  | back right                  | back left                   |
-| side | n/a (pcb is non reversible) | n/a (pcb is non reversible) |
+![dip-switch-highlighted](dip-switch-highlighted.png)
+
+3. Since the PCBs are reversible, it can be a bit confusing to know if a PCB belongs to the left or right half of the keyboard. This table shows the label you should be seeing **on the top surface of a PCB** to know which side it goes on:
+
+|      | left                                   | right                                   |
+| ---- | -------------------------------------- | --------------------------------------- |
+| base | top left                               | top right                               |
+| top  | top left / left side mounting surface  | top right / right side mounting surface |
+| add  | top left / back right                  | top right / back left                   |
+| side | n/a (pcb is non reversible)            | n/a (pcb is non reversible)             |
 
 ![assembled](assembled.jpg)
