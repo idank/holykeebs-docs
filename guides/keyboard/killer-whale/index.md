@@ -207,11 +207,13 @@ The OLED cover for the joystick and d-pad sides is now part of the main acrylic 
 
 ![oled-covers](oled-covers.png)
 
-#### Trackball Mount
+#### Trackball Holder
 
 The trackball holder has been updated to a more robust design that holds the ball better.
 
 ![trackball-holder](trackball-holder.png)
+
+If you'd like to print your own, find the files here: 1 x <a href="/stls/killer-whale-trackball-cover.stl">cover</a> + 1 x <a href="/stls/killer-whale-trackball-holder-pcb-plate.stl">holder for PCB plate</a> or 1 x <a href="/stls/killer-whale-trackball-holder-acrylic-plate.stl">holder for acrylic</a>.
 
 ### BASE
 
