@@ -33,7 +33,7 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 The source code for all keyboards can be found on the `hk-master` branch of https://github.com/holykeebs/qmk_firmware. This repo is periodically kept up to date with main QMK.
 
-To gain access to the repository, please use this [form](http://holykeebs.com/github-access).
+To gain access to the repository, please use this [form](http://holykeebs.com/github-access). The form is synced daily, resulting in a Github invite to the email used on the form (please do not email asking what's up before 48 hours since submission have passed).
 
 ::: details Why is this necessary?
 
