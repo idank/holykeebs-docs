@@ -63,12 +63,18 @@ Contact me within: 14 days of delivery.
 
 Ship items back within: 30 days of delivery.
 
-- Buyers are responsible for return shipping costs, which must have tracking.
-- If the item is not returned in its original condition, the buyer is responsible for any loss in value.
-- If your order was sent to you using free shipping, $15 will be deducted from your refund.
+- Buyers are responsible for return shipping costs, **which must have tracking**.
+- If the item is not returned in its original condition, the buyer is responsible for any loss in value. This includes any transit damage due to insufficient packaging.
+- If your order was sent to you using free shipping, that cost will be deducted from your refund (a minimum of $15).
+
+Please allow up to 7 days from receiving your return for it to be inspected. If approved, you'll be automatically refunded to your original payment method. Otherwise, you'll be contacted by email with further details.
+
+::: info
+We have no control over the time it takes for the refunded to be proccessed by your credit card company or bank, please allow up to 10 business days, and contact us in case of issues.
+:::
 
 ::: danger NOTICE
-Returns on keyboards that were not bought with hotswap sockets are not possible.
+Returns on keyboards that have soldered switches will not be accepted.
 :::
 
 ## Wireless
