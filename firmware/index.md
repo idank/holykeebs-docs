@@ -33,16 +33,6 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 The source code for all keyboards can be found on the `hk-master` branch of https://github.com/holykeebs/qmk_firmware. This repo is periodically kept up to date with main QMK.
 
-To gain access to the repository, please use this [form](http://holykeebs.com/github-access). The form is synced daily, resulting in a Github invite to the email used on the form (please do not email asking what's up before 48 hours since submission have passed).
-
-::: details Why is this necessary?
-
-Sometime in 2024, DIY keyboards have started to hit Aliexpress. While this have had some positive effects on our niche little hobby, it has also brought less nice things, one of which is misuse of source code. An example of this is using a firmware - that we've worked hard on developing, testing and keeping up to date with QMK - with the keyboards that are sold on Aliexpress. In and of itself this wouldn't be an issue, but what reality shows is that these stores do not provide any customer support and their customers end up seeking help with us.
-
-In an attempt to limit this from happening, the source code is now invite only. If you're a customer or a diy'er with no commercial intentions, you're welcome to request access and use it.
-
-:::
-
 Most of the custom logic is contained to `users/holykeebs` and the specific keyboard you're flashing for. Some scaffolding changes were also required in core QMK, but these are quite limited.
 
 If you wish to bring the changes into your own fork of QMK, please make sure you've copied them all. The diff can be obtained as follows:
