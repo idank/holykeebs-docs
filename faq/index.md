@@ -102,10 +102,6 @@ Every few months I will add new keyboards models or extend the ones already offe
 
 Yes, see [SPLIT_POINTING_ENABLE](https://docs.qmk.fm/#/feature_pointing_device?id=split-keyboard-configuration).
 
-### Dual Pointing Devices
-
-All combinations are possible except for two trackpoints due to lack of support in QMK.
-
 ### Remapping Keys
 
 With VIA, keys and layers can be changed without flashing the keyboard. Go to the VIA [web app](https://usevia.app/), or download the [desktop app](https://github.com/the-via/releases/releases). If you don't want to use VIA, please consult QMK docs on how to create your own keymap.
