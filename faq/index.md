@@ -16,6 +16,9 @@ holykeebs specializes in ergonomic split keyboards with pointing devices such as
 
 ## Shipping
 
+All orders are shipped from Israel. Please check your country's customs and duties policy to be informed of any potential
+fees you might have to pay upon receipt of your order.
+
 ### Do you ship globally?
 
 Yes, if you don't see your country in the shipping page, please contact us.
