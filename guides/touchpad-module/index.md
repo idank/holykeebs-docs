@@ -53,6 +53,10 @@ In addition to a soldering iron, you will need an H1.3 M2 hex key. Parallel plie
 
 First, we need a soldered controller to mount the touchpad on. Wether you got one in your kit, or you're bringing your own, solder it. See the [Controllers section](/guides/keyboard/#controllers) in the general keyboard build guide for soldering tips.
 
+::: warning
+Take note that you're soldering the correct pins on the controller: each column should have an unsoldered pin near the USB connector!
+:::
+
 ![soldered controller](controller.jpg)
 
 ### Step 2

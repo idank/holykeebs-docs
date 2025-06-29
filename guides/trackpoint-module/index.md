@@ -110,6 +110,10 @@ We're now ready to work on the controller. Grab the headers that came with the t
 
 ### Step 8
 
+::: warning
+Take note that you're soldering the correct pins on the controller: each column should have an unsoldered pin near the USB connector!
+:::
+
 The headers should be put as follows:
 
 ![controller-headers-unsoldered](./controller-headers-unsoldered.jpg)

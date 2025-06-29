@@ -116,7 +116,7 @@ Find the hotswap sockets in your kit, follow these [instructions](https://github
 ::: warning
 Before doing any soldering on the controller, ensure that the controllers are operational.
 
-Connect it to your computer and check that it boots properly: once connected, a USB removable drive should appear. If one doesn't, make sure your USB cable supports data transfer, and that your computer doesn't block removable drives.
+Connect it to your computer and check that it appears in your device manager (`lsusb` on Linux). If one doesn't, make sure your USB cable supports data transfer, and that your computer doesn't block removable drives.
 :::
 
 ### Sockets
