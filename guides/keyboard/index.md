@@ -240,7 +240,7 @@ This step depends whether hotswap sockets and/or top plates were used.
 
 ### Top Plates
 
-Top plates can be installed flush against the keyboard PCB, or flush against the switch.
+Top plates can be installed flush against the keyboard PCB, or flush against the switch. A split keyboard will come with two plates: FR4 plates are identical and can be used on either side. With printed plates, the textured side should be facing up.
 
 <Images :paths="[topplatesflush, topplatesgap]" />
 
