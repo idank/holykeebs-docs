@@ -36,7 +36,7 @@ For build help that's not specific to Keyball, you're welcome to visit the [Keyb
 
 ## Firmware
 
-Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers is available in this holykeebs [repository](https://github.com/idank/qmk_firmware/tree/holykeebs-master/keyboards/keyball).
+Keyball's firmware is maintained in a dedicated repository by the designer of the keyboard and is written for Pro Micro controllers. A port of the firmware for RP2040 controllers is available in this holykeebs [repository](https://github.com/holykeebs/qmk_firmware/tree/hk-master/keyboards/keyball). It's recommended to use the [precompiled firmware](../../../firmware/index.md#precompiled).
 
 ::: danger
 Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. This can short the GPIO pins of the controllers.
@@ -44,7 +44,7 @@ Avoid connecting / disconnecting the TRRS cable when the keyboard is powered. Th
 
 If you'd like to compile your own firmware, see the [Firmware](../../../firmware/index.md) page on setting up the environment.
 
-Once you have your own clone, while on the `holykeebs-master` branch, flash both sides using (adjust the name to the Keyball you have):
+Once you have your own clone, while on the `hk-master` branch, flash both sides using (adjust the name to the Keyball you have):
 
 ```shell
 make keyball/keyball44:via:flash -j8
