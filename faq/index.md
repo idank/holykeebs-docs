@@ -76,13 +76,9 @@ Please allow up to 7 days from receiving your return for it to be inspected. If 
 We have no control over the time it takes for the refunded to be proccessed by your credit card company or bank, please allow up to 10 business days, and contact us in case of issues.
 :::
 
-::: danger NOTICE
-Returns on keyboards that have soldered switches will not be accepted.
-:::
-
 ## Wireless
 
-I'd love to do wireless builds but there isn't official support for the pointing devices we use in ZMK. There are various efforts but those aren't confirmed to fully work or be power efficient.
+We'd love to do wireless builds but there isn't official support for the pointing devices we use in ZMK. There are various efforts but those aren't confirmed to fully work or be power efficient.
 
 ## Low Profile vs. Choc
 
@@ -94,10 +90,6 @@ The difference between these two is the key spacing, i.e. how close the keys are
 For choc keyboards, we differentiate these two styles of spacing by calling the former Low Profile and the latter Choc.
 
 ![key spacing](../guides/buyers-guide/spacing.jpg)
-
-## New Keyboards
-
-Every few months I will add new keyboards models or extend the ones already offered with new features. If you have a specific need that you think would also garner interest from others, feel free to reach out and I might be incentivized to go for that next.
 
 ## Firmware
 
@@ -138,7 +130,7 @@ All of our keyboards use these screws and spacers.
 
 - Flat head M2 H1.3 hex screws (5mm bottom side, 3mm top side).
 - M2 gold spacers (4mm low profile keyboards, 7mm MX keyboards).
-- M2 silver spacers for OLED (11mm for low profile sockets, 13mm for machine sockets).
+- M2 black/silver spacers for OLED (11mm for low profile sockets, 13mm for machine sockets).
 
 <Images :paths="[hardware1, hardware2, hardware3]" />
 
