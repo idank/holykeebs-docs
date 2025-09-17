@@ -44,7 +44,9 @@ Economy shipping options are delivered on the last leg using the destination cou
 
 ## Taxes and Duties
 
-Import duties, taxes, and other fees are the responsibility of the customer and are not included. Your local carrier or customs office will notify you upon receiving the shipment if any payment is required.
+For US customers, shipments made from Israel are taxed at 15% (after the goverment ended the de minimis exemption). We charge this fee from you at checkout, and our shipping partner takes care of paying the customs fee to the authorities.
+
+For other countries: import duties, taxes, and other fees are the responsibility of the customer and are not included. Your local carrier or customs office will notify you upon receiving the shipment if any payment is required.
 
 If you have any questions about how your package was declared, please reach out.
 
