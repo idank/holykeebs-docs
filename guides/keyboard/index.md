@@ -129,7 +129,7 @@ It's important for the controller sockets to be properly aligned to the PCB so t
 This is less beginner friendly but usually produces the best result.
 :::
 
-Start by pushing the sockets into the top side PCB. With the sockets still in place, flip the PCB over onto a flat surface.
+Start by pushing the sockets into the top side PCB (the side opposite to where you soldered the diodes and switches). With the sockets still in place, flip the PCB over onto a flat surface.
 
 While pressing down on the PCB so the sockets have no play, add solder to the first and last pins, securing the sockets. Be careful not to touch your finger with the iron.
 
