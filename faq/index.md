@@ -34,6 +34,11 @@ Express shipping is available using FedEx.
 
 Transit time for economy shipping is around 10-15 days on average, while FedEx is around 5-10 days.
 
+::: tip
+Orders shipped using Landmark Global use a secondary tracking number (found on the tracking page, starts with LE) in the destination. This
+number can be used in your local postal tracking for more detailed tracking (available after the package arrives to the destination).
+:::
+
 ### My order's tracking has not been updating!
 
 Orders are sent to a distribution center then shipped to the final destination. The tracking information will not update until the package is scanned at the distribution center, which may take up to 7 days.
