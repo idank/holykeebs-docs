@@ -61,7 +61,7 @@ Take note that you're soldering the correct pins on the controller: each column 
 
 ### Step 2
 
-The adapter PCB is reversible: for a right sided setup, you should see "top right" on the top side of the adapter PCB (the FFC connectors would be visible as well).
+The adapter PCB is reversible: for a right sided setup, you should see "top right" on the top side of the adapter PCB (as seen below). Turn it upside down if you don't. In the pictures below the FFC connectors are on the "top right" side, but the current version of the PCB has them on the other side.
 
 Put the 1mm spacer on your controller, and the adapter PCB on top. This ensures the adapter sits at a consistent distance from the controller. Check that it sits straight: if it's not straight, check if you have blobs of solder on the controller headers. If this is indeed the problem, reflow or remove solder until it sits flush on the spacer.
 
