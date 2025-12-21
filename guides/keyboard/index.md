@@ -151,7 +151,11 @@ Finish soldering the rest of the pins.
 ### Headers
 
 ::: warning
+
 Take note that you're soldering the correct pins on the controller: each column should have an unsoldered pin near the USB connector!
+
+![headers-top-view](headers-top-view.png)
+
 :::
 
 Machine headers have an orientation and should be pushed correctly for best fit. One side is flat, the other has a small bevel to it:
