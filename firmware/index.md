@@ -312,6 +312,7 @@ The following keycodes allow control of the above features. Orders that use the 
 | `HK_D_MODE`    | `Kb 8`          | `0x7e08` | When held*, enables the drag scroll                                         |
 | `HK_D_MODE_T`  | `Kb 9`          | `0x7e09` | Toggles drag scroll                                                         |
 | `HK_C_SCROLL`  | `Kb 10`         | `0x7e0a` | Cycles the scroll lock between off, horizontal and vertical                 |
+| `HK_I_SCROLL`  | `Kb 11`         | `0x7e0b` | Inverts the scroll direction                                                |
 
 \* Holding shift while using any of the config keycodes that need to be held will affect the peripheral pointing device.
 
