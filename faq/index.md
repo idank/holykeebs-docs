@@ -113,7 +113,7 @@ With VIA, keys and layers can be changed without flashing the keyboard. Go to th
 All of our keyboards use these screws and spacers.
 
 - Flat head M2 H1.3 hex screws (5mm bottom side, 3mm top side).
-- M2 gold spacers (4mm low profile keyboards, 7mm MX keyboards).
+- M2 gold/silver spacers (4mm low profile keyboards, 7mm MX keyboards).
 - M2 black/silver spacers for OLED (11mm for low profile sockets, 13mm for machine sockets).
 
 <Images :paths="[hardware1, hardware2, hardware3]" />
