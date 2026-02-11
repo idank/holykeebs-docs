@@ -65,9 +65,13 @@ We also encourage visiting the larger keyboard communities such as r/ErgoMechKey
 
 ### Cancellations
 
-Please contact as soon as possible if you have any problems with your order or wish to cancel.
+Please contact as soon as possible if you have any problems with your order or wish to cancel (discord/email).
 
 ### Returns
+
+::: warning
+US customers will not have the import taxes paid in their order refunded.
+:::
 
 Contact me within: 14 days of delivery.
 
