@@ -32,18 +32,17 @@ In addition to a soldering iron, you will need an H1.3 M2 hex key. Parallel plie
 
 ## BOM
 
-|   | description                | qty |
-|---|----------------------------|-----|
-| 1 | RP2040 controller          | 1   |
-| 2 | Custom low profile sockets | 2   |
-| 3 | adapter PCB                | 1   |
-| 4 | M2x4mm screw, spring washer| 2   |
-| 5 | 1mm spacer                 | 1   |
-| 6 | TPS43-201A-B               | 1   |
-| 7 | 6-pin, 0.5 pitch FFC cable | 1   |
-| 8 | 3d printed mount           | 1   |
-| 9 | 2mm matte acrylic cover    | 1   |
-
+|   | description                | quantity |
+|---|----------------------------|----------|
+| 1 | RP2040 controller          | 1        |
+| 2 | Custom low profile sockets | 2        |
+| 3 | adapter PCB                | 1        |
+| 4 | M2x4mm screw, spring washer| 2        |
+| 5 | 1mm spacer                 | 1        |
+| 6 | TPS43-201A-B               | 1        |
+| 7 | 6-pin, 0.5 pitch FFC cable | 1        |
+| 8 | 3d printed mount           | 1        |
+| ~~9~~ | ~~touchpad cover~~ (preinstalled)         | ~~1~~    |
 
 ![kit contents](./kit-contents.jpg)
 
