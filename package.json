@@ -5,7 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.0.1"
+    "vitepress": "^1.6.4"
   },
   "dependencies": {
     "posthog-js": "^1.116.6",
