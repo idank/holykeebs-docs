@@ -217,7 +217,7 @@ If you'd like to print your own, find the files here: 1 x <a href="/stls/killer-
 
 ### BASE
 
-The base unit is brains of the keyboard, has the Pi Pico controller and where all the sections connect to. The picos arrive with precut 20P headers and sockets. It's recommended to use the sockets, but not mandatory.
+The base unit is brains of the keyboard, has the Pi Pico controller and where all the sections connect to. The picos arrive with precut 20P headers and sockets. It's highly recommended to use the sockets.
 
 ::: warning
 The headers don't push in all the way into the sockets. This is as far as they'll go:
@@ -234,6 +234,10 @@ Solder the [FFC connectors](#ffc-connectors). Do this before soldering the contr
 If your kit came with printed posts, assembly is simpler: place a square nut in each post, centering its hole with the screw hole.
 
 Continue by following the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/2_BASE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/2_BASE.md)).
+
+::: info
+The Pico controllers have a USB-C socket but only work with an A to C cable.
+:::
 
 ### SIDE: Trackball
 
@@ -293,13 +297,15 @@ Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/bl
 
 Follow the official guide ([left](https://github.com/Taro-Hayashi/KillerWhale/blob/main/leftside/6_ASSEMBLE.md), [right](https://github.com/Taro-Hayashi/KillerWhale/blob/main/rightside/6_ASSEMBLE.md)), take note of the information below:
 
-1. See [FFC connector](#ffc-connectors) on how to connect the cables.
+1. The Pico controllers have a USB-C socket but only work with an A to C cable.
 
-2. Set the DIP switch on BASE according to the SIDE unit being used. In the image below, the marked switch is the one that's "on". Above the switch (not visible in the photo, are labels that show the side unit kind this switch activates). Note that your PCB may have 3 instead of 4 total switches.
+2. See [FFC connector](#ffc-connectors) on how to connect the cables.
+
+3. Set the DIP switch on BASE according to the SIDE unit being used. In the image below, the marked switch is the one that's "on". Above the switch (not visible in the photo, are labels that show the side unit kind this switch activates). Note that your PCB may have 3 instead of 4 total switches.
 
 ![dip-switch-highlighted](dip-switch-highlighted.png)
 
-3. Since the PCBs are reversible, it can be a bit confusing to know if a PCB belongs to the left or right half of the keyboard. This table shows the label you should be seeing **on the top surface of a PCB** to know which side it goes on:
+4. Since the PCBs are reversible, it can be a bit confusing to know if a PCB belongs to the left or right half of the keyboard. This table shows the label you should be seeing **on the top surface of a PCB** to know which side it goes on:
 
 |      | left                                   | right                                   |
 | ---- | -------------------------------------- | --------------------------------------- |

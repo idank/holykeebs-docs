@@ -27,7 +27,7 @@ Yes, if you don't see your country in the shipping page, please contact us.
 
 Economy methods:
 
-- To the US: items are sent to a fulfillment center in the east coast and then dispatched using USPS or FedEx Ground.
+- To the US: items are sent to a fulfillment center in the east coast and then dispatched using USPS.
 - Rest of the world: items are sent to a fulfillment center in Belgium and then dispatched using Landmark Global. This method uses post office services for the last leg of the delivery.
 
 Express shipping is available using FedEx.
