@@ -73,7 +73,7 @@ This connects GP0 instead of the shorted GP1 to the TRRS jack on each side. Last
 
 Flash both sides and try again.
 
-## Trackball Is Skipping
+## Pimoroni Trackball Is Skipping
 
 This happens on split keyboards when only the master side is connected. Unpower it, connect the halves, and try again.
 
@@ -82,3 +82,7 @@ This happens on split keyboards when only the master side is connected. Unpower 
 In VIA (or Remap), try binding a key to Reset (QK_BOOT keycode) and pressing it:
 
 ![via-reset-button](via-reset-button.png)
+
+## Linux: VIA/Remap can't open keyboard
+
+You might need to [setup udev rules](https://get.vial.today/manual/linux-udev.html). Make sure your browser supports WebHID (Chrome does).
