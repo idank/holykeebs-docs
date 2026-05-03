@@ -51,7 +51,7 @@ Precompiled firmwares for all possible configurations are available [here](https
 Entering the bootloader:
 
 - On a Sea Picro, press the reset button for ~1 second.
-- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button on the keyboard itself.
+- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button on the keyboard itself. On the **Remap** app, the reset button will appear in the **Device** tab as **Bootloader**.
 
 The [commands.txt](https://github.com/holykeebs/qmk_compiled/releases/download/latest/commands.txt) has a list of file name to the make command that produced it and can be used as a reference.
 
@@ -250,7 +250,7 @@ If one of the keys do not work, head over to [Troubleshooting](/troubleshooting/
 ## Features
 
 ::: info
-The Keyball and Killer Whale firmwares have their own dedicated implementation that overlaps with the functionality described below. Please refer to their respective documentation for more details.
+The Keyball and Killer Whale firmwares have their own dedicated implementation that overlaps with the functionality described below (precompiled firmware for these is also available in the [full list](https://github.com/holykeebs/qmk_compiled/releases/tag/latest)). Please refer to their respective documentation for more details.
 :::
 
 The default firmware facilitates pointing device usage by extending QMK with some useful and common functionality. This functionality is exposed via a collection of keycodes that can be bound to your liking. The `hk` keymap provides a batteries included mapping in a dedicated `POINTER` layer to make use of these keycodes.
