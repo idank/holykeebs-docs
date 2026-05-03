@@ -89,8 +89,7 @@ In Remap, try binding a key to Bootloader (QK_BOOT keycode) and pressing it:
 
 ## Linux: VIA/Remap can't open keyboard
 
-You might need to [setup udev rules](https://get.vial.today/manual/linux-udev.html).
-Make sure your browser supports WebHID (Chrome does, Firefox doesn't).
-
-- Even in Chrome, you might still have issues like "Could not open". If this happens, check: `chrome://device-log/` (in Chrome).
+- You might need to [setup udev rules](https://get.vial.today/manual/linux-udev.html).
+- Make sure your browser supports WebHID (Chrome does, Firefox doesn't).
+Even in Chrome, you might still have issues like "Could not open". If this happens, check: `chrome://device-log/` (in Chrome).
 If you have something like "Failed to open '/dev/hidraw6': FILE_ERROR_ACCESS_DENIED" in the logs, you have to give this device reading and writing permissions with something like: `sudo chmod a+rw /dev/hidraw6`.
