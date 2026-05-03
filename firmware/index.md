@@ -51,7 +51,7 @@ Precompiled firmwares for all possible configurations are available [here](https
 Entering the bootloader:
 
 - On a Sea Picro, press the reset button for ~1 second.
-- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button on the keyboard itself. On the **Remap** app, the reset button will appear in the **Device** tab as **Bootloader**.
+- On an RP2040 Pro Micro, there are two buttons on the components side of the controller: hold the BOOT button and then press the RESET button next to it. If your controller is already flashed with a QMK firmware, you can simply double tap the reset button on the keyboard itself. If you've changed your firmware and the reset button does not seem to be working check [this troubleshooting section](troubleshooting/#reset-button-doesn-t-go-into-bootloader).
 
 The [commands.txt](https://github.com/holykeebs/qmk_compiled/releases/download/latest/commands.txt) has a list of file name to the make command that produced it and can be used as a reference.
 
