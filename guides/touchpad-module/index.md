@@ -92,7 +92,7 @@ Soldering part done! 👏
 
 ::: info
 
-Your kit may have the touchpad sandwiched with the top surface, already inside the printed mount. Skip these steps below.
+Modules now come with the touchpad already pressed into the printed mount. Skip these steps below.
 
 :::
 
