@@ -46,7 +46,7 @@ For US customers, import tax is charged at checkout, and our shipping partner ha
 
 For all other countries, import duties, taxes, VAT/GST, brokerage fees, or other customs-related charges may apply. These fees are set by the destination country and are not included in our product or shipping prices unless clearly shown at checkout.
 
-Your local carrier or customs office may contact you directly for payment before delivery.
+Paying any customs fees charged after shipment is the customer's responsibility. Your local carrier or customs office may contact you directly for payment before delivery - it is your responsibility to track the shipment and respond promptly to any requests, otherwise the package may be returned to us or destroyed by customs.
 
 ::: info
 We are required to declare the correct value and contents of each order on customs forms. We cannot mark orders as gifts or lower the declared value.
@@ -86,15 +86,14 @@ Buyers are responsible for return shipping costs, and the return shipment must i
 
 If the item is not returned in its original condition, the buyer is responsible for any loss in value. This includes transit damage caused by insufficient packaging.
 
-If your order was sent using free shipping, the original shipping cost will be deducted from your refund, with a minimum deduction of $15.
+### Refunds
 
-### US import tax on returns
+Once we receive your return, please allow up to 7 days for it to be inspected. If approved, the refund will be sent to your original payment method.
 
-For US customers, import tax collected at checkout is non-refundable.
+The following amounts are not refunded:
 
-### Refund timing
-
-Please allow up to 7 days after we receive your return for it to be inspected. If approved, the refund will be sent to your original payment method.
+- If your order was sent using free shipping, the original shipping cost is deducted from your refund (minimum deduction of $15).
+- For US customers, import tax collected at checkout is non-refundable.
 
 Once the refund is issued, your bank or credit card company may take additional time to process it. Please allow up to 10 business days, and contact us if there are any issues.
 
