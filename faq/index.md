@@ -14,78 +14,97 @@ holykeebs is a tiny store operated from Israel. I just like soldering.
 
 holykeebs specializes in ergonomic split keyboards with pointing devices such as trackballs, touchpads and trackpoints.
 
-## Shipping
-
-All orders are shipped from Israel. Please check your country's customs and duties policy to be informed of any potential
-fees you might have to pay upon receipt of your order.
+## Shipping, Taxes and Delivery
 
 ### Do you ship globally?
 
-Yes, if you don't see your country in the shipping page, please contact us.
+Yes. If you don't see your country on the shipping page, please contact us.
+
+### Where do orders ship from?
+
+All orders are shipped from Israel.
 
 ### What shipping methods are available?
 
 Economy methods:
 
-- To the US: items are sent to a fulfillment center in the east coast and then dispatched using USPS.
-- Rest of the world: items are sent to a fulfillment center in Belgium and then dispatched using Landmark Global. This method uses post office services for the last leg of the delivery.
+- To the US: items are sent to a fulfillment center on the East Coast and then dispatched using USPS.
+- Rest of the world: items are sent to a fulfillment center in Belgium and then dispatched using Landmark Global. This method uses local postal services for the final leg of delivery.
 
 Express shipping is available using FedEx.
 
 Transit time for economy shipping is around 10-15 days on average, while FedEx is around 5-10 days.
 
 ::: tip
-Orders shipped using Landmark Global use a secondary tracking number (found on the tracking page, starts with LE) in the destination. This
-number can be used in your local postal tracking for more detailed tracking (available after the package arrives to the destination).
+Orders shipped using Landmark Global use a secondary tracking number (found on the tracking page, starts with LE). This
+number can be used in your local postal tracking for more detailed tracking (available after the package arrives in the destination country).
 :::
 
-### My order's tracking has not been updating!
+### Taxes, duties, and customs fees
 
-Orders are sent to a distribution center then shipped to the final destination. The tracking information will not update until the package is scanned at the distribution center, which may take up to 7 days.
+For US customers, import tax is charged at checkout, and our shipping partner handles payment to the relevant authorities.
 
-In other cases, there could be a customs issue, port issues, parcel / postal system overload, and many more reasons we cannot influence. Please reach out after you have not seen an about for at least a week.
+For all other countries, import duties, taxes, VAT/GST, brokerage fees, or other customs-related charges may apply. These fees are set by the destination country and are not included in our product or shipping prices unless clearly shown at checkout.
 
-Economy shipping options are delivered on the last leg using the destination country's postal service. The tracking number should show up in your local post office systems and will often have more detailed information (only works once the package arrived at the destination).
+Your local carrier or customs office may contact you directly for payment before delivery.
 
-## Taxes and Duties
+::: info
+We are required to declare the correct value and contents of each order on customs forms. We cannot mark orders as gifts or lower the declared value.
+:::
 
-For US customers, shipments made from Israel are taxed at 15% (after the goverment ended the de minimis exemption). We charge this fee from you at checkout, and our shipping partner takes care of paying the customs fee to the authorities.
+### My tracking has not been updating
 
-For other countries: import duties, taxes, and other fees are the responsibility of the customer and are not included. Your local carrier or customs office will notify you upon receiving the shipment if any payment is required.
+Orders are first sent to a fulfillment center and then shipped to the final destination. Tracking may not update until the package is scanned at the fulfillment center, which can take up to 7 days.
 
-If you have any questions about how your package was declared, please reach out.
+After that, delays can happen because of customs, local postal issues, port delays, or other issues outside our control. For economy shipping, the final delivery is handled by the destination country's postal service, and the local tracking number may show more detailed updates once the package arrives in the destination country.
+
+Please contact us if tracking has not updated for at least a week.
+
+### If a package is returned, refused, or held by customs
+
+If a package is returned to holykeebs because customs fees were not paid, the package was refused, or the shipping address was incomplete or incorrect, we may be able to reship it once it is returned to us.
+
+The customer is responsible for reshipping costs. Original shipping fees are non-refundable, and any return-to-sender fees charged to us may be passed on to the customer.
+
+If the package is returned and you do not want it reshipped, refunds are handled case by case. Please reach out to us.
+
+## Cancellations, Returns and Refunds
+
+### Cancellations
+
+Please contact us as soon as possible if you need to cancel or change your order.
+
+If the order has not shipped yet, we'll do our best to help. Once an order has shipped, it can no longer be cancelled.
+
+### Returns after delivery
+
+Contact us within 14 days of delivery if you would like to return an item.
+
+Items must be shipped back within 30 days of delivery.
+
+Buyers are responsible for return shipping costs, and the return shipment must include tracking.
+
+If the item is not returned in its original condition, the buyer is responsible for any loss in value. This includes transit damage caused by insufficient packaging.
+
+If your order was sent using free shipping, the original shipping cost will be deducted from your refund, with a minimum deduction of $15.
+
+### US import tax on returns
+
+For US customers, import tax collected at checkout is non-refundable.
+
+### Refund timing
+
+Please allow up to 7 days after we receive your return for it to be inspected. If approved, the refund will be sent to your original payment method.
+
+Once the refund is issued, your bank or credit card company may take additional time to process it. Please allow up to 10 business days, and contact us if there are any issues.
+
+For packages returned to us by the carrier (refused, held by customs, or undeliverable), see [If a package is returned, refused, or held by customs](#if-a-package-is-returned-refused-or-held-by-customs).
 
 ## Warranty and Support
 
 Whether you order a kit or use the build service, we do our best to test everything before shipping. If you discover an issue after unboxing, please reach out and we'll sort it out. For general firmware questions, please use the help-firmware discord channel. Other warranty and support services aren't provided.
 
 We also encourage visiting the larger keyboard communities such as r/ErgoMechKeyboards, r/MechanicalKeyboards, [QMK](https://discord.gg/qmk) / [Low Profile Keyboards](https://discord.gg/j2ekqbkS) discord server.
-
-## Refunds and Returns
-
-### Cancellations
-
-Please contact as soon as possible if you have any problems with your order or wish to cancel (discord/email).
-
-### Returns
-
-::: warning
-US customers will not have the import taxes paid in their order refunded.
-:::
-
-Contact me within: 14 days of delivery.
-
-Ship items back within: 30 days of delivery.
-
-- Buyers are responsible for return shipping costs, **which must have tracking**.
-- If the item is not returned in its original condition, the buyer is responsible for any loss in value. This includes any transit damage due to insufficient packaging.
-- If your order was sent to you using free shipping, that cost will be deducted from your refund (a minimum of $15).
-
-Please allow up to 7 days from receiving your return for it to be inspected. If approved, you'll be automatically refunded to your original payment method. Otherwise, you'll be contacted by email with further details.
-
-::: info
-We have no control over the time it takes for the refunded to be proccessed by your credit card company or bank, please allow up to 10 business days, and contact us in case of issues.
-:::
 
 ## Wireless
 
@@ -104,11 +123,11 @@ For choc keyboards, we differentiate these two styles of spacing by calling the 
 
 ## Firmware
 
-### Can I Change Split Master
+### Can I change split master?
 
 Yes, see [SPLIT_POINTING_ENABLE](https://docs.qmk.fm/#/feature_pointing_device?id=split-keyboard-configuration).
 
-### Remapping Keys
+### Remapping keys
 
 With VIA, keys and layers can be changed without flashing the keyboard. Go to the VIA [web app](https://usevia.app/), or download the [desktop app](https://github.com/the-via/releases/releases). If you don't want to use VIA, please consult QMK docs on how to create your own keymap.
 
